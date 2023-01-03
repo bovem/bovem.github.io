@@ -1,7 +1,7 @@
 baseURL: "https://adityatelange.github.io/hugo-PaperMod/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-title: PaperMod
+title: "BOVEM"
 paginate: 5
-theme: hugo-PaperMod
+theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -39,65 +39,65 @@ languages:
                   url: categories/
                   weight: 10
 
-    fr:
-        languageName: ":fr:"
-        languageAltTitle: French
-        weight: 2
-        title: PaperModL2
-        taxonomies:
-          category: FRcategories
-          tag: FRtags
-          series: FRseries
-        profileMode:
-            enabled: true
-            title: PaperMod
-            # imageUrl: "#"
-            # imageTitle: my image
-            # imageWidth: 120
-            # imageHeight: 120
-            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-            buttons:
-                - name: Blog
-                  url: posts
-                - name: Tags
-                  url: tags
-        menu:
-            main:
-                - name: Archive
-                  url: archives/
-                  weight: 5
-                - name: FRTags
-                  url: frtags
-                  weight: 10
-                - name: FRCategories
-                  url: frcategories
-                  weight: 10
-                - name: FRSeries
-                  url: frseries
-                  weight: 10
-                - name: NullLink
-                  url: "#"
-                - name: NullLink2
-                  url: "#"
-                - name: NullLink3
-                  url: "#"
+    # fr:
+    #     languageName: ":fr:"
+    #     languageAltTitle: French
+    #     weight: 2
+    #     title: PaperModL2
+    #     taxonomies:
+    #       category: FRcategories
+    #       tag: FRtags
+    #       series: FRseries
+    #     profileMode:
+    #         enabled: true
+    #         title: PaperMod
+    #         # imageUrl: "#"
+    #         # imageTitle: my image
+    #         # imageWidth: 120
+    #         # imageHeight: 120
+    #         subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+    #         buttons:
+    #             - name: Blog
+    #               url: posts
+    #             - name: Tags
+    #               url: tags
+    #     menu:
+    #         main:
+    #             - name: Archive
+    #               url: archives/
+    #               weight: 5
+    #             - name: FRTags
+    #               url: frtags
+    #               weight: 10
+    #             - name: FRCategories
+    #               url: frcategories
+    #               weight: 10
+    #             - name: FRSeries
+    #               url: frseries
+    #               weight: 10
+    #             - name: NullLink
+    #               url: "#"
+    #             - name: NullLink2
+    #               url: "#"
+    #             - name: NullLink3
+    #               url: "#"
 
-    fa:
-        languagedirection: rtl
-        weight: 3
-        title: PaperMod RTL
-        homeInfoParams:
-            Title: "Hi there \U0001F44B"
-            Content: Welcome to RTL layout
-        taxonomies:
-          category: FAcategories
-          tag: FAtags
-          series: FAseries
-        menu:
-            main:
-                - name: FATags
-                  url: fatags
-                  weight: 10
+    # fa:
+    #     languagedirection: rtl
+    #     weight: 3
+    #     title: PaperMod RTL
+    #     homeInfoParams:
+    #         Title: "Hi there \U0001F44B"
+    #         Content: Welcome to RTL layout
+    #     taxonomies:
+    #       category: FAcategories
+    #       tag: FAtags
+    #       series: FAseries
+    #     menu:
+    #         main:
+    #             - name: FATags
+    #               url: fatags
+    #               weight: 10
 
 outputs:
     home:
@@ -107,8 +107,8 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: Theme PaperMod
+    description: "Bovem Blog - Blogs on Mathematics, Computer Science and Technology"
+    author: "Avnish Pal"
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
@@ -127,8 +127,8 @@ params:
 
     profileMode:
         enabled: false
-        title: PaperMod
-        imageUrl: "#"
+        title: Avnish Pal
+        imageUrl: "https://avatars.githubusercontent.com/u/29746858?v=4"
         imageTitle: my image
         # imageWidth: 120
         # imageHeight: 120
@@ -139,24 +139,23 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "Avnish Pal"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
-
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-            - Do give a 🌟 on Github !
-
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+           
+           I am an Open Source Developer.
+           
+           - I'm interested in Computer Science, Machine Learning, and Mathematics. 
+           
+           - Currently I am working at Red Hat. You can download my resume from here.
 
     socialIcons:
         - name: github
-          url: "https://github.com/adityatelange/hugo-PaperMod"
-        - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
-        - name: Discord
-          url: "https://discord.gg/ahpmTvhVmp"
-        - name: RsS
+          url: "https://github.com/bovem"
+        - name: medium
+          url: "https://bovem.medium.com/"
+        - name: linkedin
+          url: "http://www.linkedin.com/in/avnish-pal"
+        - name: rss
           url: "index.xml"
 
     editPost:
