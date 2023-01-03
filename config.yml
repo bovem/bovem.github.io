@@ -38,6 +38,8 @@ languages:
                 - name: Categories
                   url: categories/
                   weight: 10
+                - name: Author
+                  url: author/
 
     # fr:
     #     languageName: ":fr:"
