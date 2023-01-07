@@ -142,11 +142,11 @@ params:
         Title: "Hi, I'm Avnish"
         Content: >
            
-           - Open Source Developer.
+           - Open Source Developer
            
-           - Interested in Computer Science, Machine Learning, and Mathematics. 
-           
-           - Currently I am working at Red Hat. You can download my resume from here.
+           - Interested in Computer Science, Machine Learning and Mathematics
+
+           - Currently I am working at Red Hat. You can download my resume from here
 
     socialIcons:
         - name: github
