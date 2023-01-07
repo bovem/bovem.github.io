@@ -38,8 +38,6 @@ languages:
                 - name: Categories
                   url: categories/
                   weight: 10
-                - name: Author
-                  url: author/
 
     # fr:
     #     languageName: ":fr:"
@@ -141,12 +139,12 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "Avnish Pal"
+        Title: "Hi, I'm Avnish"
         Content: >
            
-           I am an Open Source Developer.
+           - Open Source Developer.
            
-           - I'm interested in Computer Science, Machine Learning, and Mathematics. 
+           - Interested in Computer Science, Machine Learning, and Mathematics. 
            
            - Currently I am working at Red Hat. You can download my resume from here.
 
