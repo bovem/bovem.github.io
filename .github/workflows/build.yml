@@ -3,8 +3,7 @@ name: Build
 on:
   pull_request:
     branches:
-      - master
-      - exampleSite
+      - gh-pages
   workflow_dispatch:
     # manual run
     inputs:
