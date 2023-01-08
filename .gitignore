@@ -23,6 +23,7 @@ _testmain.go
 *.test
 
 /public
+/docs
 .DS_Store
 .hugo_build.lock
 content/posts/markdown-syntax.md
