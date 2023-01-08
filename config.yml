@@ -108,7 +108,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Bovem Blog - Blogs on Mathematics, Computer Science and Technology"
+    description: "Blogs on Mathematics, Computer Science and Technology"
     author: "Avnish Pal"
     # author: ["Me", "You"] # multiple authors
 
