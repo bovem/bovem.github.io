@@ -1,4 +1,4 @@
-baseURL: "https://bovem.github.io" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "https://bovem.github.io"
 title: "@bovem"
 paginate: 5
 theme: PaperMod
@@ -40,66 +40,6 @@ languages:
                   url: categories/
                   weight: 10
 
-    # fr:
-    #     languageName: ":fr:"
-    #     languageAltTitle: French
-    #     weight: 2
-    #     title: PaperModL2
-    #     taxonomies:
-    #       category: FRcategories
-    #       tag: FRtags
-    #       series: FRseries
-    #     profileMode:
-    #         enabled: true
-    #         title: PaperMod
-    #         # imageUrl: "#"
-    #         # imageTitle: my image
-    #         # imageWidth: 120
-    #         # imageHeight: 120
-    #         subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-    #         buttons:
-    #             - name: Blog
-    #               url: posts
-    #             - name: Tags
-    #               url: tags
-    #     menu:
-    #         main:
-    #             - name: Archive
-    #               url: archives/
-    #               weight: 5
-    #             - name: FRTags
-    #               url: frtags
-    #               weight: 10
-    #             - name: FRCategories
-    #               url: frcategories
-    #               weight: 10
-    #             - name: FRSeries
-    #               url: frseries
-    #               weight: 10
-    #             - name: NullLink
-    #               url: "#"
-    #             - name: NullLink2
-    #               url: "#"
-    #             - name: NullLink3
-    #               url: "#"
-
-    # fa:
-    #     languagedirection: rtl
-    #     weight: 3
-    #     title: PaperMod RTL
-    #     homeInfoParams:
-    #         Title: "Hi there \U0001F44B"
-    #         Content: Welcome to RTL layout
-    #     taxonomies:
-    #       category: FAcategories
-    #       tag: FAtags
-    #       series: FAseries
-    #     menu:
-    #         main:
-    #             - name: FATags
-    #               url: fatags
-    #               weight: 10
-
 outputs:
     home:
         - HTML
@@ -108,7 +48,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Bovem Blog - Blogs on Mathematics, Computer Science and Technology"
+    description: "Blogs on Mathematics, Computer Science and Technology"
     author: "Avnish Pal"
     # author: ["Me", "You"] # multiple authors
 
@@ -147,7 +87,7 @@ params:
            
            - Interested in Computer Science, Machine Learning and Mathematics
 
-           - Currently working at Red Hat. You can download my resume from here
+           - Currently working at Red Hat. You can download my resume from <a href="resume.pdf">here</a>
 
     socialIcons:
         - name: github
