@@ -27,3 +27,5 @@ _testmain.go
 .DS_Store
 .hugo_build.lock
 content/posts/markdown-syntax.md
+deploy/id_rsa
+deploy/id_rsa.pub
