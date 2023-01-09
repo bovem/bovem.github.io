@@ -1,0 +1,28 @@
+---
+version: "2.1"
+services:
+  code-server:
+    # image: lscr.io/linuxserver/code-server:latest
+    build: .
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+      - PASSWORD=password123
+      - SUDO_PASSWORD=password123
+      - DEFAULT_WORKSPACE=/config/workspace #optional
+    volumes:
+      - "..:/config/workspace"
+      - ".:/config/.ssh"
+    ports:
+      - 8443:8443
+    restart: unless-stopped
+  hugo-server:
+    image: klakegg/hugo:0.101.0
+    command: server
+    volumes:
+      - "..:/src"
+    ports:
+      - "1313:1313"
+
