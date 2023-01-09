@@ -27,6 +27,7 @@ This virtual machine could be saved as a template and shared between developers 
 With some minor changes the same template could be used for the deployment of the application.
 
 # Virtual Machines
+Add an image of virtual machine and normal machine deployment
 Expalination of virtual machines
 
 ## Advantages of using Virtual Machines for deploying applications
