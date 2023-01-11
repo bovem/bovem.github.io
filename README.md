@@ -15,5 +15,5 @@ export MACHINE_IP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | gre
 docker compose up -d
 ```
 
-Hugo server should be accessible at `http://${MACHINE_IP}:1313`
+Hugo server should be accessible at `http://${MACHINE_IP}:1313`  
 Code server should be accessible at `http://${MACHINE_IP}:8443`
