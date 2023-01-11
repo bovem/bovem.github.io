@@ -3,9 +3,9 @@
 Blogs on Mathematics, Computer Science and Technology
 
 ## Deployment
-Setup a hugo server and a code server for editing
+Setup a hugo and code server on local network for editing
 
-1. Determine machine IP
+1. Determine machine IP. [Source](https://stackoverflow.com/questions/13322485/how-to-get-the-primary-ip-address-of-the-local-machine-on-linux-and-os-x)
 ```bash
 export MACHINE_IP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
 ```
@@ -15,5 +15,5 @@ export MACHINE_IP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | gre
 docker compose up -d
 ```
 
-Hugo server should be accessible at http://${MACHINE_IP}:1313
-Code server should be accessible at http://${MACHINE_IP}:8443
+Hugo server should be accessible at `http://${MACHINE_IP}:1313`
+Code server should be accessible at `http://${MACHINE_IP}:8443`
