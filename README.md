@@ -12,7 +12,7 @@ export MACHINE_IP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | gre
 
 2. Deploy containers (inside `/deploy` folder)
 ```bash
-docker compose up
+docker compose up -d
 ```
 
 Hugo server should be accessible at http://${MACHINE_IP}:1313
