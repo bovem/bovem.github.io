@@ -72,21 +72,37 @@ it becomes a **Container Engine**. Some examples of container engines are:
 * docker
 * podman
 
-### Docker
+## Open Container Initiative (OCI)
+Open Container Intiative was established in 2015 for providing open specifications for:
+* Container Runtime
+* Container Image
+* Container Image Distribution
+
+The objective is to establish a standardized format for the containers such that an OCI container image could be used between different container engines without any issues.
+
+## Docker
 One of the most commonly used container engine. It is developed by Docker, Inc.
-It uses a daemon 
+It uses a daemon (`dockerd`) that provides all the management services for the container. This daemon runs with root privileges.
 
-### Podman
-Acronym for *Pod Manager tool* is a daemonless container engine developed by Red Hat.
+## Podman
+Acronym for *Pod Manager tool* is a daemonless container engine originally developed by Red Hat.  
 
-#### Skopeo
+Unlike docker it dosen't use any daemon for the interactions with container.
+It also has other security focused features like the containers don't run as root by default. This reduces the attack surface as the host system cannot be accessed from the inside of the container.
 
-#### Buildah
+### Skopeo
+`skopeo` is a CLI utility used alongside `podman` for management, inspection and transfer of container images.
+
+### Buildah
+`buildah` is another CLI utility used alongside `podman` and `skopeo` for building OCI container images.
 
 # External Resources
 * [Oracle VM VirtualBox](https://www.virtualbox.org/)
 * [Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/)
 * [containerd](https://containerd.io/)
 * [cri-o](https://cri-o.io/)
+* [Open Container Initiative](https://opencontainers.org/)
 * [docker](https://www.docker.com/)
 * [podman](https://podman.io/)
+* [skopeo](https://github.com/containers/skopeo)
+* [buildah](https://buildah.io/)
