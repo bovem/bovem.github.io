@@ -1,8 +1,8 @@
 ---
 author: "Avnish"
 title: "Containers"
-date: "2023-01-03"
-description: "Isolated processes for deploying applications"
+date: "2023-01-20"
+description: "A container is a set of one or more isolated processes running on an Operating System"
 tags: ["container", "podman", "docker","openshift", "kubernetes", "skopeo", "buildah", "vm"]
 categories: ["Microservices", "Cloud Computing"]
 series: ["OpenShift"]
