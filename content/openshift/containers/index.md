@@ -8,7 +8,7 @@ categories: ["Microservices", "Cloud Computing"]
 series: ["OpenShift"]
 aliases: ["containers"]
 ShowToc: true
-TocOpen: true
+TocOpen: false
 ---
 
 While creating an application in any programming language or framework you have to install its dependencies on your system.
@@ -60,7 +60,7 @@ The workloads running inside a container have very limited exposure to the resou
 * Faster deployment
 * More scalable
 
-Depending on your use case the deployment process could be a mix of both virtualization and containerization.
+Depending on your use case the deployment could be a mix of both virtualization and containerization. Like a service comprising of multiple containers could be deployed on a VM.
 
 # Managing Containers
 ## Container Runtime
@@ -120,6 +120,8 @@ It also has other security-focused features like the containers don't run as roo
 * [Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/)
 * [containerd](https://containerd.io/)
 * [cri-o](https://cri-o.io/)
+* [DockerHub](https://hub.docker.com/)
+* [Quay.io](https://quay.io/)
 * [Open Container Initiative](https://opencontainers.org/)
 * [docker](https://www.docker.com/)
 * [podman](https://podman.io/)
