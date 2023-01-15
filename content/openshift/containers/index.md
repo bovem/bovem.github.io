@@ -9,6 +9,14 @@ series: ["OpenShift"]
 aliases: ["containers"]
 ShowToc: true
 TocOpen: true
+cover:
+  image: ""
+  # can also paste direct link from external site
+  # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+  alt: "<alt text>"
+  caption: "<text>"
+  relative: false # To use relative path for cover image, used in hugo Page-bundles
+ShowShareButtons: false
 ---
 
 While creating an application in any programming language or framework you have to install its dependencies on your system.
@@ -22,18 +30,27 @@ This problem becomes more challenging once you start collaborating with other pe
 It works on my machine. Some xkcd comic strip?
 This is called monolith application development.... -->
 
-To solve this problem we can create an our development environment inside a virtual machine.
+<!-- To solve this problem we can create an our development environment inside a virtual machine.
 This virtual machine could be saved as a template and shared between developers to deploy on their own machines.
-With some minor changes the same template could be used for the deployment of the application.
+With some minor changes the same template could be used for the deployment of the application. -->
+
+When an application deployed directly on the OS running on the physical hardware it is called **baremetal deployment**.
+
+<p align="center"><img src="/openshift/containers/baremetal_deployment.png"></p>
+<p align="center"><small><i>Baremetal Deployment</i></small></p>
 
 # Virtual Machines (VMs)
-A **virtual machine** like the name suggests is a machine running upon the OS installed on the physical hardware. It has its own CPU, memory, networking interfaces, and other resources that is provided by a *hypervisor*.
+A **virtual machine** like the name suggests is a machine running upon the OS installed on the physical hardware. It has its own virtual CPU, memory, networking interfaces, and other resources that is provided by a *hypervisor*.
 
 A **hypervisor** is a program that is used to create and manage virtual machines. Some common hypervisors are:
 * Oracle VM VirtualBox
 * Hyper-V
 
 ## Advantages of using VMs for deploying applications
+
+<p align="center"><img src="/openshift/containers/virtual_machine_deployment.png"></p>
+<p align="center"><small><i>Virtualized Deployment</i></small></p>
+
 So, what advantage does development over VMs provide over development on the OS deployed on the physical hardware?
 
 1. Environment is persistent across the machines.  
@@ -49,6 +66,9 @@ A **container** is a set of one or more isolated processes running on an OS, it 
 The workloads running inside a container have a very limited exposure to the resources of its host i.e its CPUs, memory, network and storage. It uses the same kernel as its host, that's why you can't spin up a linux container on a machine running Windows (without priovisioning VM throught WSL or any other hypervisor).
 
 ## Advantages of using Containers over Virtual Machines
+<p align="center"><img src="/openshift/containers/containerized_deployment.png"></p>
+<p align="center"><small><i>Containerized Deployment</i></small></p>
+
 * Relatively lighter compared to VMs
 * Faster deployment
 * More scalable
@@ -61,6 +81,16 @@ Examples of container runtimes:
 * containerd: Developed by Docker and donated to Cloud Native Computing Foundation (CNCF). Used in Docker Engine.
 * cri-o: Container Runtime commonly used in Kubernetes.
 
+## Container Images
+**Container image** is a file that contains all the dependencies and executable code for the container. It is a way of storing and sharing containers.
+
+## Container Image Registries
+A **container image registry** is a service that handles storage and distribution of container images.
+
+Some of the common container registries are:
+* DockerHub
+* Quay.io
+
 ## Container Engine
 When a container runtime is expanded with CLI/GUI utilites for
 * Creation of containers
@@ -68,7 +98,7 @@ When a container runtime is expanded with CLI/GUI utilites for
 * Managing container images
 * APIs for developers to create layered products on top of it
 
-it becomes a **Container Engine**. Some examples of container engines are:
+it becomes a **container engine**. Some examples of container engines are:
 * docker
 * podman
 
