@@ -116,14 +116,14 @@ It also has other security-focused features like the containers don't run as roo
 `buildah` is another CLI utility used alongside `podman` and `skopeo` for building OCI container images.
 
 # External Resources
-* [Oracle VM VirtualBox](https://www.virtualbox.org/)
-* [Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/)
-* [containerd](https://containerd.io/)
-* [cri-o](https://cri-o.io/)
-* [DockerHub](https://hub.docker.com/)
-* [Quay.io](https://quay.io/)
-* [Open Container Initiative](https://opencontainers.org/)
-* [docker](https://www.docker.com/)
-* [podman](https://podman.io/)
-* [skopeo](https://github.com/containers/skopeo)
-* [buildah](https://buildah.io/)
+<a href="https://www.virtualbox.org/" target="_blank">Oracle VM VirtualBox</a>  
+<a href="https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/" target="_blank">Hyper-V</a>  
+<a href="https://containerd.io/" target="_blank">containerd</a>  
+<a href="https://cri-o.io/" target="_blank">cri-o</a>  
+<a href="https://hub.docker.com/" target="_blank">DockerHub</a>  
+<a href="https://quay.io/" target="_blank">Quay.io</a>  
+<a href="https://opencontainers.org/" target="_blank">Open Container Initiative</a>  
+<a href="https://www.docker.com/" target="_blank">Docker</a>  
+<a href="https://podman.io/" target="_blank">Podman</a>  
+<a href="https://github.com/containers/skopeo" target="_blank">Skopeo</a>  
+<a href="https://buildah.io/" target="_blank">Buildah</a>  
