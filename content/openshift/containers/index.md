@@ -44,36 +44,49 @@ The environment will be same irrespective of the OS installed on physical hardwa
 4. Provides option to run multiple OS on single hardware.
 
 # Containers
-A **container** is an isolated process running on an OS, it could be on a VM or directly on the physical hardware. Usually, it requires less resources than a virtual machine and provides similar performance and benefits depending on your use case.  
-The workloads running inside a container have a very limited exposure to the resources of its host i.e its CPUs, memory, network and storage. It uses the same kernel as its host, that's why you can't spin up a linux container on a machine running Windows.
+A **container** is a set of one or more isolated processes running on an OS, it could be on a VM or directly on the physical hardware. Usually, it requires less resources than a virtual machine and provides similar performance and benefits depending on your use case.  
+  
+The workloads running inside a container have a very limited exposure to the resources of its host i.e its CPUs, memory, network and storage. It uses the same kernel as its host, that's why you can't spin up a linux container on a machine running Windows (without priovisioning VM throught WSL or any other hypervisor).
 
 ## Advantages of using Containers over Virtual Machines
 * Relatively lighter compared to VMs
 * Faster deployment
 * More scalable
 
-# Container Architecture
-High level architecture of containers
-Pictures from any open platform?
-
-## Cgroups
-## Namespaces
-## Container Engine
-## Container Runtime
-
 # Managing Containers
-## Podman
-What is podman and how it used?
-Developed by Red Hat
+## Container Runtime
+The container is executed through a **container runtime**. It sets up the namespaces for the container.
 
-## Docker
-Even more popular container platform
+Examples of container runtimes:
+* containerd: Developed by Docker and donated to Cloud Native Computing Foundation (CNCF). Used in Docker Engine.
+* cri-o: Container Runtime commonly used in Kubernetes.
 
-## Skopeo
+## Container Engine
+When a container runtime is expanded with CLI/GUI utilites for
+* Creation of containers
+* Changing stage of the container (starting, stopping, resuming, deleting)
+* Managing container images
+* APIs for developers to create layered products on top of it
 
-## Buildah
+it becomes a **Container Engine**. Some examples of container engines are:
+* docker
+* podman
+
+### Docker
+One of the most commonly used container engine. It is developed by Docker, Inc.
+It uses a daemon 
+
+### Podman
+Acronym for *Pod Manager tool* is a daemonless container engine developed by Red Hat.
+
+#### Skopeo
+
+#### Buildah
 
 # External Resources
 * [Oracle VM VirtualBox](https://www.virtualbox.org/)
 * [Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/)
-* [Cgroups, namespaces, and beyond: what are containers made from?](https://www.youtube.com/watch?v=sK5i-N34im8)
+* [containerd](https://containerd.io/)
+* [cri-o](https://cri-o.io/)
+* [docker](https://www.docker.com/)
+* [podman](https://podman.io/)

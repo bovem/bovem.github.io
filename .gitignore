@@ -32,3 +32,6 @@ deploy/id_rsa.pub
 deploy/known_hosts
 deploy/known_hosts.old
 deploy/*.pem
+content/openshift/container-architecture/index.md
+content/openshift/container-architecture/systemctl_list_units.png
+.gitignore
