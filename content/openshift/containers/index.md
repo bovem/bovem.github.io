@@ -3,7 +3,7 @@ author: "Avnish"
 title: "Containers"
 date: "2023-01-03"
 description: "Isolated processes for deploying applications"
-tags: ["container", "podman", "docker","openshift", "kubernetes"]
+tags: ["container", "podman", "docker","openshift", "kubernetes", "skopeo", "buildah", "vm"]
 categories: ["Microservices", "Cloud Computing"]
 series: ["OpenShift"]
 aliases: ["containers"]
@@ -56,9 +56,12 @@ The workloads running inside a container have very limited exposure to the resou
 <p align="center"><img src="/openshift/containers/containerized_deployment.png"></p>
 <p align="center"><small><i>Containerized Deployment</i></small></p>
 
-* Relatively lighter compared to VMs
-* Faster deployment
-* More scalable
+1. Relatively lighter compared to VMs  
+  Containers don't need virtual resources. The size of the container could be shrunk down to the point where only the dependencies required for the application are present on it.
+2. Faster deployment  
+  Due to their smaller size compared to VMs they could be deployed faster.
+3. More scalable  
+  It is possible to execute multiple containers in the same amount of resources required by a VM for an application.
 
 Depending on your use case the deployment could be a mix of both virtualization and containerization. Like a service comprising of multiple containers could be deployed on a VM.
 
@@ -76,9 +79,7 @@ A **container image** is a file that contains all the dependencies and executabl
 ## Container Image Registries
 A **container image registry** is a service that handles the storage and distribution of container images.
 
-Some of the common container registries are:
-* DockerHub
-* Quay.io
+Some of the common container registries are: DockerHub, Quay.io, etc.
 
 ## Container Engine
 When a container runtime is expanded with CLI/GUI utility for
