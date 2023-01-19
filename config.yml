@@ -54,7 +54,7 @@ params:
 
     defaultTheme: auto
     # disableThemeToggle: true
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowReadingTime: true
     # disableSpecial1stPost: true
     displayFullLangName: true
@@ -87,15 +87,19 @@ params:
            
            - Interested in Computer Science, Machine Learning and Mathematics
 
-           - Currently working at Red Hat. You can download my resume from <a target=_blank href="https://github.com/bovem/bovem.github.io/blob/gh-pages/resources/docs/resume.pdf">here</a>
+           - I'm currently working at Red Hat. You can download my resume from <a target=_blank href="Resume-AvnishPal-DevOps-1.5YoE.pdf">here</a>
 
     socialIcons:
+        - name: cv
+          url: "Resume-AvnishPal-DevOps-1.5YoE.pdf"
         - name: github
           url: "https://github.com/bovem"
         - name: medium
           url: "https://bovem.medium.com/"
         - name: linkedin
           url: "http://www.linkedin.com/in/avnish-pal"
+        - name: stackoverflow
+          url: "https://stackoverflow.com/users/15039093/avnish-pal"
         - name: rss
           url: "index.xml"
 
