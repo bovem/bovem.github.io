@@ -34,3 +34,4 @@ deploy/known_hosts.old
 deploy/*.pem
 content/openshift/container-architecture/
 .gitignore
+resources/_gen/images/openshift/container-architecture/*.png
