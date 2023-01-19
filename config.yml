@@ -10,7 +10,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-publishDir: "public"
+publishDir: "docs"
 # googleAnalytics: UA-123-45
 
 minify:
