@@ -33,5 +33,13 @@ deploy/known_hosts
 deploy/known_hosts.old
 deploy/*.pem
 content/openshift/container-architecture/
+content/openshift/container-lifecycle
+content/openshift/deploying-containerized-applications-on-kubernetes
+content/openshift/image-registries
+content/openshift/image-streams
+content/openshift/kubernetes
+content/openshift/kubernetes-resources
+content/openshift/managing-multiple-containers
+openshift
 .gitignore
 resources/_gen/images/openshift/container-architecture/*.png
