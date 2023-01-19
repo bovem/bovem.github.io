@@ -2,6 +2,10 @@
 
 Blogs on Mathematics, Computer Science and Technology
 
+## Technologies Used
+- [Hugo Static Site Generator](https://gohugo.io/)
+- [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod)
+
 ## Local Deployment (with Code Server)
 Setup a hugo and code server on local network for editing
 

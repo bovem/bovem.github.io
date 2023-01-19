@@ -70,7 +70,7 @@ params:
         enabled: false
         title: Avnish Pal
         imageUrl: "https://avatars.githubusercontent.com/u/29746858?v=4"
-        imageTitle: my image
+        imageTitle: Profile
         # imageWidth: 120
         # imageHeight: 120
         buttons:
@@ -104,7 +104,7 @@ params:
           url: "index.xml"
 
     editPost:
-        URL: "https://github.com/bovem/bovem-blog/pulls"
+        URL: "https://github.com/bovem/bovem.github.io/pulls"
         Text: "Suggest Changes" # edit text
         # appendFilePath: true # to append file path to Edit link
 
