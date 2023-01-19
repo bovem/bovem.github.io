@@ -1,5 +1,4 @@
 [![Blog Cover Image](./static/bovem-cover.png)](https://www.bovem.in/)
-[![Deploy Hugo Blog](https://github.com/bovem/bovem.github.io/actions/workflows/static.yml/badge.svg)](https://github.com/bovem/bovem.github.io/actions/workflows/static.yml) 
 
 Blogs on Mathematics, Computer Science and Technology
 
