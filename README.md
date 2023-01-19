@@ -2,7 +2,7 @@
 
 Blogs on Mathematics, Computer Science and Technology
 
-## Deployment
+## Local Deployment (with Code Server)
 Setup a hugo and code server on local network for editing
 
 1. Determine machine IP. [Source](https://stackoverflow.com/questions/13322485/how-to-get-the-primary-ip-address-of-the-local-machine-on-linux-and-os-x)
