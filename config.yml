@@ -104,7 +104,7 @@ params:
           url: "index.xml"
 
     editPost:
-        URL: "https://github.com/bovem/bovem-blog/pulls"
+        URL: "https://github.com/bovem/bovem.github.io/pulls"
         Text: "Suggest Changes" # edit text
         # appendFilePath: true # to append file path to Edit link
 

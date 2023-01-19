@@ -20,7 +20,7 @@ This problem becomes more challenging once you start collaborating with other pe
 
 When an application is deployed directly on the OS running on the physical hardware it is called **baremetal deployment**.
 
-<p align="center"><img src="/openshift/containers/baremetal_deployment.png"></p>
+<p align="center"><img src="/openshift/containers/baremetal_deployment.png" alt="Deployment of application directly on physical hardware"></p>
 <p align="center"><small><i>Baremetal Deployment</i></small></p>
 
 # Virtual Machines (VMs)
@@ -32,7 +32,7 @@ A **hypervisor** is a program that is used to create and manage virtual machines
 
 ## Advantages of using VMs for deploying applications
 
-<p align="center"><img src="/openshift/containers/virtual_machine_deployment.png"></p>
+<p align="center"><img src="/openshift/containers/virtual_machine_deployment.png" alt="Deployment of application using Virtualization"></p>
 <p align="center"><small><i>Virtualized Deployment</i></small></p>
 
 So, what advantage does development over VMs provide over development on the OS deployed on the physical hardware?
@@ -53,7 +53,7 @@ A **container** is a set of one or more isolated processes running on an OS, it 
 The workloads running inside a container have very limited exposure to the resources of its host i.e its CPUs, memory, network, and storage. It uses the same kernel as its host, that's why you can't spin up a Linux container on a machine running Windows (without provisioning the VM through Windows Subsystem for Linux or any other hypervisor).
 
 ## Advantages of using Containers over Virtual Machines
-<p align="center"><img src="/openshift/containers/containerized_deployment.png"></p>
+<p align="center"><img src="/openshift/containers/containerized_deployment.png" alt="Deployment of applicatino using containerization"></p>
 <p align="center"><small><i>Containerized Deployment</i></small></p>
 
 1. Relatively lighter compared to VMs  
