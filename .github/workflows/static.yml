@@ -8,9 +8,6 @@ on:
       - "README.md"
     branches:
       - gh-pages
-  pull:
-    branches:
-      - gh-pages
   workflow_dispatch:
     # manual run
     inputs:
