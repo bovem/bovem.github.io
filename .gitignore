@@ -39,6 +39,5 @@ content/openshift/image-streams
 content/openshift/kubernetes
 content/openshift/kubernetes-resources
 content/openshift/managing-multiple-containers
-openshift
 .gitignore
 resources/_gen/images/openshift/container-architecture/*.png
