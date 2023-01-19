@@ -1,11 +1,11 @@
 ---
 author: "Avnish"
 title: "Containers"
-date: "2023-01-20"
+date: "2023-01-19"
 description: "A container is a set of one or more isolated processes running on an Operating System"
 tags: ["container", "podman", "docker","openshift", "kubernetes", "skopeo", "buildah", "vm"]
 categories: ["Microservices", "Cloud Computing"]
-series: ["OpenShift"]
+# series: ["OpenShift"]
 aliases: ["containers"]
 ShowToc: true
 TocOpen: false
