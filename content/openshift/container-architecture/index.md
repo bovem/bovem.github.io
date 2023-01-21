@@ -2,37 +2,90 @@
 author: "Avnish"
 title: "Container Architecture"
 date: "2023-01-27"
-description: "Isolated processes for deploying applications"
+description: "Creation and execution of container is enabled using features such as namespaces, Cgroups, seccomp and SELinux"
 tags: ["container", "podman", "docker","openshift", "kubernetes", "linux", "namespaces", "cgroups", "seccomp", "selinux"]
-categories: ["Microservices", "Cloud Computing", "Operating Systems"]
+categories: ["Microservices", "Operating Systems"]
 series: ["OpenShift"]
 aliases: ["container-architecture"]
 ShowToc: true
-# TocOpen: true
+TocOpen: false
 cover:
   image: "container_arch.drawio.svg"
   linkFullImages: true
-  # can also paste direct link from external site
-  # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
-  alt: "Features for containers"
-  caption: "Features for containers"
-  relative: false # To use relative path for cover image, used in hugo Page-bundles
+  alt: "The features essestial for containers"
+  caption: "The features essential for containers"
+  relative: false
 ---
 
-Features that facilitate the creation and execution of containers:
+To isolate process in <a href="/openshift/containers" target="_blank">containers</a> from their host, the container engines uses following four features provided by the OS:
+* Namespaces
+* Control Groups
+* Secure Computing
+* SELinux
 
 ## Namespaces
 **Namespaces** are used to limit the reach of container to its host's resources. This helps with security and well as limiting the resources available to the container.
 
-Namespaces necessary for the creation of containers:
+The namespaces that are essential for containers:
+
 ### User
 The users and groups created inside the container are completely different from its host, they have their own UID and GID. Processes running inside the container as a `root` user could be mapped to a non-root user on the host.
 
-### mnt
+Using the `id` command you can verify that the containers are using different user namespace than other processses on your host.
+
+Running `id` on host:
+```bash
+$ id
+uid=1000(username) gid=1000(username) groups=1000(username),10(wheel) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+```
+
+Running `id` inside a container created from `docker.io/library/httpd:latest` container image:
+```
+root@14ed72afd62e:/usr/local/apache2# id
+uid=0(root) gid=0(root) groups=0(root)
+```
+
+### Mount (`mnt`)
 The container has its own file system hierarchy but it could be viewed by the host in directory `/proc/<CONTAINER_PID>/mounts`.
 
+To view the filesystems mounted you can use the `df` command.
+
+Using `df` on host
+```bash
+Filesystem     1K-blocks      Used Available Use% Mounted on
+devtmpfs            4096         0      4096   0% /dev
+tmpfs            7849316    143584   7705732   2% /dev/shm
+tmpfs            3139728      2440   3137288   1% /run
+/dev/nvme0n1p3 498443264 308159584 185270656  63% /
+/dev/nvme0n1p3 498443264 308159584 185270656  63% /home
+tmpfs            7849320     20520   7828800   1% /tmp
+```
+
+Using `df` inside a container
+```bash
+root@14ed72afd62e:/usr/local/apache2# df
+Filesystem     1K-blocks      Used Available Use% Mounted on
+overlay        498443264 308159584 185270656  63% /
+tmpfs              65536         0     65536   0% /dev
+tmpfs            1569860       276   1569584   1% /etc/hosts
+shm                64000         0     64000   0% /dev/shm
+devtmpfs            4096         0      4096   0% /dev/tty
+```
+
 ### Unix Timesharing System (UTS)
-Container have their own hostnames assigned to them due to UTS namespace.
+Container have their own hostnames assigned to them due to UTS namespace. We can verify this with `hostname` command.
+
+On host:
+```bash
+[username@host-1 ~]$ hostname
+host-1
+```
+
+Inside container:
+```bash
+root@14ed72afd62e:/usr/local/apache2# hostname
+14ed72afd62e
+```
 
 ### Process ID (PID)
 Each process running on the OS has a unique Process ID or PID assigned to it. The processes running inside the container have their own PIDs which is separate from the host. 
@@ -45,14 +98,15 @@ Containers communicate with the host and internet through a virtual network inte
 Processes in same IPCs can access the resources of each other. So two containers on same IPC namespace can communicate with each other.
 
 ### Time
-Since Linux Kernel 5.6 and addition of Time namespace now a container can have a different view of time than its host
+Time namespaces are available since the release of Linux Kernel 5.6.  
+Maybe sometime in future containers can have different time than their host.
 
 ## Control Groups (Cgroups)
 A **control group** is created to effectively allocate resources of the OS to the processes residing in it. These Cgroups are hierarchial i.e. a child Cgroup could be spawned from the parent and it will inherit its certain attributes.
 
 By creating a Cgroup a process in it could be prioritized, paused, removed or resumed based on the resources allocated to it. This also helps in monitoring the resources used by a particular processes.
 
-If you are using an OS with `systemd` init system. Then you can use the following command to list all the cgroups: 
+If you are using an OS with `systemd` init system (to verify this you can ....) then you can use the following command to list all the cgroups: 
 
 ```bash
 systemctl list-units
@@ -134,10 +188,11 @@ SELinux checks the *SELinux context* of the file or process to make decisions re
 To view the SELinux context of a file use command `ls -Z <FILENAME>` and to view it for a process use command `ps -eZ | grep <PROCESS_NAME>`.
 
 # External Resources
-* [Cgroups, namespaces, and beyond: what are containers made from?](https://www.youtube.com/watch?v=sK5i-N34im8)
-* [4 Linux technologies fundamental to containers](https://opensource.com/article/21/8/container-linux-technology)
-* [systemd(1) — Linux manual page](https://man7.org/linux/man-pages/man1/init.1.html)
-* [Obtaining Information about Control Groups](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/resource_management_guide/sec-obtaining_information_about_control_groups)
-* [It's Finally Time: The Time Namespace Support Has Been Added To The Linux 5.6 Kernel](https://www.phoronix.com/news/Time-Namespace-In-Linux-5.6)
-* [seccomp(2) — Linux manual page](https://man7.org/linux/man-pages/man2/seccomp.2.html)
-* [What is SELinux?](https://www.redhat.com/en/topics/linux/what-is-selinux)
+
+<a href="https://www.youtube.com/watch?v=sK5i-N34im8" target="_blank">Cgroups, namespaces, and beyond: what are containers made from?</a>  
+<a href="https://opensource.com/article/21/8/container-linux-technology" target="_blank">4 Linux technologies fundamental to containers</a>  
+<a href="https://man7.org/linux/man-pages/man1/init.1.html" target="_blank">systemd(1) — Linux manual page</a>  
+<a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/resource_management_guide/sec-obtaining_information_about_control_groups" target="_blank">Obtaining Information about Control Groups</a>  
+<a href="https://www.phoronix.com/news/Time-Namespace-In-Linux-5.6" target="_blank">It's Finally Time: The Time Namespace Support Has Been Added To The Linux 5.6 Kernel</a>  
+<a href="https://man7.org/linux/man-pages/man2/seccomp.2.html" target="_blank">seccomp(2) — Linux manual page</a>  
+<a href="https://www.redhat.com/en/topics/linux/what-is-selinux" target="_blank">What is SELinux?</a>  
