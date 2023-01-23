@@ -82,9 +82,9 @@ A **container image registry** is a service that handles the storage and distrib
 Some of the common container registries are: DockerHub, Quay.io, etc.
 
 ## Container Engine
-When a container runtime is expanded with CLI/GUI utility for
+When a container runtime is expanded with CLI and/or GUI utility for
 * Creation of containers
-* Changing stage of the container (starting, stopping, resuming, deleting)
+* Changing the state of container (starting, stopping, resuming, deleting)
 * Managing container images
 * APIs for developers to create layered products on top of it
 
