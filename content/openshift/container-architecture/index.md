@@ -47,33 +47,65 @@ root@14ed72afd62e:/usr/local/apache2# id
 uid=0(root) gid=0(root) groups=0(root)
 ```
 
-### Mount (`mnt`)
-The container has its own file system hierarchy but it could be viewed by the host in directory `/proc/<CONTAINER_PID>/mounts`.
+### Process ID (`PID`)
+Each process running on the OS has a unique Process ID (PID) assigned to it. The processes running inside the container have their own PIDs which is separate from the host. Due to process ID isolation a container can't access the details of processes running on its host.   
 
-<!-- Tell how to extract container's PID. Maybe we need to rephrase this section. -->
+To fetch the list of PID namespaces you can use the command:
 
-To view the filesystems mounted you can use the `df` command.
-
-Using `df` on host
 ```bash
-Filesystem     1K-blocks      Used Available Use% Mounted on
-devtmpfs            4096         0      4096   0% /dev
-tmpfs            7849316    143584   7705732   2% /dev/shm
-tmpfs            3139728      2440   3137288   1% /run
-/dev/nvme0n1p3 498443264 308159584 185270656  63% /
-/dev/nvme0n1p3 498443264 308159584 185270656  63% /home
-tmpfs            7849320     20520   7828800   1% /tmp
+$ lsns -t pid
+        NS TYPE NPROCS   PID USER  COMMAND
+4026531836 pid     128  4996 user /usr/lib/systemd/systemd --user
+4026533251 pid      16  4525 user nginx: worker process
+...
 ```
 
-Using `df` inside a container
+Just like other processes, containers also have PIDs assigned to them by host. You can fetch the PID of a running container using following command: 
+
+```bash
+$  docker inspect -f '{{.State.Pid}}' deploy-hugo-server-1
+7172
+```
+
+`ps aux` command could be used list the running processes on the system along with their details.
+
+```bash
+$ ps aux | grep 7172
+root        7172  0.0  0.4 759596 68860 ?        Ssl  Jan22   0:32 /usr/lib/hugo/hugo server --buildFuture --bind=0.0.0.0
+```
+
+### Mount (`mnt`)
+By using different mount namespaces for different process the user can ensure that they can't access each other's files. To view the filesystems mounted on your system, you can use the `df` command.
+
+```bash
+$ df
+Filesystem     1K-blocks      Used Available Use% Mounted on
+devtmpfs            4096         0      4096   0% /dev
+tmpfs            7849324     42384   7806940   1% /dev/shm
+tmpfs            3139732      2444   3137288   1% /run
+...
+```
+
+The container has its own file system hierarchy which could be viewed if we use `df` command insider container.
 ```bash
 root@14ed72afd62e:/usr/local/apache2# df
 Filesystem     1K-blocks      Used Available Use% Mounted on
 overlay        498443264 308159584 185270656  63% /
 tmpfs              65536         0     65536   0% /dev
 tmpfs            1569860       276   1569584   1% /etc/hosts
-shm                64000         0     64000   0% /dev/shm
-devtmpfs            4096         0      4096   0% /dev/tty
+...
+```
+
+but it could be viewed by the host in file `/proc/<CONTAINER_PID>/mounts`.
+```bash
+$ docker inspect -f '{{.State.Pid}}' deploy-hugo-server-1
+7172
+
+$ cat /proc/7172/mounts
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /dev tmpfs rw,seclabel,nosuid,size=65536k,mode=755,inode64 0 0
+devpts /dev/pts devpts rw,seclabel,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666 0 0
+...
 ```
 
 ### Unix Timesharing System (UTS)
@@ -89,32 +121,6 @@ Inside container:
 ```bash
 root@14ed72afd62e:/usr/local/apache2# hostname
 14ed72afd62e
-```
-
-### Process ID (`PID`)
-Each process running on the OS has a unique Process ID (PID) assigned to it. The processes running inside the container have their own PIDs which is separate from the host. Due to process ID isolation a container can't access the details of processes running on its host.   
-
-To fetch the list of PID namespaces you can use the command:
-
-```bash
-$ lsns -t pid
-        NS TYPE NPROCS   PID USER  COMMAND
-4026531836 pid     128  4996 user /usr/lib/systemd/systemd --user
-4026533251 pid      16  4525 user nginx: worker process
-```
-
-Just like other processes, containers also have PIDs assigned to them by host. You can fetch the PID of a running container using following command: 
-
-```bash
-$  docker inspect -f '{{.State.Pid}}' deploy-hugo-server-1
-7172
-```
-
-`ps aux` command could be used list the running processes on the system along with their details.
-
-```bash
-$ ps aux | grep 7172
-root        7172  0.0  0.4 759596 68860 ?        Ssl  Jan22   0:32 /usr/lib/hugo/hugo server --buildFuture --bind=0.0.0.0
 ```
 
 ### Network
