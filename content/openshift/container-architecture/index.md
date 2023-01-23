@@ -118,7 +118,9 @@ root        7172  0.0  0.4 759596 68860 ?        Ssl  Jan22   0:32 /usr/lib/hugo
 ```
 
 ### Network
+Each container has its own IP address and network ports assigned to it. This is achieved using network namespaces. It allows the developer to run multiple processes with their own IP address and network ports.
 
+To access or communicate with a process inside container the a network port has to be exposed from the container and port forwarding should be established from the host.
 
 ### Inter-Process Communication (IPC)
 Processes in same IPCs can access the resources of each other. So two containers on same IPC namespace can communicate with each other.
