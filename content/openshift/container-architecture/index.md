@@ -26,7 +26,9 @@ To isolate process in <a href="/openshift/containers" target="_blank">containers
 ## Namespaces
 **Namespaces** are used to limit the reach of container to its host's resources. This helps with security and well as limiting the resources available to the container.
 
-The namespaces that are essential for containers:
+On GNU/LINUX based systems you can use command `lsns` for listing details of all the namespaces.
+
+The namespaces essential for the container creation are: User, Mount, Unix Timesharing System, Process ID, Network, and Inter-Process Communication.
 
 ### User
 The users and groups created inside the container are completely different from its host, they have their own UID and GID. Processes running inside the container as a `root` user could be mapped to a non-root user on the host.
@@ -47,6 +49,8 @@ uid=0(root) gid=0(root) groups=0(root)
 
 ### Mount (`mnt`)
 The container has its own file system hierarchy but it could be viewed by the host in directory `/proc/<CONTAINER_PID>/mounts`.
+
+<!-- Tell how to extract container's PID. Maybe we need to rephrase this section. -->
 
 To view the filesystems mounted you can use the `df` command.
 
@@ -87,12 +91,34 @@ root@14ed72afd62e:/usr/local/apache2# hostname
 14ed72afd62e
 ```
 
-### Process ID (PID)
-Each process running on the OS has a unique Process ID or PID assigned to it. The processes running inside the container have their own PIDs which is separate from the host. 
-To view all the running processes you can use the command `ps`.  
+### Process ID (`PID`)
+Each process running on the OS has a unique Process ID (PID) assigned to it. The processes running inside the container have their own PIDs which is separate from the host. Due to process ID isolation a container can't access the details of processes running on its host.   
+
+To fetch the list of PID namespaces you can use the command:
+
+```bash
+$ lsns -t pid
+        NS TYPE NPROCS   PID USER  COMMAND
+4026531836 pid     128  4996 user /usr/lib/systemd/systemd --user
+4026533251 pid      16  4525 user nginx: worker process
+```
+
+Just like other processes, containers also have PIDs assigned to them by host. You can fetch the PID of a running container using following command: 
+
+```bash
+$  docker inspect -f '{{.State.Pid}}' deploy-hugo-server-1
+7172
+```
+
+`ps aux` command could be used list the running processes on the system along with their details.
+
+```bash
+$ ps aux | grep 7172
+root        7172  0.0  0.4 759596 68860 ?        Ssl  Jan22   0:32 /usr/lib/hugo/hugo server --buildFuture --bind=0.0.0.0
+```
 
 ### Network
-Containers communicate with the host and internet through a virtual network interface provided by the Container's Runtime.
+
 
 ### Inter-Process Communication (IPC)
 Processes in same IPCs can access the resources of each other. So two containers on same IPC namespace can communicate with each other.
@@ -192,7 +218,8 @@ To view the SELinux context of a file use command `ls -Z <FILENAME>` and to view
 <a href="https://www.youtube.com/watch?v=sK5i-N34im8" target="_blank">Cgroups, namespaces, and beyond: what are containers made from?</a>  
 <a href="https://opensource.com/article/21/8/container-linux-technology" target="_blank">4 Linux technologies fundamental to containers</a>  
 <a href="https://man7.org/linux/man-pages/man1/init.1.html" target="_blank">systemd(1) — Linux manual page</a>  
-<a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/resource_management_guide/sec-obtaining_information_about_control_groups" target="_blank">Obtaining Information about Control Groups</a>  
+<a href="https://www.redhat.com/sysadmin/7-linux-namespaces" target="_blank">The 7 most used Linux namespaces</a>  
 <a href="https://www.phoronix.com/news/Time-Namespace-In-Linux-5.6" target="_blank">It's Finally Time: The Time Namespace Support Has Been Added To The Linux 5.6 Kernel</a>  
+<a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/resource_management_guide/sec-obtaining_information_about_control_groups" target="_blank">Obtaining Information about Control Groups</a>  
 <a href="https://man7.org/linux/man-pages/man2/seccomp.2.html" target="_blank">seccomp(2) — Linux manual page</a>  
 <a href="https://www.redhat.com/en/topics/linux/what-is-selinux" target="_blank">What is SELinux?</a>  
