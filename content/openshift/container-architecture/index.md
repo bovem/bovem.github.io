@@ -129,7 +129,7 @@ Each container has its own IP address and network ports assigned to it. This is 
 To access or communicate with a process inside container the a network port has to be exposed from the container and port forwarding should be established from the host.
 
 ### Inter-Process Communication (IPC)
-Processes in same IPCs can access the resources of each other. So two containers on same IPC namespace can communicate with each other.
+Processes in same IPC namespace can share the resources such as memory, semaphores, and message queues. Keeping containers in a separate namespace than the host also ensures that the process inside the container cannot access the resources being used by host's processes.
 
 ### Time
 Time namespaces are available since the release of Linux Kernel 5.6.  
