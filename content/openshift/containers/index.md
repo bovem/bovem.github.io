@@ -53,7 +53,7 @@ A **container** is a set of one or more isolated processes running on an OS, it 
 The workloads running inside a container have very limited exposure to the resources of its host i.e its CPUs, memory, network, and storage. It uses the same kernel as its host, that's why you can't spin up a Linux container on a machine running Windows (without provisioning the VM through Windows Subsystem for Linux or any other hypervisor).
 
 ## Advantages of using Containers over Virtual Machines
-<p align="center"><img src="/openshift/containers/containerized_deployment.png" alt="Deployment of applicatino using containerization"></p>
+<p align="center"><img src="/openshift/containers/containerized_deployment.png" alt="Deployment of application using containerization"></p>
 <p align="center"><small><i>Containerized Deployment</i></small></p>
 
 1. Relatively lighter compared to VMs  
