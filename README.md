@@ -6,18 +6,11 @@ Blogs on Mathematics, Computer Science and Technology
 - [Hugo Static Site Generator](https://gohugo.io/)
 - [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod)
 
-## Local Deployment (with Code Server)
-Setup a hugo and code server on local network for editing
+## Local Deployment (with Docker)
 
-1. Determine machine IP. [Source](https://stackoverflow.com/questions/13322485/how-to-get-the-primary-ip-address-of-the-local-machine-on-linux-and-os-x)
-```bash
-export MACHINE_IP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
-```
-
-2. Deploy containers (inside `/deploy` folder)
+Inside `/deploy` folder
 ```bash
 docker compose up -d
 ```
 
-Hugo server should be accessible at `http://${MACHINE_IP}:1313`  
-Code server should be accessible at `http://${MACHINE_IP}:8443`
+Hugo server should be accessible at [http://localhost:1313](http://localhost:1313)
