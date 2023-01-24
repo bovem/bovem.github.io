@@ -140,9 +140,9 @@ A **control group** is created to effectively allocate resources of the OS to th
 
 By creating a Cgroup a process in it could be prioritized, paused, removed or resumed based on the resources allocated to it. This also helps in monitoring the resources used by a particular processes.
 
-If you are using an OS with `systemd` init system (to verify this you can use command `ps -p 1 -o comm=`) then you can use the command `systemctl list-units` to list all the cgroups. It will open a table containing....
+If you are using an OS with `systemd` init system (to verify this you can use command `ps -p 1 -o comm=`) then you can use the command `systemctl list-units` to list all the Cgroups. It will open a table containing Cgroup name, state, and description.
 
-The names of the Cgroup will be in form `<parent-cgroup>.<child-cgroup>` like `sys-devices-platform-serial8250-tty-ttyS0.device`. To view the hierarchy of cgroups you can use the command `systemd-cgls`. It presents cgroups in a tree structure like:
+The names of the Cgroup will be in form `<parent-cgroup>.<child-cgroup>` like `sys-devices-platform-serial8250-tty-ttyS0.device`. To view the hierarchy of Cgroups you can use the command `systemd-cgls`. It presents cgroups in a tree structure like:
 
 ```bash
 Control group /:
