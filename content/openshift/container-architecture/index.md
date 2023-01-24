@@ -175,7 +175,10 @@ If you are using the Podman container engine you have to change the SELinux cont
 <a href="https://opensource.com/article/21/8/container-linux-technology" target="_blank">4 Linux technologies fundamental to containers</a>  
 <a href="https://man7.org/linux/man-pages/man1/init.1.html" target="_blank">systemd(1) — Linux manual page</a>  
 <a href="https://www.redhat.com/sysadmin/7-linux-namespaces" target="_blank">The 7 most used Linux namespaces</a>  
+<a href="https://opensource.com/article/19/4/interprocess-communication-linux-storage" target="_blank">Inter-process communication in Linux: Shared storage</a>  
+<a href="https://www.tenable.com/audits/items/DISA_STIG_Docker_Enterprise_2.x_Linux_Unix_v1r1.audit:f0aaa2cd4bcb66461902f47c69bf323b" target="_blank">DKER-EE-001250 - The Docker Enterprise hosts IPC namespace must not be shared.</a>  
 <a href="https://www.phoronix.com/news/Time-Namespace-In-Linux-5.6" target="_blank">It's Finally Time: The Time Namespace Support Has Been Added To The Linux 5.6 Kernel</a>  
 <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/resource_management_guide/sec-obtaining_information_about_control_groups" target="_blank">Obtaining Information about Control Groups</a>  
 <a href="https://man7.org/linux/man-pages/man2/seccomp.2.html" target="_blank">seccomp(2) — Linux manual page</a>  
 <a href="https://www.redhat.com/en/topics/linux/what-is-selinux" target="_blank">What is SELinux?</a>  
+<a href="https://blog.christophersmart.com/2021/01/31/podman-volumes-and-selinux/" target="_blank">Podman volumes and SELinux</a>  
