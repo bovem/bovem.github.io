@@ -12,8 +12,8 @@ TocOpen: false
 cover:
   image: "container_arch.drawio.svg"
   linkFullImages: true
-  alt: "The features essestial for containers"
-  caption: "The features essential for containers"
+  alt: "Linux features essestial for the containers"
+  caption: "Linux features essential for the containers"
   relative: false
 ---
 
@@ -24,7 +24,7 @@ To isolate the processes running inside a <a href="/openshift/containers" target
 * Security-Enhanced Linux
 
 ## Namespaces
-**Namespaces** are used to limit the reach of a container to its host's resources. It helps with security and well as limits resources available to the container.
+**Namespaces** are created to limit the reach of a container to its host's resources. It helps with security and well as limits resources available to the container.
 
 Linux command `lsns` could be used for listing details of namespaces.
 
@@ -135,7 +135,7 @@ Processes in the same IPC namespace can share the resources such as memory, sema
 
 ### Time
 Time namespaces are available since the release of Linux Kernel 5.6.  
-Maybe in future containers can have a different time than their host.
+Maybe in the future containers can have a different time than their host.
 
 ## Control Groups (Cgroups)
 A **control group** is created to effectively allocate resources of the OS to the processes residing in it. These Cgroups are hierarchical i.e. a child Cgroup could be spawned from the parent and it will inherit its certain attributes.
@@ -159,9 +159,9 @@ Control group /:
 ``` 
 
 ## Secure Computing (Seccomp)
-Using **Secure Computing** or seccomp you can disable the system calls your process can make. It restricts a container from making any syscall to the host's kernel. 
+Using **Secure Computing** (or seccomp) you can disable the system calls your process can make to the host's kernel. 
 
-A *seccomp profile* is a definition with a set of restricted and allowed calls stored in a file. Default seccomp profile used by Docker: <a href="https://github.com/moby/moby/blob/master/profiles/seccomp/default.json" target="_blank">default.json</a>  
+A *seccomp profile* is a definition with a set of restricted and allowed calls stored in a file. Default seccomp profile used by Docker: <a href="https://github.com/moby/moby/blob/master/profiles/seccomp/default.json" target="_blank">default.json</a>.
 
 Docker allows you to define your seccomp profile for a container in JSON format. 
 ```bash
