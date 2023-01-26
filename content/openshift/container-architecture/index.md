@@ -48,7 +48,7 @@ uid=0(root) gid=0(root) groups=0(root)
 ```
 
 ### Process ID (`PID`)
-Each process running on the OS has a unique Process ID (PID) assigned to it. The processes running inside the container have their PIDs separate from the PIDs assigned  by host. Due to process ID isolation, a container can't access the details of processes running on its host.   
+Each process running on the OS has a unique Process ID (PID) assigned to it. The processes running inside a container have their PIDs separate from PIDs assigned by the host. Due to process ID isolation, a container can't access the details of processes running on its host.   
 
 To fetch the list of PID namespaces you can use the command:
 
