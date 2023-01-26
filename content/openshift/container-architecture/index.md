@@ -2,7 +2,7 @@
 author: "Avnish"
 title: "Container Architecture"
 date: "2023-01-27"
-description: "Creation and execution of container is enabled using features such as namespaces, Cgroups, seccomp, and SELinux"
+description: "Creation and execution of container is enabled using features like namespaces, Cgroups, seccomp, and SELinux"
 tags: ["container", "podman", "docker","openshift", "kubernetes", "linux", "namespaces", "cgroups", "seccomp", "selinux"]
 categories: ["Microservices", "Operating Systems"]
 series: ["OpenShift"]
@@ -17,21 +17,21 @@ cover:
   relative: false
 ---
 
-To isolate processes in <a href="/openshift/containers" target="_blank">containers</a> from their host, container engines use the following four features provided by the GNU/LINUX-based OS:
+To isolate the processes running inside a <a href="/openshift/containers" target="_blank">container</a> from its host system the container engine uses the following four features:
 * Namespaces
 * Control Groups
 * Secure Computing
 * Security-Enhanced Linux
 
 ## Namespaces
-**Namespaces** are used to limit the reach of a container to its host's resources. This helps with security and well as limiting the resources available to the container.
+**Namespaces** are used to limit the reach of a container to its host's resources. It helps with security and well as limits resources available to the container.
 
-The command `lsns` could be used for listing details of all the namespaces.
+Linux command `lsns` could be used for listing details of namespaces.
 
 The namespaces essential for containers are User, Mount, Unix Timesharing System, Process ID, Network, and Inter-Process Communication.
 
 ### User
-The users and groups created inside a container are completely different from its host. Processes running inside the container as a `root` user could be mapped to a non-root user on the host.
+The users and groups created inside a container are different from its host. Processes running inside the container as a `root` user could be mapped to a non-root user on the host.
 
 Using the `id` command you can verify that the containers are present on a different user namespace than other processes on your host.
 
@@ -48,7 +48,7 @@ uid=0(root) gid=0(root) groups=0(root)
 ```
 
 ### Process ID (`PID`)
-Each process running on the OS has a unique Process ID (PID) assigned to it. The processes running inside the container have their PIDs which are separate from the host. Due to process ID isolation, a container can't access the details of processes running on its host.   
+Each process running on the OS has a unique Process ID (PID) assigned to it. The processes running inside the container have their PIDs separate from the PIDs assigned  by host. Due to process ID isolation, a container can't access the details of processes running on its host.   
 
 To fetch the list of PID namespaces you can use the command:
 
@@ -77,7 +77,7 @@ root        7172  0.0  0.4 759596 68860 ?        Ssl  Jan22   0:32 /usr/lib/hugo
 ### Mount (`mnt`)
 By using different mount namespaces for different processes we can ensure that they won't be able to access each other's files. 
 
-To view the filesystems mounted on your system, you can use the `df` command.
+You can use `df` command to view the filesystems mounted on your system.
 
 ```bash
 $ df
@@ -88,7 +88,7 @@ tmpfs            3139732      2444   3137288   1% /run
 ...
 ```
 
-The container has its file system hierarchy which could be viewed if we use `df` command insider container.
+A container has its separate file system hierarchy which could be viewed by using `df` command on its shell.
 ```bash
 root@14ed72afd62e:/usr/local/apache2# df
 Filesystem     1K-blocks      Used Available Use% Mounted on
@@ -98,7 +98,7 @@ tmpfs            1569860       276   1569584   1% /etc/hosts
 ...
 ```
 
-It could also be viewed by the host in file `/proc/<CONTAINER_PID>/mounts`.
+It could also be viewed by the host in the file `/proc/<CONTAINER_PID>/mounts`.
 ```bash
 $ docker inspect -f '{{.State.Pid}}' deploy-hugo-server-1
 7172
@@ -126,25 +126,25 @@ root@14ed72afd62e:/usr/local/apache2# hostname
 ```
 
 ### Network
-Each container has its IP address and network ports assigned to it. This is achieved using network namespaces. It allows the developer to run multiple processes inside the container and expose them over different network ports.
+Each container has its IP address and network ports assigned to it by its network namespace. It allows the developer to run multiple processes inside the container and expose them over different network ports.
 
 To access or communicate with a process inside the container, port forwarding should be established from the host.
 
 ### Inter-Process Communication (IPC)
-Processes in the same IPC namespace can share the resources such as memory, semaphores, and message queues. Keeping separate IPC namespaces ensures that the processes inside a container cannot access the resources being used by the host's processes.
+Processes in the same IPC namespace can share the resources such as memory, semaphores, and message queues. Keeping separate IPC namespaces ensures that the processes inside a container cannot access the resources used by the host's processes.
 
 ### Time
 Time namespaces are available since the release of Linux Kernel 5.6.  
-Maybe sometime in the future containers can have a different time than their host.
+Maybe in future containers can have a different time than their host.
 
 ## Control Groups (Cgroups)
 A **control group** is created to effectively allocate resources of the OS to the processes residing in it. These Cgroups are hierarchical i.e. a child Cgroup could be spawned from the parent and it will inherit its certain attributes.
 
-By creating a Cgroup a process in it could be prioritized, paused, removed, or resumed based on the resources allocated to it. This also helps in monitoring the resources used by particular processes.
+By creating a Cgroup a process in it could be prioritized, paused, removed, or resumed based on the resources allocated to it. It also helps in monitoring the resources used by particular processes.
 
-If you are using an OS with `systemd` init system (to verify this you can use the command `ps -p 1 -o comm=`) then you can use the command `systemctl list-units` to list all the Cgroups. It will open a table containing the Cgroup name, state, and description.The names of the Cgroup will be in the form `<parent-cgroup>.<child-cgroup>` like `sys-devices-platform-serial8250-tty-ttyS0.device`. 
+If you are using an OS with `systemd` init system (to verify this you can use the command `ps -p 1 -o comm=`) then you can use the command `systemctl list-units` to list all the Cgroups. It will open a table containing the Cgroup name, state, and description. The names of the Cgroup will be in the form `<parent-cgroup>.<child-cgroup>` like `sys-devices-platform-serial8250-tty-ttyS0.device`. 
 
-To view the hierarchy of Cgroups you can use the command `systemd-cgls`. It presents cgroups in as a tree structure.
+To view the hierarchy of Cgroups you can use the command `systemd-cgls`. It presents cgroups as a tree structure.
 
 ```bash
 Control group /:
@@ -159,7 +159,7 @@ Control group /:
 ``` 
 
 ## Secure Computing (Seccomp)
-Using **Secure Computing** or seccomp you can disable the system calls your process can make. This restricts a container from making any syscall to the host's kernel. 
+Using **Secure Computing** or seccomp you can disable the system calls your process can make. It restricts a container from making any syscall to the host's kernel. 
 
 A *seccomp profile* is a definition with a set of restricted and allowed calls stored in a file. Default seccomp profile used by Docker: <a href="https://github.com/moby/moby/blob/master/profiles/seccomp/default.json" target="_blank">default.json</a>  
 
@@ -169,7 +169,7 @@ docker run --rm -it --security-opt seccomp=/path/to/seccomp/profile.json hello-w
 ```
 
 ## Security-Enhanced Linux (SELinux)
-**SELinux** is a security architecture for GNU/Linux-based OS that defines access to files and processes. This is enforced on users or processes to restrict their access to the resources.
+**SELinux** is a security architecture for GNU/Linux-based OS that defines access to files and processes. It is enforced on users or processes to restrict their access to the resources.
 
 SELinux checks the *SELinux context* of the file or process to make decisions related to its access control. To view the SELinux context of a file use command `ls -Z <FILENAME>` and to view it for a process using the command `ps -eZ | grep <PROCESS_NAME>`. 
 
