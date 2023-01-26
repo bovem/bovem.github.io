@@ -164,13 +164,14 @@ Using **Secure Computing** or seccomp you can disable the system calls your proc
 A *seccomp profile* is a definition with a set of restricted and allowed calls stored in a file. Default seccomp profile used by Docker: <a href="https://github.com/moby/moby/blob/master/profiles/seccomp/default.json" target="_blank">default.json</a>  
 
 Docker allows you to define your seccomp profile for a container in JSON format. 
+```bash
+docker run --rm -it --security-opt seccomp=/path/to/seccomp/profile.json hello-world
+```
 
 ## Security-Enhanced Linux (SELinux)
 **SELinux** is a security architecture for GNU/Linux-based OS that defines access to files and processes. This is enforced on users or processes to restrict their access to the resources.
 
 SELinux checks the *SELinux context* of the file or process to make decisions related to its access control. To view the SELinux context of a file use command `ls -Z <FILENAME>` and to view it for a process using the command `ps -eZ | grep <PROCESS_NAME>`. 
-
-If you are using the Podman container engine you have to change the SELinux context of the files mounted to it by the host.
 
 # External Resources
 
