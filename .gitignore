@@ -32,7 +32,6 @@ deploy/id_rsa.pub
 deploy/known_hosts
 deploy/known_hosts.old
 deploy/*.pem
-content/openshift/container-lifecycle
 content/openshift/deploying-containerized-applications-on-kubernetes
 content/openshift/image-registries
 content/openshift/image-streams
