@@ -17,6 +17,9 @@ cover:
   relative: false
 ---
 
+<!-- We are going to be using podman in the following article but commands are mostly interopable with docker -->
+<!-- Docker installation documentation -->
+
 # Accessing Container Images
 ## Login to Container Image Registry
 <!-- About container registries and repositories -->
@@ -72,6 +75,7 @@ podman run -p ::
 # Managing Container Images
 ## Build Container Images
 <!-- Creating containerfile and details of containerfiles -->
+<!-- About buildah and how podman uses buildah in background -->
 ```bash
 podman build
 ```
