@@ -17,7 +17,7 @@ cover:
   relative: false
 ---
 
-To isolate the processes running inside a <a href="/openshift/containers" target="_blank">container</a> from its host system the container engine uses the following four features:
+To isolate the processes running inside a <a href="/openshift/containers" target="_blank">container</a> from its host system, container engine uses the following four features:
 * Namespaces
 * Control Groups
 * Secure Computing
@@ -48,7 +48,7 @@ uid=0(root) gid=0(root) groups=0(root)
 ```
 
 ### Process ID (`PID`)
-Each process running on the OS has a unique Process ID (PID) assigned to it. The processes running inside a container have their PIDs separate from PIDs assigned by the host. Due to process ID isolation, a container can't access the details of processes running on its host.   
+Each process running on the host has a unique Process ID (PID) assigned to it. The PIDs of processes running inside container are separate from PIDs assigned by the host. Due to process ID isolation, a container can't access the details of processes running on its host.   
 
 To fetch the list of PID namespaces you can use the command:
 
@@ -111,7 +111,7 @@ devpts /dev/pts devpts rw,seclabel,nosuid,noexec,relatime,gid=5,mode=620,ptmxmod
 ```
 
 ### Unix Timesharing System (UTS)
-Unix Time System (UTS) namespace allows containers to have their hostnames. We can verify this with the `hostname` command.
+Unix Time System (UTS) namespace allows containers to have hostnames. We can verify this with the `hostname` command.
 
 On the host:
 ```bash
@@ -126,7 +126,7 @@ root@14ed72afd62e:/usr/local/apache2# hostname
 ```
 
 ### Network
-Each container has its IP address and network ports assigned to it by its network namespace. It allows the developer to run multiple processes inside the container and expose them over different network ports.
+Each container has a IP address and network ports assigned to it by its network namespace. It allows the developer to run multiple processes inside the container and expose them over different network ports.
 
 To access or communicate with a process inside the container, port forwarding should be established from the host.
 
@@ -138,7 +138,7 @@ Time namespaces are available since the release of Linux Kernel 5.6.
 Maybe in the future containers can have a different time than their host.
 
 ## Control Groups (Cgroups)
-A **control group** is created to effectively allocate resources of the OS to the processes residing in it. These Cgroups are hierarchical i.e. a child Cgroup could be spawned from the parent and it will inherit its certain attributes.
+A **control group** is created to effectively allocate resources of host its processes. These Cgroups are hierarchical i.e. a child Cgroup could be spawned from the parent and it will inherit its certain attributes.
 
 By creating a Cgroup a process in it could be prioritized, paused, removed, or resumed based on the resources allocated to it. It also helps in monitoring the resources used by particular processes.
 
@@ -161,7 +161,7 @@ Control group /:
 ## Secure Computing (Seccomp)
 Using **Secure Computing** (or seccomp) you can disable the system calls your process can make to the host's kernel. 
 
-A *seccomp profile* is a definition with a set of restricted and allowed calls stored in a file. Default seccomp profile used by Docker: <a href="https://github.com/moby/moby/blob/master/profiles/seccomp/default.json" target="_blank">default.json</a>.
+A *seccomp profile* is a definition with a set of restricted and allowed system calls stored in a file. Default seccomp profile used by Docker: <a href="https://github.com/moby/moby/blob/master/profiles/seccomp/default.json" target="_blank">default.json</a>.
 
 Docker allows you to define your seccomp profile for a container in JSON format. 
 ```bash
