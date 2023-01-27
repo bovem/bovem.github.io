@@ -93,6 +93,15 @@ podman push
 ## Copy Container Images between Registries
 <!-- About skopeo tool and copying images between registries or repositories -->
 
+## Deleting containers and container images
+```bash
+podman rm
+```
+
+```bash
+podman rmi
+```
+
 # Metrics and Logging
 ## Statistics for Containers
 ```bash
