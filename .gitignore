@@ -34,7 +34,7 @@ deploy/known_hosts.old
 deploy/*.pem
 content/openshift/deploying-containerized-applications-on-kubernetes
 content/openshift/image-registries
-content/openshift/image-streams
+content/openshift/container-images
 content/openshift/kubernetes
 content/openshift/kubernetes-resources
 content/openshift/managing-multiple-containers
