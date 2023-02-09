@@ -37,7 +37,7 @@ After executing this command a prompt will ask for your username and password, f
 
 Once login is successful, Podman stores the encrypted user information in file `${XDG_RUNTIME_DIR}/containers/auth.json`. `XDG_RUNTIME_DIR` is an environment variable set by `systemd` that stores the path of the directory containing user-specific runtime files.
 
-## Pull Container Images
+## Pulling Container Images
 <p align="center"><img src="/openshift/container-lifecycle/image_pull.png" alt="Pulling container images from registry"></p>
 <p align="center"><small><i>Pulling container images from registries</i></small></p>
 
@@ -66,7 +66,7 @@ skopeo list-tags docker://docker.io/library/httpd
 # Managing Container Lifecycle
 Once we have access to the container image we can easily create one or more containers.
 
-## Create a Container
+## Creating a Container
 <p align="center"><img src="/openshift/container-lifecycle/create_containers.png" alt="Creating a container from the container image"></p>
 <p align="center"><small><i>Creating a container from the container image</i></small></p>
 
@@ -85,7 +85,7 @@ On Podman Desktop, the **Containers** section provides utilities for managing th
 <p align="center"><small><i>Creating container using Podman Desktop</i></small></p>
 
 
-## Execute Commands inside a Container
+## Executing Commands inside a Container
 To run a container and access its shell we have to use options `--interactive` & `--tty`. 
 
 `--interactive` will allow us to provide inputs to the process running inside the container and `--tty` will attach a pseudo-terminal to the container.
@@ -104,7 +104,7 @@ To execute a command or script inside the container we use Podman's `exec` subco
 podman exec httpd-test echo "Hello, world"
 ```
 
-## Attach Volumes
+## Attaching Volumes
 Directories from the host could be mounted on a container. It is useful when scripts are edited outside the container (an IDE/Code Editor on the host) or the files have to be shared between multiple containers.
 
 To mount a directory from host to container flag `--volume` could be used with `run` subcommand and values are passed as `<HOSTDIR>:<CONTAINERDIR>`.
@@ -134,7 +134,7 @@ podman run --name httpd-test --detach \
 To view the output we can visit <a href="http://localhost:8080" target="_blank">localhost:8080</a> in our browser.
 It is advised that only the necessary network ports should be forwarded from container to host.
 
-## Pause an Executing Container
+## Pausing an Executing Container
 <p align="center"><img src="/openshift/container-lifecycle/pause.png" alt="Pausing running container"></p>
 <p align="center"><small><i>Pausing running container</i></small></p>
 
@@ -179,7 +179,7 @@ If we go back to the first terminal we can observe that the script execution is 
 podman unpause python-test
 ```
 
-## Stop an Executing Container
+## Stopping an Executing Container
 <p align="center"><img src="/openshift/container-lifecycle/stop.png" alt="Stop running containers"></p>
 <p align="center"><small><i>Stop running containers</i></small></p>
 
@@ -193,7 +193,7 @@ Upon restarting container will run the entrypoint command, starting a new proces
 podman start python-test
 ```
 
-## Deleting containers
+## Deleting a Container
 <p align="center"><img src="/openshift/container-lifecycle/delete.png" alt="Deleting containers"></p>
 <p align="center"><small><i>Deleting containers</i></small></p>
 
@@ -203,7 +203,7 @@ podman rm python-test
 ```
 
 # Metrics and Logging
-## List of containers
+## Listing Containers
 By default, the `ps` subcommand fetches the list of running containers but to view all the containers regardless of their state we can use the `--all` flag.
 ```bash
 podman ps --all
