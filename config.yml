@@ -64,6 +64,7 @@ params:
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
+    ShowFullTextinRSS: true
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
