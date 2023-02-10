@@ -116,6 +116,8 @@ It also has other security-focused features like the containers don't run as roo
 ### Buildah
 `buildah` is another CLI utility used alongside `podman` and `skopeo` for building OCI container images.
 
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
 # External Resources
 <a href="https://www.virtualbox.org/" target="_blank">Oracle VM VirtualBox</a>  
 <a href="https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/" target="_blank">Hyper-V</a>  

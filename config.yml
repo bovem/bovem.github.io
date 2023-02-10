@@ -1,5 +1,5 @@
 baseURL: "https://www.bovem.in"
-title: "@bovem"
+title: "${bovem}"
 paginate: 5
 theme: PaperMod
 
@@ -33,15 +33,15 @@ languages:
                 - name: Categories
                   url: categories/
                   weight: 10
-                - name: Search
-                  url: search/
-                  weight: 15
                 - name: Tags
                   url: tags/
-                  weight: 20
+                  weight: 15
                 - name: Source
                   url: https://github.com/bovem/bovem.github.io
                   weight: 25
+                - name: Search
+                  url: search/
+                  weight: 30
 
 outputs:
     home:
@@ -51,7 +51,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Blogs on Mathematics, Computer Science and Technology"
+    description: "Hi, I'm Avnish. I am an Open Source Developer currently working at Red Hat. I write about Computer Science, Machine Learning, and Mathematics."
     author: "Avnish Pal"
     # author: ["Me", "You"] # multiple authors
 
@@ -64,10 +64,11 @@ params:
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
+    ShowFullTextinRSS: true
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
-    images: ["bovem-cover.png"]
+    images: ["bovem-substack-cover.png"]
 
     profileMode:
         enabled: false
@@ -86,17 +87,21 @@ params:
         Title: "Hi, I'm Avnish"
         Content: >
            
-           - Open Source Developer
-           
-           - Interested in Computer Science, Machine Learning and Mathematics
+           - I'm an Open Source Developer currently working at Red Hat.
 
-           - I'm currently working at Red Hat. You can download my resume from <a target=_blank href="Resume-AvnishPal-DevOps-1.5YoE.pdf">here</a>
+           - I write about Computer Science, Machine Learning, and Mathematics. 
+
+           - <a target=_blank href="/subscribe">Subscribe to my newsletter</a> if you are interested.
+           
+           - <a target=_blank href="Resume-AvnishPal-DevOps-1.5YoE.pdf">Download my resume</a> if you want to know about my work experience and projects.
 
     socialIcons:
         - name: cv
           url: "Resume-AvnishPal-DevOps-1.5YoE.pdf"
         - name: github
           url: "https://github.com/bovem"
+        - name: substack
+          url: "https://bovem.substack.com/"
         - name: medium
           url: "https://bovem.medium.com/"
         - name: linkedin
