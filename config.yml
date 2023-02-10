@@ -68,7 +68,7 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
-    images: ["bovem-cover.png"]
+    images: ["bovem-substack-cover.png"]
 
     profileMode:
         enabled: false
