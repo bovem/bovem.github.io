@@ -51,7 +51,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Hi, I'm Avnish. I write about Mathematics, Computer Science, and Technology"
+    description: "Hi, I'm Avnish. I am an Open Source Developer currently working at Red Hat. I write about Computer Science, Machine Learning, and Mathematics."
     author: "Avnish Pal"
     # author: ["Me", "You"] # multiple authors
 
