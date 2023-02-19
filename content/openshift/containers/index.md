@@ -9,6 +9,12 @@ series: ["OpenShift"]
 aliases: ["containers"]
 ShowToc: true
 TocOpen: false
+cover:
+  image: "deployments.drawio.svg"
+  linkFullImages: true
+  alt: "Types of application deployment"
+  caption: "Types of application deployment"
+  relative: false
 ---
 
 While creating an application in any programming language or framework you have to install its dependencies on your system.
