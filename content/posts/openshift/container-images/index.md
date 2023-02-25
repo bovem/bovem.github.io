@@ -29,8 +29,7 @@ for container images.
 
 A container image created from OCI Image specification should have
 * Layered Filesystem: Packaged contents of the container.
-* Image Manifest: Metadata for container image that includes dependencies and details of layered filesystems.
-* Image Index: Its optional
+* Image Index and Manifest: Contains a manifest list that stores the metadata for container images for multiple platforms.
 * Image Configuration: Arguments and environment variables for the application running inside the container.
 
 The images created from Docker, Podman and buildah follow OCI Image Specification.
@@ -44,7 +43,7 @@ The base and image layers are read only. This helps with storage space consumpti
 
 When a container is created a data state of image layers is generated and a wriable **container layer** is added on top of image layers. This layer stores all the changes at runtime (file creation, configuration changes, etc.) and deleted with the container.
 
-## Image Manifest
+## Image Index and Manifest
 The **manifest** of a container image contains the metadata related to the filesystem layers, the command to be executed once the container is provisioned and other information required by the Container Runtime.
 
 To view the manifest of a container image from Podman you can use `manifest` subcommand with `inspect` option.
@@ -101,8 +100,6 @@ The output of the command will be a JSON document similar to this
     ]
 }
 ```
-
-## Image Index
 
 ## Configuration
 

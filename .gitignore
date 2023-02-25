@@ -32,9 +32,7 @@ deploy/id_rsa.pub
 deploy/known_hosts
 deploy/known_hosts.old
 deploy/*.pem
-content/posts/interview-preparation/arrays-strings-and-hashmaps
-content/posts/interview-preparation/time-complexity
-content/posts/interview-preparation/finding-duplicates
+content/posts/interview-preparation
 content/posts/openshift/container-registries
 .gitignore
 resources/_gen/images/posts/container-architecture/*.png
