@@ -17,7 +17,7 @@ cover:
   relative: false
 ---
 
-To isolate the processes running inside a <a href="/openshift/containers" target="_blank">container</a> from its host system, container engine uses the following four features:
+To isolate the processes running inside a <a href="/posts/openshift/containers/" target="_blank">container</a> from its host system, container engine uses the following four features:
 * Namespaces
 * Control Groups
 * Secure Computing
