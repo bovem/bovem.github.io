@@ -15,6 +15,7 @@ cover:
   alt: "Building container images from containerfile"
   caption: "Building container images from containerfile"
   relative: false
+draft: true
 ---
 
 A container image is a static file that contains all the necessary resources (packages, configuration, other dependencies) required to provision a container. A container image consists of one or multiple layered filesystems and a *Manifest* file that contains the metadata for container image.
