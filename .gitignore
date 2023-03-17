@@ -32,15 +32,9 @@ deploy/id_rsa.pub
 deploy/known_hosts
 deploy/known_hosts.old
 deploy/*.pem
-content/openshift/deploying-containerized-applications-on-kubernetes
-content/openshift/image-registries
-content/openshift/container-images
-content/openshift/kubernetes
-content/openshift/kubernetes-resources
 content/posts/interview-preparation
 content/posts/openshift/building-container-images
-content/posts/openshift/container-images
+# content/posts/openshift/container-images
 content/posts/openshift/container-registries
 .gitignore
-resources/_gen/images/openshift/container-architecture/*.png
 themes/
