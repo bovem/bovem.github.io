@@ -109,9 +109,9 @@ params:
         - name: rss
           url: "index.xml"
 
-    editPost:
-        URL: "https://github.com/bovem/bovem.github.io/pulls"
-        Text: "Suggest Changes" # edit text
+    # editPost:
+    #     URL: "https://github.com/bovem/bovem.github.io/pulls"
+    #     Text: "Suggest Changes" # edit text
         # appendFilePath: true # to append file path to Edit link
 
     # label:
