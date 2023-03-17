@@ -15,7 +15,6 @@ cover:
   alt: "Managing and Distributing container images"
   caption: "Managing and Distributing container images"
   relative: false
-draft: true
 ---
 
 A container image is a static file that contains the necessary resources (packages, configuration, other dependencies) required to provision a container. It consists of multiple layered-filesystems and a *Manifest* file, containing its metadata.
@@ -247,8 +246,8 @@ docker push quay.io/username/webserver:latest
 ```
 
 ### Creating images from existing containers
-<p align="center"><img src="containers_commit.png" alt="Commit running containers to the container image"></p>
-<p align="center"><small><i>Commit running containers to the container image</i></small></p>
+<p align="center"><img src="containers_commit.png" alt="Commit running containers to container image"></p>
+<p align="center"><small><i>Commit running containers to container image</i></small></p>
 
 To create a container image from a running container, the `commit` subcommand could be used.
 
