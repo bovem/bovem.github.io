@@ -38,7 +38,7 @@ After executing this command a prompt will ask for your username and password, f
 Once login is successful, Podman stores the encrypted user information in file `${XDG_RUNTIME_DIR}/containers/auth.json`. `XDG_RUNTIME_DIR` is an environment variable set by `systemd` that stores the path of the directory containing user-specific runtime files.
 
 ## Pulling Container Images
-<p align="center"><img src="/openshift/container-lifecycle/image_pull.png" alt="Pulling container images from registry"></p>
+<p align="center"><img src="image_pull.png" alt="Pulling container images from registry"></p>
 <p align="center"><small><i>Pulling container images from registries</i></small></p>
 
 Public registries provide an interface for searching images or Podman's subcommand `search` could also be used.
@@ -54,7 +54,7 @@ podman pull docker.io/library/httpd
 ```
 
 or using the Podman Desktop app you can go to **Images** -> **Pull an Image**.
-<p align="center"><img src="/openshift/container-lifecycle/podman_desktop_image_pull.png" alt="Pulling container image using Podman Desktop"></p>
+<p align="center"><img src="podman_desktop_image_pull.png" alt="Pulling container image using Podman Desktop"></p>
 <p align="center"><small><i>Pulling container image using Podman Desktop</i></small></p>
 
 Different versions/variations of container images are managed by **Tags**. The image tag `latest` is pulled by default. You can view the list of available tags on the registry's webpage or use `skopeo list-tags`. Skopeo requires the *transport* (`docker` in our case) to be mentioned explicitly with the image name.
@@ -67,7 +67,7 @@ skopeo list-tags docker://docker.io/library/httpd
 Once we have access to the container image we can easily create one or more containers.
 
 ## Creating a Container
-<p align="center"><img src="/openshift/container-lifecycle/create_containers.png" alt="Creating a container from the container image"></p>
+<p align="center"><img src="create_containers.png" alt="Creating a container from the container image"></p>
 <p align="center"><small><i>Creating a container from the container image</i></small></p>
 
 We use the `run` subcommand for creating containers. If the image specified in the command is not present in the system then Podman will attempt to pull it from the registry.
@@ -81,7 +81,7 @@ After executing this command a container named `httpd-test` will be created on y
 `podman ps` command will list running containers on the system.
 
 On Podman Desktop, the **Containers** section provides utilities for managing the state of containers.
-<p align="center"><img src="/openshift/container-lifecycle/podman_desktop_create_containers.png" alt="Creating container using Podman Desktop"></p>
+<p align="center"><img src="podman_desktop_create_containers.png" alt="Creating container using Podman Desktop"></p>
 <p align="center"><small><i>Creating container using Podman Desktop</i></small></p>
 
 
@@ -120,7 +120,7 @@ This command starts a python container with contents of the present working dire
 
 Before mounting the host directory we have to change its <a href="/openshift/container-architecture/#security-enhanced-linux-selinux" target="_blank">SELinux</a> context to `container_file_t` otherwise we could encounter permission issues while accessing directory contents. To change the SELinux context you can append either `:z` (if multiple containers need read-write access) or `:Z` (if only the current container needs read-write access).
 
-<p align="center"><img src="/openshift/container-lifecycle/podman_desktop_volumes.png" alt="Accessing volumes on Podman Desktop"></p>
+<p align="center"><img src="podman_desktop_volumes.png" alt="Accessing volumes on Podman Desktop"></p>
 <p align="center"><small>Accessing volumes on Podman Desktop</small></p>
 
 ## Port Forwarding
@@ -135,7 +135,7 @@ To view the output we can visit <a href="http://localhost:8080" target="_blank">
 It is advised that only the necessary network ports should be forwarded from container to host.
 
 ## Pausing an Executing Container
-<p align="center"><img src="/openshift/container-lifecycle/pause.png" alt="Pausing running container"></p>
+<p align="center"><img src="pause.png" alt="Pausing running container"></p>
 <p align="center"><small><i>Pausing running container</i></small></p>
 
 To demonstrate a paused container we will take the help of the following Python script
@@ -180,7 +180,7 @@ podman unpause python-test
 ```
 
 ## Stopping an Executing Container
-<p align="center"><img src="/openshift/container-lifecycle/stop.png" alt="Stop running containers"></p>
+<p align="center"><img src="stop.png" alt="Stop running containers"></p>
 <p align="center"><small><i>Stop running containers</i></small></p>
 
 While pausing a container stops its execution in its current state, *stopping* a container kills the executing process.
@@ -194,7 +194,7 @@ podman start python-test
 ```
 
 ## Deleting a Container
-<p align="center"><img src="/openshift/container-lifecycle/delete.png" alt="Deleting containers"></p>
+<p align="center"><img src="delete.png" alt="Deleting containers"></p>
 <p align="center"><small><i>Deleting containers</i></small></p>
 
 Before we delete a running container we have to stop it or we can use the `--force` flag along with the `rm` subcommand.
@@ -224,12 +224,12 @@ podman logs --follow httpd-test
 
 To access the container logs from Podman Desktop we can click on the container name in the **Containers** section.
 
-<p align="center"><img src="/openshift/container-lifecycle/podman_desktop_container_logs.png" alt="Accessing container logs from Podman Desktop"></p>
+<p align="center"><img src="podman_desktop_container_logs.png" alt="Accessing container logs from Podman Desktop"></p>
 <p align="center"><small><i>Accessing container logs from Podman Desktop</i></small></p>
 
 We can also attach a terminal to the container from the **Terminal** tab.
 
-<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
 
 # External Resources
 <a href="https://podman.io/getting-started/installation" target="_blank">Podman Installation Instructions</a>  

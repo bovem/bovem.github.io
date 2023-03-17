@@ -90,8 +90,6 @@ params:
            - I'm an Open Source Developer currently working at Red Hat.
 
            - I write about Computer Science, Machine Learning, and Mathematics. 
-
-           - <a target=_blank href="/subscribe">Subscribe to my newsletter</a> if you are interested.
            
            - <a target=_blank href="Resume-AvnishPal-DevOps-1.5YoE.pdf">Download my resume</a> if you want to know about my work experience and projects.
 
@@ -100,14 +98,14 @@ params:
           url: "Resume-AvnishPal-DevOps-1.5YoE.pdf"
         - name: github
           url: "https://github.com/bovem"
-        - name: substack
-          url: "https://bovem.substack.com/"
+        # - name: substack
+        #   url: "https://bovem.substack.com/"
         - name: medium
           url: "https://bovem.medium.com/"
         - name: linkedin
           url: "http://www.linkedin.com/in/avnish-pal"
-        - name: stackoverflow
-          url: "https://stackoverflow.com/users/15039093/avnish-pal"
+        # - name: stackoverflow
+        #   url: "https://stackoverflow.com/users/15039093/avnish-pal"
         - name: rss
           url: "index.xml"
 

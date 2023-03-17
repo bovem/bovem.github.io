@@ -20,9 +20,9 @@ services:
   #   restart: unless-stopped
   hugo-server:
     image: klakegg/hugo:0.101.0
-    command: "server --buildFuture"
+    command: "server --bind=192.168.56.10 --baseURL=http://192.168.56.10:1313"
     volumes:
-      - "..:/src"
+      - "../..:/src"
     ports:
       - "1313:1313"
 

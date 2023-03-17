@@ -37,6 +37,10 @@ content/openshift/image-registries
 content/openshift/container-images
 content/openshift/kubernetes
 content/openshift/kubernetes-resources
-content/openshift/managing-multiple-containers
+content/posts/interview-preparation
+content/posts/openshift/building-container-images
+content/posts/openshift/container-images
+content/posts/openshift/container-registries
 .gitignore
 resources/_gen/images/openshift/container-architecture/*.png
+themes/
