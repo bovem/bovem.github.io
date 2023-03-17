@@ -12,8 +12,8 @@ TocOpen: false
 cover:
   image: "container_image.drawio.svg"
   linkFullImages: true
-  alt: "Managing and Distributing container images"
-  caption: "Managing and Distributing container images"
+  alt: "Workflow of container images"
+  caption: "Workflow of container images"
   relative: false
 ---
 
