@@ -1,5 +1,5 @@
 baseURL: "https://www.bovem.in"
-title: "${bovem}"
+title: "bovem"
 paginate: 5
 theme: PaperMod
 
@@ -68,7 +68,7 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
-    images: ["bovem-substack-cover.png"]
+    images: ["bovem-cover.png"]
 
     profileMode:
         enabled: false
@@ -89,7 +89,7 @@ params:
            
            - I'm an Open Source Developer currently working at Red Hat.
 
-           - I write about Computer Science, Machine Learning, and Mathematics. 
+           - I write about Self-Hosting, Homelab and DevOps Technologies. 
            
            - <a target=_blank href="Resume-AvnishPal-DevOps-1.5YoE.pdf">Download my resume</a> if you want to know about my work experience and projects.
 
