@@ -118,7 +118,7 @@ podman run -it --name python-test --detach \
 
 This command starts a python container with contents of the present working directory (fetched from the `pwd` command) mounted on the `/app` directory inside the container. Both directory paths have to be absolute.
 
-Before mounting the host directory we have to change its <a href="/openshift/container-architecture/#security-enhanced-linux-selinux" target="_blank">SELinux</a> context to `container_file_t` otherwise we could encounter permission issues while accessing directory contents. To change the SELinux context you can append either `:z` (if multiple containers need read-write access) or `:Z` (if only the current container needs read-write access).
+Before mounting the host directory we have to change its <a href="/posts/openshift/container-architecture/#security-enhanced-linux-selinux" target="_blank">SELinux</a> context to `container_file_t` otherwise we could encounter permission issues while accessing directory contents. To change the SELinux context you can append either `:z` (if multiple containers need read-write access) or `:Z` (if only the current container needs read-write access).
 
 <p align="center"><img src="podman_desktop_volumes.png" alt="Accessing volumes on Podman Desktop"></p>
 <p align="center"><small>Accessing volumes on Podman Desktop</small></p>

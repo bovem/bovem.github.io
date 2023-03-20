@@ -1,6 +1,14 @@
-[![Blog Cover Image](./static/bovem-substack-cover.png)](https://www.bovem.in/)
+[![Blog Cover Image](./static/bovem-cover.png)](https://www.bovem.in/)
 
-Blogs on Mathematics, Computer Science and Technology. <a target=_blank href="https://www.bovem.in/subscribe">Subscribe to my newsletter</a> if you are interested.
+Blogs on Self-Hosting, Homelab and DevOps Technologies.
+
+## Index
+-  <a target=_blank href="https://www.bovem.in/posts/openshift/">OpenShift</a>
+    -  <a target=_blank href="https://www.bovem.in/posts/openshift/containers/">Containers</a>
+    -  <a target=_blank href="https://www.bovem.in/posts/openshift/container-architecture/">Container Architecture</a>
+    -  <a target=_blank href="https://www.bovem.in/posts/openshift/container-lifecycle/">Container Lifecycle</a>
+    -  <a target=_blank href="https://www.bovem.in/posts/openshift/container-images/">Container Images</a>
+    -  <a target=_blank href="https://www.bovem.in/posts/openshift/building-container-images/">Building Container Images</a>
 
 ## Technologies Used
 - [Hugo Static Site Generator](https://gohugo.io/)
@@ -8,9 +16,16 @@ Blogs on Mathematics, Computer Science and Technology. <a target=_blank href="ht
 
 ## Local Deployment (with Docker)
 
-Inside `/deploy` folder
+### Dev Environment (with Drafts and Future Posts)
+1. Change directory to `/deploy/dev`
+2. Deploy container
 ```bash
 docker compose up -d
 ```
 
-Hugo server should be accessible at [http://localhost:1313](http://localhost:1313)
+### Prod Environment
+1. Change directory to `/deploy/prod`
+2. Deploy container
+```bash
+docker compose up -d
+```
