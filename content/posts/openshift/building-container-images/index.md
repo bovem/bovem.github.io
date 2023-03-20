@@ -2,7 +2,7 @@
 author: "Avnish"
 title: "Building Container Images"
 date: "2023-03-20"
-description: "Container images are built from Containerfile, a plaintext specification containing the steps to be executed during the build process."
+description: "Container images are built from Containerfile, a plaintext file containing the steps to be executed during the build process."
 tags: ["container","podman","docker","buildah","openshift","kubernetes","container-image"]
 categories: ["Microservices", "Cloud Computing"]
 series: ["OpenShift"]
@@ -51,7 +51,7 @@ FROM python:${IMAGE_VERSION}
 After `FROM` instruction is executed, the value for the variable declared in `ARG` becomes inaccessible.
 
 ### ENV
-The Environment variables (used by other instructions) are declared using `ENV`.
+The Environment variables (used by other instructions or container at runtime) are declared using `ENV`.
 
 ```dockerfile
 ENV DEPLOYMENT_FOLDER=src
@@ -130,7 +130,7 @@ docker build .
 
 `.` will be substituted with the current working directory on the host. 
 
-Note that by default Docker expects *Dockerfile* (instead of *Containerfile*) in the build context, `--file` flag could be used to pass the path to containerfile.
+By default Docker expects *Dockerfile* (instead of *Containerfile*) in the build context, `--file` flag could be used to pass the path to containerfile.
 
 ```bash
 docker build --tag node-application:latest . --file ./Containerfile
@@ -169,5 +169,6 @@ Images built by `buildah` could then be executed using Podman and Docker or any 
 <a href="https://docs.docker.com/engine/reference/builder/" target="_blank">Dockerfile reference</a>  
 <a href="https://docs.docker.com/engine/reference/commandline/build/" target="_blank">docker build</a>  
 <a href="https://github.com/containers/buildah/blob/main/README.md" target="_blank">buildah</a>  
+<a href="https://hub.docker.com/_/scratch" target="_blank">scratch container image</a>  
 <a href="https://github.com/containers/buildah/blob/main/docs/tutorials/01-intro.md" target="_blank">Buildah Tutorial 1</a>  
 <a href="https://github.com/containers/buildah#buildah-and-podman-relationship" target="_blank">Buildah and Podman relationship</a>  
