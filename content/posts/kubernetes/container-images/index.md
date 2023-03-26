@@ -5,7 +5,7 @@ date: "2023-03-17"
 description: "Container Images are static files containing the necessary resources for creating containers."
 tags: ["container","podman","docker","buildah","openshift","kubernetes","container-image","container-registry"]
 categories: ["Microservices", "Cloud Computing"]
-series: ["OpenShift"]
+series: ["Kubernetes"]
 aliases: ["container-images"]
 ShowToc: true
 TocOpen: false

@@ -5,7 +5,7 @@ date: "2023-03-20"
 description: "Container images are built from Containerfile, a plaintext file containing the steps to be executed during the build process."
 tags: ["container","podman","docker","buildah","openshift","kubernetes","container-image"]
 categories: ["Microservices", "Cloud Computing"]
-series: ["OpenShift"]
+series: ["Kubernetes"]
 aliases: ["building-container-images"]
 ShowToc: true
 TocOpen: false
@@ -17,7 +17,7 @@ cover:
   relative: false
 ---
 
-Public registries provide container images for most use cases but they might not cover all of them. That's why container engines such as Podman & Docker and CLI tools like `buildah` provide utilities for creating custom <a href="/posts/openshift/container-images" target="_blank">container images</a>.
+Public registries provide container images for most use cases but they might not cover all of them. That's why container engines such as Podman & Docker and CLI tools like `buildah` provide utilities for creating custom <a href="/posts/kubernetes/container-images" target="_blank">container images</a>.
 
 The build steps are written in a plaintext file called **Containerfile** and parsed by container engines (or `buildah`) during the build process.
 
@@ -86,7 +86,7 @@ A temporary container is created to execute the shell command and the changes on
 `SHELL` instruction is used in containerfile to change the default shell for `RUN`, for example, `SHELL ["/bin/zsh", "-c"]` will change the default shell from `bash` to `zsh`.
 
 ### EXPOSE
-`EXPOSE` specifies the network ports to be used by the container on runtime. The ports still have to be published when the <a href="/posts/openshift/container-lifecycle/#port-forwarding" target="_blank">container is provisioned</a>.
+`EXPOSE` specifies the network ports to be used by the container on runtime. The ports still have to be published when the <a href="/posts/kubernetes/container-lifecycle/#port-forwarding" target="_blank">container is provisioned</a>.
 
 ### CMD
 `CMD` adds a shell command that will be executed on container startup. `CMD` instructions could be written as `CMD param1 param2` or `CMD ["/bin/executable", "param1", "param2"]`. 

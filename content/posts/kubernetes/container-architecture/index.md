@@ -5,7 +5,7 @@ date: "2023-01-27"
 description: "Creation and execution of container is enabled using features like namespaces, Cgroups, seccomp, and SELinux"
 tags: ["container", "podman", "docker","openshift", "kubernetes", "linux", "namespaces", "cgroups", "seccomp", "selinux"]
 categories: ["Microservices", "Operating Systems"]
-series: ["OpenShift"]
+series: ["Kubernetes"]
 aliases: ["container-architecture"]
 ShowToc: true
 TocOpen: false
@@ -17,7 +17,7 @@ cover:
   relative: false
 ---
 
-To isolate the processes running inside a <a href="/posts/openshift/containers/" target="_blank">container</a> from its host system, container engine uses the following four features:
+To isolate the processes running inside a <a href="/posts/kubernetes/containers/" target="_blank">container</a> from its host system, container engine uses the following four features:
 * Namespaces
 * Control Groups
 * Secure Computing
