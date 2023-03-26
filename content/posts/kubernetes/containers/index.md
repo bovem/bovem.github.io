@@ -10,7 +10,7 @@ aliases: ["containers"]
 ShowToc: true
 TocOpen: false
 cover:
-  image: "deployments.drawio.svg"
+  image: "containers.drawio.png"
   linkFullImages: true
   alt: "Types of application deployment"
   caption: "Types of application deployment"

@@ -10,7 +10,7 @@ aliases: ["container-lifecycle"]
 ShowToc: true
 TocOpen: false
 cover:
-  image: "container_lifecycle.drawio.svg"
+  image: "container_lifecycle.drawio.png"
   linkFullImages: true
   alt: "Lifecycle of a container"
   caption: "Lifecycle of a container"

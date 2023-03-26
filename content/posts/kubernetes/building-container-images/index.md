@@ -10,7 +10,7 @@ aliases: ["building-container-images"]
 ShowToc: true
 TocOpen: false
 cover:
-  image: "container_image.drawio.svg"
+  image: "building_container_images.drawio.png"
   linkFullImages: true
   alt: "Building container images from Containerfile"
   caption: "Building container images from Containerfile"

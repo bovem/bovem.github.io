@@ -10,7 +10,7 @@ aliases: ["container-images"]
 ShowToc: true
 TocOpen: false
 cover:
-  image: "container_image.drawio.svg"
+  image: "container_image.drawio.png"
   linkFullImages: true
   alt: "Workflow of container images"
   caption: "Workflow of container images"

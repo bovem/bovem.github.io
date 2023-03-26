@@ -10,7 +10,7 @@ aliases: ["container-architecture"]
 ShowToc: true
 TocOpen: false
 cover:
-  image: "container_arch.drawio.svg"
+  image: "container_arch.drawio.png"
   linkFullImages: true
   alt: "Linux features essestial for the containers"
   caption: "Linux features essential for the containers"
