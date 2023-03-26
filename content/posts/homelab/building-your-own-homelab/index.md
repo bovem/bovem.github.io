@@ -26,7 +26,7 @@ There is an app for everything and modern app stores have made it extremely conv
 
 * Many of them operate on a subscription-based model which means you don't own the product outright, you are just renting it as a service.
 
-Self Hosting these services presents an option to have more control while also keeping your data private. There are multiple hardware options available across the budget that could be used to host services like media streaming platforms, cloud storage, VPN server, etc. In this article, we will go through the hardware options available for self-hosting.
+Self-Hosting these services presents an option to have more control while also keeping your data private. There are multiple hardware options available across the budget that could be used to host services like media streaming platforms, cloud storage, VPN server, etc. In this article, we will go through the hardware options available for self-hosting.
 
 # Mini PCs
 Mini PCs provide maximum utility for homelab workloads (like a router, adblocking DNS, media streaming, etc.) but in a smaller package with low power consumption and noise.
@@ -59,7 +59,7 @@ NUCs are available in four skews of Intel x86 processors: Celeron, Core i3, Core
 
 MiniPCs like Beelink's <a href="https://www.bee-link.net/products/pre-order-beelink-gtr6-6900hx-first-quad-8k-mini-pc" target="_blank">GTR</a>, <a href="https://www.bee-link.net/products/beelink-ser5-mini-pc-amd-ryzen-5-5500u-16g-ddr4-500gb-m-2-2280-nvme-ssd-mini-desktop-computer-4k-60hz-wifi-6-bt5-2-dual-hdmi-type-c-support-2-5-inch-hdd" target="_blank">SER</a>, and <a href="https://www.bee-link.net/products/beelink-sr55-5800h-mini-pc" target="_blank">SR</a> series provide an AMD alternative to NUC in similar form factors.
 
-## Limitations of using Mini PCs for Self Hosting
+## Limitations of Using Mini PCs for Self-Hosting
 While MiniPCs are a great starting point for self-hosting services, there are still some limitations that you have to keep in mind
 
 <!-- * Some container images/applications might not have an ARM compatible build -->
@@ -70,7 +70,7 @@ While MiniPCs are a great starting point for self-hosting services, there are st
 # Cloud Service Providers (CSPs)
 You can host your services on VMs provided by Cloud Service Providers (CSPs) like Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). They also provide a static IP for the VM which is useful when you want your service to be publicly available.
 
-## Limitations of using CSPs for Self Hosting
+## Limitations of Using CSPs for Self-Hosting
 * You are dependent on your CSP for the availability of your services. A CSP outage could also mean a service outage.
 * Depending on your workload and your geographical location, hosting and running a VM round-the-clock might be expensive due to cloud costs.
 * Scaling your lab on the cloud could be expensive.
@@ -87,13 +87,13 @@ Some enterprise features could help you in managing your homelab like
 * Error Correction Code (ECC) memory: ECC memory unlike non-ECC memory automatically detects and corrects memory errors. It is a necessary feature for critical workloads as it prevents unexpected crashes and outages.
 * Ability to swap Power Supply Units (PSUs) and storage devices easily.
 
-## Limitations of using decommissioned servers for Self Hosting
+## Limitations of Using Decommissioned Servers for Self-Hosting
 * Replacement for individual components could be scarce or extremely expensive if available.
 * Datacenter servers are usually designed for environments where having a high noise level could be traded off for better cooling. This might not be ideal if you want to deploy it in your home.
 * The footprint of a server might be larger than an average PC.
 <!-- * Server hardware can have more power consumption compared to commercial hardware. You might not be able to take advantage of that power. -->
 
-# Custom PC Builds
+# Custom PC Build
 <p align="center"><img src="pc.jpg" alt="Not my PC"></p>
 <p align="center"><small><i>Not my PC. Photo by <a href="https://unsplash.com/ja/@amieldh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amiel D Hechanova</a> on <a href="https://unsplash.com/photos/XznGSZ9DtpQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   </i></small></p>
