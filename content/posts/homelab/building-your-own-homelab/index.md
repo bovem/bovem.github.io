@@ -26,7 +26,7 @@ There is an app for everything and modern app stores have made it extremely conv
 
 * Many of them operate on a subscription-based model which means you don't own the product outright, you are just renting it as a service.
 
-Self-Hosting these services presents an option to have more control while also keeping your data private. There are multiple hardware options available across the budget that could be used to host services like media streaming platforms, cloud storage, VPN server, etc. In this article, we will go through the hardware options available for self-hosting.
+Self-Hosting these services presents an option to have more control while also keeping your data private. There are multiple hardware options available across the budget that could be used to host services like media streaming platforms, cloud storage, VPN server, etc. 
 
 # Mini PCs
 Mini PCs provide maximum utility for homelab workloads (like a router, adblocking DNS, media streaming, etc.) but in a smaller package with low power consumption and noise.
