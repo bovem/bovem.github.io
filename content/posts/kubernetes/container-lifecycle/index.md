@@ -231,7 +231,7 @@ We can also attach a terminal to the container from the **Terminal** tab.
 
 
 
-# Resources
+# Resources Referenced in this Article
 <a href="https://podman.io/getting-started/installation" target="_blank">Podman Installation Instructions</a>  
 <a href="https://podman-desktop.io/" target="_blank">Podman Desktop</a>  
 <a href="https://docs.podman.io/en/latest/markdown/podman-login.1.html" target="_blank">podman-login</a>  

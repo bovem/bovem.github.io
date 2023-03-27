@@ -18,20 +18,28 @@ cover:
 draft: true
 ---
 
-There is an app for everything and modern app stores have made it extremely convenient to install them on your device. However, some underlying issues still need to be addressed:
+There is an app for everything and modern app stores have made it extremely convenient to install them on your device. However, some underlying issues need to be discussed
 
-* Each application has a different set of terms and services. A small subset of users read it and a smaller subset refuses to use an application due to its terms and services.
+* Each application has a different set of terms and services. A small subset of users read it and a smaller subset of them will refuse to use the application if they disagree with it.
 
-* These applications are crucial for you but if you lose access to them, there might not be a proper support channel to regain access or retrieve data. If you lose access to your Google account you’ll also lose access to your emails, your photos (backed up on Google Photos), your YouTube account, and probably most of the services you signed in using Google.
+* These applications are critical for your daily life but if you lose access to them, there might not be a proper support channel to regain access or retrieve data. 
+
+If you lose access to your Google account you’ll also lose access to your emails, your photos (backed up on Google Photos), your YouTube account, and probably most of the services you signed in using Google.
 
 * Many of them operate on a subscription-based model which means you don't own the product outright, you are just renting it as a service.
 
-Self-Hosting these services presents an option to have more control while also keeping your data private. There are multiple hardware options available across the budget that could be used to host services like media streaming platforms, cloud storage, VPN server, etc. 
+The application provider can change their payment model to subscription-based, while also discontinuing your existing “lifetime” license. <a href="https://support.google.com/a/answer/2855120?hl=en" target="_blank">G Suite legacy free edition</a>, <a href="https://community.teamviewer.com/English/discussion/119369/has-anyone-who-bought-a-lifetime-license-for-earlier-version-5-gotten-free-update-to-v-1" target="_blank">TeamViewer</a>
+
+The service itself could be discontinued. <a href="https://killedby.tech/google/" target="_blank">Killed by Google</a>
+
+Content "owned" by you could be removed without your consent. <a href="https://www.pushsquare.com/news/2022/07/sony-removing-some-purchased-films-movies-from-users-accounts" target="_blank">Sony Removing Some Purchased Films, Movies from Users' Accounts</a>
+
+Self-Hosted alternatives to some or all of these services will give you more control while also keeping your data private. There are multiple hardware options available across the budget that could be used to host services like media streaming, cloud storage, VPN server, etc. at your home. 
 
 # Mini PCs
-Mini PCs provide maximum utility for homelab workloads (like a router, adblocking DNS, media streaming, etc.) but in a smaller package with low power consumption and noise.
+Mini PCs provide maximum utility for homelab but in a smaller package with low power consumption and noise.
 
-If you want to get started with self-hosting then a mini PC would be a great option or if you want to deploy a secondary server for services running round-the-clock (like password manager).
+If you want to get started with self-hosting or deploy a secondary server for services running round-the-clock (like a password manager, DNS, router, etc.) then a mini PC would be a great option.
 
 ## Raspberry Pi and Alternatives
 <p align="center"><img src="raspberry-pi-and-alternatives.jpg" alt="Raspberry Pi and Alternatives"></p>
@@ -53,25 +61,24 @@ At the time of writing the Raspberry Pis are unavailable in most countries or so
 <p align="center"><img src="intel-nuc.jpg" alt="Intel NUC"></p>
 <p align="center"><small><i>Photo by <a href="https://unsplash.com/@gabimedia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gabriel Vasiliu</a> on <a href="https://unsplash.com/photos/1cIirhlCMts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i></small></p>
 
-Next Unit of Computing (NUC) kits (PC kits without memory and storage) from Intel provide a relatively powerful alternative to Raspberry Pi or similar Mini PCs.
+Next Unit of Computing (NUC) kits (PC kits without memory and storage) from Intel provide a relatively powerful alternative to Raspberry Pi or similar mini PCs.
 
-NUCs are available in four skews of Intel x86 processors: Celeron, Core i3, Core i5, and Core i7. NUC Extreme could be configured with a Core i9 processor and desktop GPU.
+NUCs are available with four types of Intel x86 processors: Celeron, Core i3, Core i5, and Core i7. NUC Extreme could be configured with a Core i9 processor and a desktop GPU.
 
 MiniPCs like Beelink's <a href="https://www.bee-link.net/products/pre-order-beelink-gtr6-6900hx-first-quad-8k-mini-pc" target="_blank">GTR</a>, <a href="https://www.bee-link.net/products/beelink-ser5-mini-pc-amd-ryzen-5-5500u-16g-ddr4-500gb-m-2-2280-nvme-ssd-mini-desktop-computer-4k-60hz-wifi-6-bt5-2-dual-hdmi-type-c-support-2-5-inch-hdd" target="_blank">SER</a>, and <a href="https://www.bee-link.net/products/beelink-sr55-5800h-mini-pc" target="_blank">SR</a> series provide an AMD alternative to NUC in similar form factors.
 
 ## Limitations of Using Mini PCs for Self-Hosting
 While MiniPCs are a great starting point for self-hosting services, there are still some limitations that you have to keep in mind
 
-<!-- * Some container images/applications might not have an ARM compatible build -->
-* MiniPCs do provide options for expansion and upgrades but relatively less than a custom PC build or server.
+* MiniPCs do provide options for expansion and upgrades but relatively less than a custom PC build or a server.
 * You might not be able to run multiple intensive workloads in parallel.
-* To scale your homelab running on MiniPC you might have to create a cluster of mini PC nodes.
+* To scale your homelab running on MiniPC you have to create a cluster of mini PC nodes.
 
 # Cloud Service Providers (CSPs)
-You can host your services on VMs provided by Cloud Service Providers (CSPs) like Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). They also provide a static IP for the VM which is useful when you want your service to be publicly available.
+You can host your services on VMs provided by Cloud Service Providers (CSPs) like Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). They also provide a static IP for VMs which could be useful if you want your services publicly available.
 
 ## Limitations of Using CSPs for Self-Hosting
-* You are dependent on your CSP for the availability of your services. A CSP outage could also mean a service outage.
+* You are dependent on your CSP for the availability of your services. A CSP outage could also mean a homelab outage.
 * Depending on your workload and your geographical location, hosting and running a VM round-the-clock might be expensive due to cloud costs.
 * Scaling your lab on the cloud could be expensive.
 
@@ -79,7 +86,7 @@ You can host your services on VMs provided by Cloud Service Providers (CSPs) lik
 <p align="center"><img src="servers.jpg" alt="Servers"></p>
 <p align="center"><small><i>Photo by <a href="https://unsplash.com/@tvick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taylor Vick</a> on <a href="https://unsplash.com/photos/M5tzZtFCOfs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i></small></p>
 
-Datacenters and IT organizations often decommission servers and sell them on the secondary market. While they might not have enough performance to execute current enterprise workloads but they can easily execute your typical homelab workloads.
+Datacenters and IT organizations often decommission servers and sell them on the secondary market. They might not perform well with the current enterprise workloads but their performance should be adequate for homelab.
 
 Some enterprise features could help you in managing your homelab like
 * 10 Gigabit Ethernet: If you are running a media streaming service or a video editing file server then having 10GbE could significantly improve your workflow.
@@ -88,46 +95,45 @@ Some enterprise features could help you in managing your homelab like
 * Ability to swap Power Supply Units (PSUs) and storage devices easily.
 
 ## Limitations of Using Decommissioned Servers for Self-Hosting
-* Replacement for individual components could be scarce or extremely expensive if available.
-* Datacenter servers are usually designed for environments where having a high noise level could be traded off for better cooling. This might not be ideal if you want to deploy it in your home.
+* Scarce availability of replacements for components.
+* Datacenter servers are designed to provide maximum cooling with the tradeoff of the high noise level. This might not be ideal if you want to deploy it in your home.
 * The footprint of a server might be larger than an average PC.
-<!-- * Server hardware can have more power consumption compared to commercial hardware. You might not be able to take advantage of that power. -->
 
 # Custom PC Build
 <p align="center"><img src="pc.jpg" alt="Not my PC"></p>
 <p align="center"><small><i>Not my PC. Photo by <a href="https://unsplash.com/ja/@amieldh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amiel D Hechanova</a> on <a href="https://unsplash.com/photos/XznGSZ9DtpQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   </i></small></p>
 
-Custom PC builds provide maximum upgradability and customization and that’s why I decided to build one. I’ll go through my thought process for selecting each component, while it might not be the same for you but it may provide a direction for decision-making.
+Custom PC builds provide maximum upgradability and customization and that’s why I decided to build one. I’ll go through my thought process for selecting each component, while it might not be the same for you, it can provide a direction for decision-making.
 
 My planned use case for homelab:
 * Hosting a Network Attached Storage (NAS) server
-* Deploying Kubernetes/Red Hat OpenShift Local
-* Hosting a Virtual Private Network (VPN)
+* Deploying Kubernetes/Red Hat OpenShift Local cluster
+* Hosting a Virtual Private Network (VPN) server
 * Hosting a media streaming server
-* Gaming on Windows VM
+* Windows VM for gaming
 * Trying different self-hosted applications
 
-Based on my use cases I decided on the following specification:
-* More than 8 cores and 16 threads for simultaneous execution of VMs (Linux and Windows) and other workloads. I decided to allocate at least 4 threads to my Windows VM.
-* At least 2TB of redundant storage i.e. two drives mirrored on NAS.
-* 2.5 Gigabit networking on the motherboard as the homelab as I’ll be accessing services remotely.
-* 32GB memory would be adequate for all VMs. I went with DDR4 because DDR5 components exceed my budget.
+Based on my use case I decided on the following specification:
+* More than 8 cores and 16 threads for simultaneous execution of multiple VMs and containers. I decided that I'll allocate at least 4 threads to my Windows VM.
+* 2TB of redundant storage i.e. two drives mirrored on NAS.
+* 2.5 Gigabit networking on the motherboard as I’ll be accessing services remotely.
+* 32GB memory would be adequate for VMs. I went with DDR4 because DDR5 exceeds my budget.
 * 1TB NVMe SSD storage for the host OS/hypervisor to be installed on homelab.
-* PCIe bandwidth to support Nvidia’s GeForce RTX 3070/RTX 4070 GPU with an expansion card like Network Interface Card (NIC) for a possible 10 Gigabit upgrade in the future.
-* 2 X 2TB Hard Disk Drives for NAS server.
+* PCIe bandwidth and PSU wattage to support Nvidia’s GeForce RTX 3070/RTX 4070 GPU with an expansion card like Network Interface Card (NIC) for a possible 10 Gigabit upgrade in the future.
+* 2 X 2TB HDD for NAS server.
 
 <a href="/posts/homelab/building-your-own-homelab/#my-pc-build-specification">Skip to My PC Build Specification >></a>
 
 ## CPU
-For the CPU you should make sure it has support for virtualization with enough cores and threads to host and deploy multiple services concurrently.
+You should make sure that your CPU has support for virtualization with enough cores and threads to host and deploy multiple services concurrently.
 
 Depending on your goals you should also look for:
 * Overclocking support
 * ECC Memory support
 * Integrated Graphics: If your CPU doesn’t have integrated graphics then you have to purchase a GPU to install or access the OS/hypervisor.
 
-I wanted a CPU with integrated graphics and more than or equal to 8 cores, the options in my budget were: <a href="https://www.amd.com/en/products/apu/amd-ryzen-7-7700" target="_blank">AMD Ryzen™ 7 7700</a> or <a href="https://www.intel.in/content/www/in/en/products/sku/230580/intel-core-i513500-processor-24m-cache-up-to-4-80-ghz/specifications.html" target="_blank">Intel® Core™ i5-13500</a>. I don't have any overclocking requirements, otherwise, I would've gone with <a href="https://www.intel.in/content/www/in/en/products/sku/230493/intel-core-i513600k-processor-24m-cache-up-to-5-10-ghz/specifications.html" target="_blank">Intel® Core™ i5-13600K</a>.
+I wanted a CPU with more than or equal to 8 cores with integrated graphics, the options in my budget were: <a href="https://www.amd.com/en/products/apu/amd-ryzen-7-7700" target="_blank">AMD Ryzen 7 7700</a> or <a href="https://www.intel.in/content/www/in/en/products/sku/230580/intel-core-i513500-processor-24m-cache-up-to-4-80-ghz/specifications.html" target="_blank">Intel Core i5-13500</a>. I didn't have any overclocking requirements, otherwise, I would've gone with <a href="https://www.intel.in/content/www/in/en/products/sku/230493/intel-core-i513600k-processor-24m-cache-up-to-5-10-ghz/specifications.html" target="_blank">Intel Core i5-13600K</a>.
 
 I went with the **i5-13500** as it has more cores and threads compared to Ryzen 7700.
 
@@ -137,30 +143,30 @@ The choice of your CPU limits the choices of your motherboard. First, you'll hav
 * <a href="https://www.amd.com/en/chipsets/am5" target="_blank">AMD chipsets</a>: B650, B650E, X670, X670E
 * <a href="https://ark.intel.com/content/www/us/en/ark/products/series/229717/intel-700-series-desktop-chipsets.html#@Desktop" target="_blank">Intel 700 series chipsets</a>: Z790, H770, B760, W790
 
-Motherboard features you might want to consider for homelab:
+Motherboard features you might want to consider for your homelab:
 
-* Enough SATA ports for storage expansion
 * Upgradability path with future CPU releases
 * PCIe Bandwidth for expansion cards
-* IPMI support
 * 2.5 Gigabit networking
+* SATA ports for storage expansion
+* IPMI support
 
-I planned on getting <a href="https://www.msi.com/Motherboard/PRO-B760M-A-WIFI-DDR4" target="_blank">MSI PRO B760M-A WIFI DDR4</a> but I got a better deal with <a href="https://www.msi.com/Motherboard/PRO-Z790-P-WIFI-DDR4" target="_blank">MSI PRO Z790-P WIFI DDR4</a> so I went with it. It has 2.5 Gigabit networking and 6x SATA ports which provides me the option to add more drives in the future.
+I planned on getting <a href="https://www.msi.com/Motherboard/PRO-B760M-A-WIFI-DDR4" target="_blank">MSI PRO B760M-A WIFI DDR4</a> but I got a better deal with <a href="https://www.msi.com/Motherboard/PRO-Z690-P-WIFI" target="_blank">MSI PRO Z690-P WIFI DDR4</a> so I went with that. It has 2.5 Gigabit networking and 6x SATA ports which provides me the option to add more drives in the future.
 
 ## CPU Cooler
-Most CPUs come with an air cooler. But if you are using high-end CPUs you might not be able to extract the complete performance using the default cooler.
+Most CPUs come with an air cooler. But if you are using a high-end CPU you might not be able to extract its complete performance using the default cooler.
 
-The options are air cooling, custom water cooling, and an All-In-One (AIO) Liquid cooler. You can make your decision based on your CPU, cooling performance, noise level, and ease of use.
+Options are air cooling, custom water cooling, or an All-In-One (AIO) Liquid cooler. You can make your decision based on your CPU, cooling performance, noise level, and ease of installation.
 
-I went with <a href="https://www.corsair.com/br/en/Categories/Products/Liquid-Cooling/RGB-Liquid-CPU-Coolers/p/CW-9060053-WW" target="_blank">Corsair H100 RGB 240mm Liquid CPU Cooler</a> for its price and aesthetics.
+I went with <a href="https://www.corsair.com/br/en/Categories/Products/Liquid-Cooling/RGB-Liquid-CPU-Coolers/p/CW-9060053-WW" target="_blank">Corsair H100 RGB 240mm Liquid CPU Cooler</a> due to its price and aesthetics.
 
 ## Memory
 At the time of writing the price of DDR5 memory is significantly higher than its MSRP so I opted for DDR4.
 
-I went with 2 x <a href="https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M1E3200C16" target="_blank">Corsair VENGEANCE LPX 16GB DDR4 DRAM Memory Kit</a> because its 3200MHz speed is adequate for my workload.
+I went with 2 x <a href="https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M1E3200C16" target="_blank">Corsair VENGEANCE LPX 16GB DDR4 DRAM Memory Kit</a> because its 3200MHz speed will be adequate for my workload.
 
 ## Storage
-Network Attached Storage (NAS) server is a common self-hosted service. With a NAS server, you have your cloud storage with no privacy concerns or subscriptions. That’s why selecting the right storage device is important.
+Network Attached Storage (NAS) server is a common self-hosted service. With a NAS server, you have your cloud storage without privacy concerns or subscriptions. That’s why selecting the right storage device is important.
 
 Along with drives for NAS you'll need additional storage for the OS/Hypervisor running on your homelab.
 
@@ -170,27 +176,27 @@ It's ideal to store the OS/Hypervisor in a faster drive compared to the drives u
 I'm using <a href="https://www.kingston.com/en/ssd/nv2-nvme-pcie-ssd?capacity=1tb" target="_blank">Kingston NV2 PCIe 4.0 NVMe SSD </a> as the boot disk for the Proxmox hypervisor.
 
 ### NAS Drives
-Although you can use any Hard Disk Drive (HDD) for your NAS server NAS-rated hard drives provide advantages like
+Although you can use any Hard Disk Drive (HDD) for your NAS server you might want to consider NAS-rated hard drives because they provide advantages like
 
 * Optimization for read-and-write operations
 * Relatively fewer vibrations compared to desktop hard drives
 * Rated for 24/7 operation
 
-If you are using two hard drives in mirrored mode then its safer to source them from different vendors.
+If you are using two hard drives in mirrored mode then it is safer to source them from different vendors.
 
 I opted for <a href="https://www.westerndigital.com/en-in/products/internal-drives/wd-blue-desktop-sata-hdd#WD5000AZLX" target="_blank">WD Blue PC Desktop Hard Drive 2TB</a> and <a href="https://www.seagate.com/in/en/products/hard-drives/barracuda-hard-drive/" target="_blank">Seagate BarraCuda Hard Drives 2TB</a> as storage drives. I'll be running them in mirrored mode using TrueNAS.
 
 ## Power Supply Unit (PSU)
-Websites like <a href="https://outervision.com/power-supply-calculator" target="_blank">OuterVision Power Supply Calculator</a> could be used to calculate the power budget required by your PC build. It will be a better choice to select a power supply with a higher wattage than required currently to ensure upgradability.
+Websites like <a href="https://outervision.com/power-supply-calculator" target="_blank">OuterVision Power Supply Calculator</a> could be used to calculate the power budget of your PC. It's ideal to select a power supply with higher wattage to ensure upgradability.
 
-PSUs are rated as White, Bronze, Silver, Gold, Platinum, and Titanium in the increasing order of their efficiency. A more efficient PSU will draw less power and run quieter. Hence, reducing your power bill.
+PSUs are rated as White, Bronze, Silver, Gold, Platinum, and Titanium in the increasing order of their efficiency. An efficient PSU will draw less power and run quieter. Hence, reducing your power bill.
 
-I opted for <a href="https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/Power-Supply-Units-Advanced/RM-Series%E2%84%A2-80-PLUS-Gold-Power-Supplies/p/CP-9020196-NA" target="_blank">Corsair RM Series™ RM850 — 850 Watt 80 PLUS® Gold Certified Fully Modular PSU</a> which provides 850W of wattage and that is enough to run my homelab while also providing an option to add an Nvidia GeForce RTX 3070/RTX 4070 in the future.
+I opted for <a href="https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/Power-Supply-Units-Advanced/RM-Series%E2%84%A2-80-PLUS-Gold-Power-Supplies/p/CP-9020196-NA" target="_blank">Corsair RM850 850 Watt 80 PLUS Gold Certified Fully Modular PSU</a> which provides 850W of wattage and that is enough to run my homelab while also providing an option to add an Nvidia GeForce RTX 3070/RTX 4070 in the future.
 
 ## PCIe Expansion Cards
-If you are planning to use your homelab for video editing, animation, machine learning, gaming, or any similar workloads then adding a GPU can improve the performance significantly.
+If you are planning to use your homelab for video editing, animation, machine learning, gaming, or any similar workloads then adding a GPU can improve its performance significantly.
 
-By adding a 10 Gigabit Network Interface Card (NIC) you can improve the access time to your services.
+By adding a 10 Gigabit Network Interface Card (NIC) you can reduce the access time to your services.
 
 ## Case
 As long as all the components fit, any PC case could be used for homelab. You might want to consider its
@@ -202,37 +208,36 @@ As long as all the components fit, any PC case could be used for homelab. You mi
 I selected <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-Tower-ATX-Cases/4000D-Airflow-Tempered-Glass-Mid-Tower-ATX-Case/p/CC-9011200-WW" target="_blank">Corsair 4000D AIRFLOW Tempered Glass Mid-Tower ATX Case</a> due to its airflow and ease of building.
 
 ## Limitations of Using Custom PC Build for Self-Hosting
-* While it is easy to build PCs by following guides and tutorials online it might still be very difficult for novice builders. Retailers provide an option to assemble the components, sometimes at no extra cost.
-* Current prices of many products are significantly higher than their MSRPs, even double in some cases.
+* While it is easy to build PCs by following guides and tutorials on the internet. It might still be very difficult for novice builders. Retailers do provide an option to assemble the components, sometimes at no extra cost.
+* Current prices of some components are significantly higher than their MSRPs, even double in some cases.
 * The upfront cost is higher compared to other options.
 
 # My PC Build Specification  
-| Component   | Product                                                                                                                                                                                                                                                                     | Price (₹) |Price ($) |
-|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|-------|
-| CPU         | <a href="https://www.intel.in/content/www/in/en/products/sku/230580/intel-core-i513500-processor-24m-cache-up-to-4-80-ghz/specifications.html" target="_blank">Intel® Core™ i5-13500</a>                                                                                    | ₹23400     | $284.16
-| Motherboard | <a href="https://www.msi.com/Motherboard/PRO-Z790-P-WIFI-DDR4" target="_blank">MSI PRO Z790-P WIFI DDR4</a>                                                                                                                                                                 | ₹21300      | $258.66
-| CPU Cooler  | <a href="https://www.corsair.com/br/en/Categories/Products/Liquid-Cooling/RGB-Liquid-CPU-Coolers/p/CW-9060053-WW" target="_blank">Corsair H100 RGB 240mm Liquid CPU Cooler</a>                                                                                              |  ₹7100     | $86.22
-| Memory      | 2 X <a href="https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M1E3200C16" target="_blank">Corsair VENGEANCE LPX 16GB DDR4 DRAM Memory Kit</a>                                                                                               |   ₹7100    | $86.22
-| SSD         | <a href="https://www.kingston.com/en/ssd/nv2-nvme-pcie-ssd?capacity=1tb" target="_blank">Kingston NV2 PCIe 4.0 NVMe SSD </a>                                                                                                                                                |  ₹5200     | $63.15
-| HDD 1       | <a href="https://www.westerndigital.com/en-in/products/internal-drives/wd-blue-desktop-sata-hdd#WD5000AZLX" target="_blank">WD Blue PC Desktop Hard Drive 2TB</a>                                                                                                           | ₹4200      | $51.00
-| HDD 2       | <a href="https://www.seagate.com/in/en/products/hard-drives/barracuda-hard-drive/" target="_blank">Seagate BarraCuda Hard Drives 2TB</a>                                                                                                                                    | ₹4200      | $51.00
-| PSU         | <a href="https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/Power-Supply-Units-Advanced/RM-Series%E2%84%A2-80-PLUS-Gold-Power-Supplies/p/CP-9020196-NA" target="_blank">Corsair RM Series™ RM850 — 850 Watt 80 PLUS® Gold Certified Fully Modular PSU</a> |  ₹10000     | $121.44
-| Case        | <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-Tower-ATX-Cases/4000D-Airflow-Tempered-Glass-Mid-Tower-ATX-Case/p/CC-9011200-WW" target="_blank">Corsair 4000D AIRFLOW Tempered Glass Mid-Tower ATX Case</a>                                           |  ₹6300     | $76.51
-| Total        |                                            |  ₹88800     | $1078.36
+| Component   | Product                                                                                                                                                                                                                                                                     |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CPU         | <a href="https://www.intel.in/content/www/in/en/products/sku/230580/intel-core-i513500-processor-24m-cache-up-to-4-80-ghz/specifications.html" target="_blank">Intel Core i5-13500</a>                                                                                    |
+| Motherboard | <a href="https://www.msi.com/Motherboard/PRO-Z690-P-WIFI" target="_blank">MSI PRO Z690-P WIFI DDR4</a>                                                                                                                                                                 |
+| CPU Cooler  | <a href="https://www.corsair.com/br/en/Categories/Products/Liquid-Cooling/RGB-Liquid-CPU-Coolers/p/CW-9060053-WW" target="_blank">Corsair H100 RGB 240mm Liquid CPU Cooler</a>                                                                                              |
+| Memory      | 2 X <a href="https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M1E3200C16" target="_blank">Corsair VENGEANCE LPX 16GB DDR4 DRAM Memory Kit</a>                                                                                               |
+| SSD         | <a href="https://www.kingston.com/en/ssd/nv2-nvme-pcie-ssd?capacity=1tb" target="_blank">Kingston NV2 PCIe 4.0 NVMe SSD </a>                                                                                                                                                |
+| HDD 1       | <a href="https://www.westerndigital.com/en-in/products/internal-drives/wd-blue-desktop-sata-hdd#WD5000AZLX" target="_blank">WD Blue PC Desktop Hard Drive 2TB</a>                                                                                                           |
+| HDD 2       | <a href="https://www.seagate.com/in/en/products/hard-drives/barracuda-hard-drive/" target="_blank">Seagate BarraCuda Hard Drives 2TB</a>                                                                                                                                    |
+| PSU         | <a href="https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/Power-Supply-Units-Advanced/RM-Series%E2%84%A2-80-PLUS-Gold-Power-Supplies/p/CP-9020196-NA" target="_blank">Corsair RM850 850 Watt 80 PLUS® Gold Certified Fully Modular PSU</a> |
+| Case        | <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-Tower-ATX-Cases/4000D-Airflow-Tempered-Glass-Mid-Tower-ATX-Case/p/CC-9011200-WW" target="_blank">Corsair 4000D AIRFLOW Tempered Glass Mid-Tower ATX Case</a>                                           | 
 
 <p align="center"><img src="pc_front.jpg" alt="PC - Front"></p>
 
 <p align="center"><img src="pc_side.jpg" alt="PC - Side"></p>
-<p align="center"><small><i>Result</i></small></p>
+<p align="center"><small><i>The Result</i></small></p>
 
 # Challenges of Self-Hosting
-* Deploying and managing a homelab could be difficult for people who aren't technically sound. But with patience and research, it could be done.
-* Managing some of the services like email server is tough, especially when they integrate with other services.
-* You have to manage and debug issues on your services. You'll learn a lot, which might help you in your professional career.
-* You have to provide technical support to everyone else using your service.
-* You might lose out on some features or their quality provided by proprietary services like AI face recognition provided with Google Photos.
+* Deploying and managing a homelab could be difficult for people who don't work with computers. But it is possible with patience and research.
+* Managing some services like an email server is difficult, especially when they integrate with other services.
+* You have to manage and debug issues yourself. You'll learn a lot, which might help you in your professional career.
+* You have to provide technical support to everyone else using your services.
+* You might lose out on some features or their quality provided by proprietary services. Like AI face recognition provided with Google Photos.
 * You are responsible for the security of your data. Make sure that all of the services, OS, and hypervisors are up to date.
-* For some of the applications, you might not have full autonomy to switch to self-hosted alternatives. For example, if your friends and family use WhatsApp then you can’t simply switch to a self-hosted alternative and expect others to do the same.
+* For some applications, you might not have full autonomy to switch to a self-hosted alternative. For example, if your friends and family use WhatsApp then you can’t simply switch to a self-hosted alternative and expect others to do the same.
 
 # Resources to Learn About Homelab and Self-Hosting
 ## Blogs
@@ -243,6 +248,8 @@ I selected <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-
 
 ## Repositories
 <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank">awesome-selfhosted</a>  
+<a href="https://github.com/tteck/Proxmox" target="_blank">tteck/Proxmox</a>  
+<a href="https://github.com/topics/homelab" target="_blank">topics/homelab</a>  
 
 ## Subreddits
 <a href="https://old.reddit.com/r/selfhosted/" target="_blank">r/selfhosted</a>  
@@ -259,7 +266,11 @@ I selected <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-
 <a href="https://www.youtube.com/@LAWRENCESYSTEMS" target="_blank">Lawrence Systems</a>  
 <a href="https://www.youtube.com/@AwesomeOpenSource" target="_blank">AwesomeOpenSource</a>  
 
-# Resources Referred in this Article
+# Resources Referenced in this Article
+<a href="https://support.google.com/a/answer/2855120?hl=en" target="_blank">G Suite legacy free edition</a>  
+<a href="https://community.teamviewer.com/English/discussion/119369/has-anyone-who-bought-a-lifetime-license-for-earlier-version-5-gotten-free-update-to-v-1" target="_blank">Has anyone who bought a lifetime license for earlier version (5) gotten free update to v.1?</a>
+<a href="https://killedby.tech/google/" target="_blank">Killed by Google</a>  
+<a href="https://www.pushsquare.com/news/2022/07/sony-removing-some-purchased-films-movies-from-users-accounts" target="_blank">Sony Removing Some Purchased Films, Movies from Users' Accounts</a>  
 <a href="https://www.raspberrypi.org/help/what-%20is-a-raspberry-pi/" target="_blank">What is a Raspberry Pi?</a>  
 <a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi OS</a>  
 <a href="https://youtu.be/uJvCVw1yONQ" target="_blank">I Can Save You Money! – Raspberry Pi Alternatives</a>  

@@ -255,7 +255,7 @@ To create a container image from a running container, the `commit` subcommand co
 docker commit webserver-container quay.io/username/webserver:latest
 ```
 
-# Resources
+# Resources Referenced in this Article
 <a href="https://opencontainers.org/about/overview/" target="_blank">About the Open Container Initiative</a>  
 <a href="https://github.com/opencontainers/image-spec/blob/main/manifest.md" target="_blank">OCI Image Manifest Specification</a>  
 <a href="https://github.com/opencontainers/image-spec/blob/main/layer.md" target="_blank">Image Layer Filesystem Changeset</a>  

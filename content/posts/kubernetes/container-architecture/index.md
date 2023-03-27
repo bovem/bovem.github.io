@@ -175,7 +175,7 @@ SELinux checks the *SELinux context* of the file or process to make decisions re
 
 
 
-# Resources
+# Resources Referenced in this Article
 <a href="https://www.youtube.com/watch?v=sK5i-N34im8" target="_blank">Cgroups, namespaces, and beyond: what are containers made from?</a>  
 <a href="https://opensource.com/article/21/8/container-linux-technology" target="_blank">4 Linux technologies fundamental to containers</a>  
 <a href="https://man7.org/linux/man-pages/man1/init.1.html" target="_blank">systemd(1) — Linux manual page</a>  

@@ -160,7 +160,7 @@ Images built by `buildah` could then be executed using Podman and Docker or any 
 * Making ad-hoc changes to existing container images.
 * Automating build process.
 
-# Resources
+# Resources Referenced in this Article
 <a href="https://opencontainers.org/about/overview/" target="_blank">About the Open Container Initiative</a>  
 <a href="https://github.com/opencontainers/image-spec/blob/main/manifest.md" target="_blank">OCI Image Manifest Specification</a>  
 <a href="https://github.com/opencontainers/image-spec/blob/main/layer.md" target="_blank">Image Layer Filesystem Changeset</a>  
