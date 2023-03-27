@@ -15,6 +15,7 @@ cover:
   alt: "Types of application deployment"
   caption: "Types of application deployment"
   relative: false
+comments: true
 ---
 
 While creating an application in any programming language or framework you have to install its dependencies on your system.

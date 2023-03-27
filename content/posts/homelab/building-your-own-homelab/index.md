@@ -15,6 +15,7 @@ cover:
   alt: "My Homelab"
   caption: "My Homelab"
   relative: true
+comments: true
 ---
 
 There is an app for everything and modern app stores have made it extremely convenient to install them on your device. However, some underlying issues need to be discussed

@@ -15,6 +15,7 @@ cover:
   alt: "Linux features essestial for the containers"
   caption: "Linux features essential for the containers"
   relative: false
+comments: true
 ---
 
 To isolate the processes running inside a <a href="/posts/kubernetes/containers/" target="_blank">container</a> from its host system, container engine uses the following four features:
