@@ -38,3 +38,4 @@ future
 content/posts/openshift/container-registries
 .gitignore
 themes/
+resources/
