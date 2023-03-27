@@ -9,12 +9,12 @@ series: ["Homelab"]
 aliases: ["building-your-own-homelab"]
 ShowToc: true
 TocOpen: false
-# cover:
-#   image: "container_image.drawio.svg"
-#   linkFullImages: true
-#   alt: "Workflow of container images"
-#   caption: "Workflow of container images"
-#   relative: false
+cover:
+  image: "pc_cover_image.jpg"
+  linkFullImages: true
+  alt: "My Homelab"
+  caption: "My Homelab"
+  relative: true
 draft: true
 ---
 
@@ -206,15 +206,6 @@ I selected <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-
 * Current prices of many products are significantly higher than their MSRPs, even double in some cases.
 * The upfront cost is higher compared to other options.
 
-# Challenges of Self-Hosting
-* Deploying and managing a homelab could be difficult for people who aren't technically sound. But with patience and research, it could be done.
-* Managing some of the services like email server is tough, especially when they integrate with other services.
-* You have to manage and debug issues on your services. You'll learn a lot, which might help you in your professional career.
-* You have to provide technical support to everyone else using your service.
-* You might lose out on some features or their quality provided by proprietary services like AI face recognition provided with Google Photos.
-* You are responsible for the security of your data. Make sure that all of the services, OS, and hypervisors are up to date.
-* For some of the applications, you might not have full autonomy to switch to self-hosted alternatives. For example, if your friends and family use WhatsApp then you can’t simply switch to a self-hosted alternative and expect others to do the same.
-
 # My PC Build Specification  
 | Component   | Product                                                                                                                                                                                                                                                                     | Price (₹) |Price ($) |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|-------|
@@ -229,7 +220,19 @@ I selected <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-
 | Case        | <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-Tower-ATX-Cases/4000D-Airflow-Tempered-Glass-Mid-Tower-ATX-Case/p/CC-9011200-WW" target="_blank">Corsair 4000D AIRFLOW Tempered Glass Mid-Tower ATX Case</a>                                           |  ₹6300     | $76.51
 | Total        |                                            |  ₹88800     | $1078.36
 
-<!-- Image of your PC -->
+<p align="center"><img src="pc_front.jpg" alt="PC - Front"></p>
+
+<p align="center"><img src="pc_side.jpg" alt="PC - Side"></p>
+<p align="center"><small><i>Result</i></small></p>
+
+# Challenges of Self-Hosting
+* Deploying and managing a homelab could be difficult for people who aren't technically sound. But with patience and research, it could be done.
+* Managing some of the services like email server is tough, especially when they integrate with other services.
+* You have to manage and debug issues on your services. You'll learn a lot, which might help you in your professional career.
+* You have to provide technical support to everyone else using your service.
+* You might lose out on some features or their quality provided by proprietary services like AI face recognition provided with Google Photos.
+* You are responsible for the security of your data. Make sure that all of the services, OS, and hypervisors are up to date.
+* For some of the applications, you might not have full autonomy to switch to self-hosted alternatives. For example, if your friends and family use WhatsApp then you can’t simply switch to a self-hosted alternative and expect others to do the same.
 
 # Resources to Learn About Homelab and Self-Hosting
 ## Blogs
