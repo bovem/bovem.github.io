@@ -15,6 +15,7 @@ cover:
   alt: "Workflow of container images"
   caption: "Workflow of container images"
   relative: false
+  responsiveImages: false
 comments: true
 ---
 

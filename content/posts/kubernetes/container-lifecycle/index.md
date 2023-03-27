@@ -15,6 +15,7 @@ cover:
   alt: "Lifecycle of a container"
   caption: "Lifecycle of a container"
   relative: false
+  responsiveImages: false
 comments: true
 ---
 

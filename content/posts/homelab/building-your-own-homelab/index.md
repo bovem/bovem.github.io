@@ -15,6 +15,7 @@ cover:
   alt: "My Homelab"
   caption: "My Homelab"
   relative: true
+  responsiveImages: false
 comments: true
 ---
 

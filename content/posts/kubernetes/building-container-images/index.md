@@ -15,6 +15,7 @@ cover:
   alt: "Building container images from Containerfile"
   caption: "Building container images from Containerfile"
   relative: false
+  responsiveImages: false
 comments: true
 ---
 

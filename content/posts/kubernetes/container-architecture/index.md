@@ -15,6 +15,7 @@ cover:
   alt: "Linux features essestial for the containers"
   caption: "Linux features essential for the containers"
   relative: false
+  responsiveImages: false
 comments: true
 ---
 

@@ -15,6 +15,7 @@ cover:
   alt: "Types of application deployment"
   caption: "Types of application deployment"
   relative: false
+  responsiveImages: false
 comments: true
 ---
 
