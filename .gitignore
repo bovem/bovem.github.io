@@ -32,7 +32,6 @@ deploy/id_rsa.pub
 deploy/known_hosts
 deploy/known_hosts.old
 deploy/*.pem
-content/posts/interview-preparation
 future
 # content/posts/openshift/building-container-images
 # content/posts/openshift/container-images
