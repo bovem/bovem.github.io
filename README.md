@@ -18,6 +18,16 @@ Blogs on Self-Hosting, Homelab and DevOps Technologies.
 
 ## Local Deployment (with Docker)
 
+### After cloning
+```bash
+git submodule update --init --recursive
+```
+
+### Updating theme
+```bash
+git submodule update --remote --merge
+```
+
 ### Dev Environment (with Drafts and Future Posts)
 1. Change directory to `/deploy/dev`
 2. Deploy container
