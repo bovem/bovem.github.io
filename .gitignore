@@ -33,9 +33,7 @@ deploy/known_hosts
 deploy/known_hosts.old
 deploy/*.pem
 future
-# content/posts/openshift/building-container-images
-# content/posts/openshift/container-images
-content/posts/openshift/container-registries
+content/posts/kubernetes/operators-on-openshift
 .gitignore
 themes/
 resources/

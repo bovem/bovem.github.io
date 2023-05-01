@@ -20,7 +20,7 @@ services:
   #   restart: unless-stopped
   hugo-server:
     image: klakegg/hugo:0.101.0
-    command: "server --bind=192.168.56.10 --baseURL=http://192.168.56.10:1313"
+    command: "server"
     volumes:
       - "../..:/src"
     ports:

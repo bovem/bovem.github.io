@@ -9,6 +9,7 @@ Blogs on Self-Hosting, Homelab and DevOps Technologies.
     -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/container-lifecycle/">Container Lifecycle</a>
     -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/container-images/">Container Images</a>
     -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/building-container-images/">Building Container Images</a>
+    -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/kubernetes-operators/">Kubernetes Operators</a>
 -  <a target=_blank href="https://www.bovem.in/posts/homelab/">Homelab</a>
     -  <a target=_blank href="https://www.bovem.in/posts/homelab/building-your-own-homelab/">Building Your Own Homelab</a>
 
@@ -17,6 +18,16 @@ Blogs on Self-Hosting, Homelab and DevOps Technologies.
 - [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod)
 
 ## Local Deployment (with Docker)
+
+### After cloning
+```bash
+git submodule update --init --recursive
+```
+
+### Updating theme
+```bash
+git submodule update --remote --merge
+```
 
 ### Dev Environment (with Drafts and Future Posts)
 1. Change directory to `/deploy/dev`
