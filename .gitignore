@@ -33,7 +33,7 @@ deploy/known_hosts
 deploy/known_hosts.old
 deploy/*.pem
 future
-content/posts/kubernetes/operators-on-openshift
+# content/posts/kubernetes/operators-on-openshift
 .gitignore
 themes/
 resources/
