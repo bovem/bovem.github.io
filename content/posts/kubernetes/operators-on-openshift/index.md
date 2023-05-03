@@ -22,7 +22,7 @@ The **OperatorHub** is an interface for searching and installing operators. It h
 * Red Hat Marketplace Operators: Applications purchased from Red Hat Marketplace available as Operators. Example: [Dynatrace Operator](https://marketplace.redhat.com/en-us/products/dynatrace)
 * Community Operators: Default catalog of Operators maintained by their communities. Example: [Infispan Operator](https://github.com/infinispan/infinispan-operator)
 
-OperatorHub fetches data from the **Marketplace** operator installed by default in the `openshift-marketplace` namespace. 
+OperatorHub fetches the catalog data from an operator installed by default on all clusters called **Marketplace Operator**. 
 
 The value of the field `disableAllDefaultSources` needs to be `false` in the CR called `cluster` to view the operator's catalog.
 
@@ -46,13 +46,13 @@ Once installed the operator should be visible in **Operators -> Installed Operat
 **Operator Framework** is a set of developer tools for operators, it includes: 
 
 - Operator Lifecycle Manager (OLM): Handles installation, update, and management of operators on the cluster.
-- Operator Software Development Kit (Operator SDK): SDK for building operators using Ansible, Helm Chart, or Go.
-- Operator Registry:  A registry of operators that could be deployed on an OpenShift cluster.
+- Operator SDK: SDK for building operators using Ansible, Helm Chart, or Go.
+- Operator Registry:  Registry of operators that could be hosted on an OpenShift cluster.
 
 To explore other projects under Operator Framework you can check their [GitHub](https://github.com/operator-framework).
 
 # Operator Lifecycle Manager (OLM)
-The **Operator Lifecycle Manager (OLM)** is installed by default on OpenShift clusters to ensure:
+The **Operator Lifecycle Manager (OLM)** is installed by default on OpenShift clusters. It ensures:
 * The dependencies of an operator (including other operators) are satisfied before its installation.
 * Installed operators are up-to-date.
 * Availability of the operators to the users of the cluster.
@@ -68,7 +68,7 @@ The **OLM Operator** deploys the resources defined in `ClusterServiceVersion` pr
 The `ClusterServiceVersion` or `CSV` represents a specific version of an operator. It contains operator metadata such as its name, description, version, details of the maintainer, installation strategy, and APIs provided by the operator.
 
 ### `OperatorGroup`
-OLM has cluster-admin privileges. Operators could request some of these cluster-admin permissions in their CSV. By creating an `OperatorGroup` the cluster administrator can take control of the permissions granted to the operators or limit them to one or more namespaces.
+OLM has cluster-admin privileges. Operators could request some of these cluster-admin permissions in their `CSV`. By creating an `OperatorGroup` the cluster administrator can take control of the permissions granted to the operators or limit them to one or more namespaces.
 
 ### `OperatorCondition`
 Operators can modify the OLM's management strategy by stating their conditions in `OperatorCondition`. For example, an operator could set the `status` for the Upgradable property to `False` if its installation has to be frozen on a specific version.
@@ -86,7 +86,7 @@ Operators can modify the OLM's management strategy by stating their conditions i
 An `InstallPlan` defines the operator's custom resources to be installed.
 
 # Installing a Specific Version of the Operator
-By default, OpenShift installs the latest version of an operator available in the `CatalogSource`. If you want to change this behavior and install a specific version of the operator you have to edit its `Subscription` and specify the version to be installed in `startingCSV` and set `installPlanApproval` to `Manual`. 
+By default, OpenShift installs the latest available version of an operator in the `CatalogSource`. If you want to change this behavior and install a specific version of the operator you have to edit its `Subscription` and specify the version to be installed in `startingCSV` and set `installPlanApproval` to `Manual`. 
 Note that if the required version is not available on the default `channel` then you have to change it as well.
 
 Example of a `Subscription` for installing v1.9.0 of OpenShift Pipelines Operator
