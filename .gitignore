@@ -26,14 +26,12 @@ _testmain.go
 /docs
 .DS_Store
 .hugo_build.lock
-content/posts/markdown-syntax.md
 deploy/id_rsa
 deploy/id_rsa.pub
 deploy/known_hosts
 deploy/known_hosts.old
 deploy/*.pem
 future
-# content/posts/kubernetes/operators-on-openshift
 .gitignore
 themes/
 resources/
