@@ -9,6 +9,7 @@ series: ["Homelab"]
 aliases: ["building-your-own-homelab"]
 ShowToc: true
 TocOpen: false
+weight: 1
 cover:
   image: "pc_cover_image.jpg"
   linkFullImages: true
