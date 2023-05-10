@@ -6,7 +6,7 @@ description: "Operators are packaged and distributed as bundle images"
 tags: ["openshift", "kubernetes", "kubernetes-operators", "operatorshub", "operator-bundle-images", "go", "operator-sdk"]
 categories: ["Microservices", "Cloud Computing"]
 series: ["Kubernetes"]
-aliases: ["operator-sdk"]
+aliases: ["operator-sdk", "operator-bundle-images"]
 ShowToc: true
 TocOpen: false
 comments: true
