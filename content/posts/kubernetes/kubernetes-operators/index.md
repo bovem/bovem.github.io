@@ -12,7 +12,7 @@ TocOpen: false
 comments: true
 ---
 
-Applications built to be deployed on Kubernetes could be packaged as Operators. Operators automate the process of installation, updates, and management of the application using automations. These automations are defined by developers based on the application's business logic.
+Applications built to be deployed on Kubernetes could be packaged as Operators. Operators automate the process of installation, updates, and management of the application. These automations are defined by developers based on the application's business logic.
 
 An Operator consists of:
 * Custom Resources (CRs) required by the application

@@ -9,6 +9,7 @@ series: ["Kubernetes"]
 aliases: ["container-images"]
 ShowToc: true
 TocOpen: false
+weight: 2
 cover:
   image: "container_image.drawio.png"
   linkFullImages: true
