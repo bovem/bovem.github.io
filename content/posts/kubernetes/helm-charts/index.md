@@ -190,7 +190,7 @@ helm uninstall test-helm-chart
 # Example of a Helm Chart: Grafana Helm Chart
 Grafana is an analytics tool that provides utilities for creating dashboards with graphs and alerts. Using Grafana developers can create dashboards for monitoring services, presenting business metrics, etc.
 
-[Grafana's helm chart]() will perform the following changes to the Kubernetes cluster
+<a href="https://artifacthub.io/packages/helm/grafana/grafana" target="_blank">Grafana's Helm Chart</a> will perform the following changes to the Kubernetes cluster
 * Create pods and other workload resources required by Grafana
 * Create services and security policies
 * Create ConfigMaps and Secrets for pods
