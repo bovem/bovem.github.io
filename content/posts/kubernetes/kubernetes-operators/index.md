@@ -87,7 +87,7 @@ It could be limited to a single namespace or deployed cluster-wide. It is recomm
 * Database backups
 * Metrics for database
 
-# Resources Referenced in this Article
+# Resources
 <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/" target="_blank">Operator Pattern</a>  
 <a href="https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/" target="_blank">Kubernetes Operators</a>  
 <a href="https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator" target="_blank">What is a Kubernetes Operator</a>  
