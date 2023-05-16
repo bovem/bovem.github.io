@@ -239,7 +239,7 @@ Tests are defined in `config/scorecard/bases` as **stages** and executed on pods
 operator-sdk scorecard docker.io/bovem/memcached-operator-bundle:v0.0.1
 ```
 
-# Resources Referenced in this Article
+# Resources
 <a href="https://github.com/operator-framework/operator-registry/blob/v1.16.1/docs/design/operator-bundle.md" target="_blank">Operator Bundle</a>  
 <a href="https://medium.com/swlh/what-is-memcached-d1498623db3b" target="_blank">What is Memcached</a>  
 <a href="https://book-v1.book.kubebuilder.io/getting_started/what_is_kubebuilder.html" target="_blank">Kubebuilder</a>  

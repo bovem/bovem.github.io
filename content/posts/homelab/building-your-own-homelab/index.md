@@ -267,7 +267,7 @@ I selected <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-
 <a href="https://www.youtube.com/@LAWRENCESYSTEMS" target="_blank">Lawrence Systems</a>  
 <a href="https://www.youtube.com/@AwesomeOpenSource" target="_blank">AwesomeOpenSource</a>  
 
-# Resources Referenced in this Article
+# Resources
 <a href="https://support.google.com/a/answer/2855120?hl=en" target="_blank">G Suite legacy free edition</a>  
 <a href="https://community.teamviewer.com/English/discussion/119369/has-anyone-who-bought-a-lifetime-license-for-earlier-version-5-gotten-free-update-to-v-1" target="_blank">Has anyone who bought a lifetime license for earlier version (5) gotten free update to v.1?</a>
 <a href="https://killedby.tech/google/" target="_blank">Killed by Google</a>  

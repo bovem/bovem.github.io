@@ -130,7 +130,7 @@ openshift-pipelines-operator-rh.v1.10.0   Red Hat OpenShift Pipelines   1.10.0
 $ oc delete csv/openshift-pipelines-operator-rh.v1.10.0 -n openshift-operators
 ```
 
-# Resources Referenced in this Article
+# Resources
 <a href="https://docs.openshift.com/container-platform/4.12/operators/understanding/olm-understanding-operatorhub.html" target="_blank">OperatorHub</a>  
 <a href="https://olm.operatorframework.io/" target="_blank">Operator Lifecycle Manager (OLM)</a>  
 <a href="https://olm.operatorframework.io/docs/concepts/crds/clusterserviceversion/" target="_blank">ClusterServiceVersion</a>  
