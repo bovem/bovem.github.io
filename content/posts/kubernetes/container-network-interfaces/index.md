@@ -4,7 +4,7 @@ title: "Container Network Interfaces (CNI)"
 date: "2023-05-24"
 description: "Container Network Interfaces provide plugin-based solutions for creating an configuring network interfaces for containers"
 tags: ["openshift", "kubernetes", "cni", "networking", "containers", "container-runtime", "docker"]
-categories: ["Microservices", "Cloud Computing"]
+categories: ["Microservices", "Cloud Computing", "Computer Networking"]
 series: ["Kubernetes"]
 aliases: ["container-network-interfaces"]
 ShowToc: true
