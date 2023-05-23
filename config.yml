@@ -30,14 +30,14 @@ languages:
                 - name: Archive
                   url: archives
                   weight: 5
-                - name: Categories
-                  url: categories/
+                - name: Index
+                  url: https://github.com/bovem/bovem.github.io#index
                   weight: 10
                 - name: Tags
                   url: tags/
                   weight: 15
-                - name: Source
-                  url: https://github.com/bovem/bovem.github.io
+                - name: Categories
+                  url: categories/
                   weight: 25
                 - name: Search
                   url: search/
