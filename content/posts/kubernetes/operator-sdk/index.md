@@ -130,7 +130,7 @@ The value of the `--version` flag will specify the API version and `--kind` spec
 `--resource` toggles the creation of API resource's YAML manifests.
 
 ## Building an Operator Image
-The difference between an **Operator Image** and an Operator Bundle Image is that an operator image could be used to deploy an operator directly on the cluster as a Deployment (it contains the binary of the controller manager) whereas the bundle image stores the necessary metadata, custom resources, and APIs associated with the operator (also used for deployment but through OLM).
+The difference between an **Operator Image** and an Operator Bundle Image is that an operator image could be used to deploy an operator directly on the cluster as a Deployment (it contains the binary of the controller manager) whereas the bundle image stores the necessary metadata, custom resources, and APIs associated with the operator (also used for deployment, but through OLM).
 
 `make` is an automation utility commonly used for processes like compiling/building applications. The `Makefile` in the operator project defines multiple **targets** like `docker-build` and `docker-push` for building and pushing the operator image to the registry respectively. 
 
