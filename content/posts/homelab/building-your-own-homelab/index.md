@@ -16,7 +16,7 @@ cover:
   caption: "My Homelab"
   relative: true
   responsiveImages: false
-comments: true
+comments: false
 ---
 
 There is an app for everything and modern app stores have made it extremely convenient to install them on your device. However, some underlying issues need to be discussed

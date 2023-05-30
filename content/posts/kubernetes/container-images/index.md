@@ -16,7 +16,7 @@ cover:
   caption: "Workflow of container images"
   relative: false
   responsiveImages: false
-comments: true
+comments: false
 ---
 
 A container image is a static file that contains the necessary resources (packages, configuration, other dependencies) required to provision a container. It consists of multiple layered-filesystems and a *Manifest* file, containing its metadata.

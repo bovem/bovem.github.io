@@ -9,7 +9,7 @@ series: ["Kubernetes"]
 aliases: ["helm-charts"]
 ShowToc: true
 TocOpen: false
-comments: true
+comments: false
 ---
 
 Package managers like `dnf` and `apt` increase the convenience of installing, updating, and maintaining applications on operating systems. For developers, a package manager provides a standardized way of packaging and distributing their applications.

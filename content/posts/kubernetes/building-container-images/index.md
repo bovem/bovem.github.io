@@ -16,7 +16,7 @@ cover:
   caption: "Building container images from Containerfile"
   relative: false
   responsiveImages: false
-comments: true
+comments: false
 ---
 
 Public registries provide container images for most use cases but they might not cover all of them. That's why container engines such as Podman & Docker and CLI tools like `buildah` provide utilities for creating custom <a href="/posts/kubernetes/container-images" target="_blank">container images</a>.

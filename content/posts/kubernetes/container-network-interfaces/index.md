@@ -9,7 +9,7 @@ series: ["Kubernetes"]
 aliases: ["container-network-interfaces"]
 ShowToc: true
 TocOpen: false
-comments: true
+comments: false
 cover:
   image: "CNI.png"
   linkFullImages: true

@@ -9,7 +9,7 @@ series: ["Kubernetes"]
 aliases: ["container-storage-interfaces"]
 ShowToc: true
 TocOpen: false
-comments: true
+comments: false
 cover:
   image: "CSIVolumeLifecycle.png"
   linkFullImages: true

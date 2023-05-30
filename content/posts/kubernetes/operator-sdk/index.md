@@ -9,7 +9,7 @@ series: ["Kubernetes"]
 aliases: ["operator-sdk", "operator-bundle-images"]
 ShowToc: true
 TocOpen: false
-comments: true
+comments: false
 ---
 
 An Operator Bundle Image (OBI) is created to package custom resources and metadata associated with an <a href="/posts/kubernetes/kubernetes-operators/" target="_blank">operator</a>. It's like any other <a href="/posts/kubernetes/container-images/" target="_blank">container image</a> only difference is that it couldn't be executed but it could be distributed through an OCI-compliant image registry. 

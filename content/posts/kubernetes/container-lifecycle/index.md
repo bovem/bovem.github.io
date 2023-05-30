@@ -16,7 +16,7 @@ cover:
   caption: "Lifecycle of a container"
   relative: false
   responsiveImages: false
-comments: true
+comments: false
 ---
 
 Container Engines like Podman and Docker provide GUI and CLI utilities for managing the state of containers. They also provide features such as container image management, metrics, logging, and debugging tools. The examples in this article use Podman but CLI commands are mostly interoperable with Docker. 

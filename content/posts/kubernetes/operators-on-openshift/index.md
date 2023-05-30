@@ -9,7 +9,7 @@ series: ["Kubernetes"]
 aliases: ["operators-on-openshift"]
 ShowToc: true
 TocOpen: false
-comments: true
+comments: false
 ---
 
 OpenShift provides an *Operators* section in its web console UI for the installation and management of <a href="/posts/kubernetes/kubernetes-operators/" target="_blank">operators</a> on the cluster.
