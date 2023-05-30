@@ -86,7 +86,7 @@ It could be limited to a single namespace or deployed cluster-wide. It is recomm
 * Database backups
 * Metrics for database
 
-# Newsletter
+
 <iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources

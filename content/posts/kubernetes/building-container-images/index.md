@@ -162,7 +162,7 @@ Images built by `buildah` could then be executed using Podman and Docker or any 
 * Making ad-hoc changes to existing container images.
 * Automating build process.
 
-# Newsletter
+
 <iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources

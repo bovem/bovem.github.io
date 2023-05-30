@@ -267,7 +267,7 @@ I selected <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-
 <a href="https://www.youtube.com/@LAWRENCESYSTEMS" target="_blank">Lawrence Systems</a>  
 <a href="https://www.youtube.com/@AwesomeOpenSource" target="_blank">AwesomeOpenSource</a>  
 
-# Newsletter
+
 <iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources

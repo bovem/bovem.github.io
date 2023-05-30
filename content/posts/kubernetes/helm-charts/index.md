@@ -258,7 +258,7 @@ Similarly, a specific version of the chart could be pulled from DockerHub using 
 helm pull oci://docker.io/bovem/test-helm-chart --version 0.0.1
 ```
 
-# Newsletter
+
 <iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources

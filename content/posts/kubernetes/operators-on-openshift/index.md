@@ -130,7 +130,7 @@ openshift-pipelines-operator-rh.v1.10.0   Red Hat OpenShift Pipelines   1.10.0
 $ oc delete csv/openshift-pipelines-operator-rh.v1.10.0 -n openshift-operators
 ```
 
-# Newsletter
+
 <iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
