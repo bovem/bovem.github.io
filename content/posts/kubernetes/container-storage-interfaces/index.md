@@ -147,6 +147,9 @@ The PMEM-CSI storage driver is provided by Intel to configure the Optane Persist
 
 Using this driver the developers can take advantage of Optane memory in their cache data store like <a href="/posts/kubernetes/operator-sdk/#creating-a-go-based-operator" target="_blank">Memcached Operator</a>.
 
+# Newsletter
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
 # Resources
 <a href="https://www.computerweekly.com/feature/Container-storage-101-What-is-CSI-and-how-does-it-work" target="_blank">Container storage 101: What is CSI and how does it work? | Computer Weekly</a>   
 <a href="https://medium.com/google-cloud/understanding-the-container-storage-interface-csi-ddbeb966a3b" target="_blank">Understanding the Container Storage Interface (CSI) | by anoop vijayan maniankara</a>   

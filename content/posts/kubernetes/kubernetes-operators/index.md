@@ -78,7 +78,6 @@ A **Custom Controller** created by the Operator manages the state of the cluster
 
 It could be limited to a single namespace or deployed cluster-wide. It is recommended to have a single custom controller for a CR as multiple controllers can make changes simultaneously overwriting each other.
 
-
 # Example of a Kubernetes Operator: MariaDB Operator
 <a href="https://operatorhub.io/operator/mariadb-operator-app" target="_blank">MariaDB Operator</a> performs the following changes on the Kubernetes Cluster automates:
 * Deployment of MariaDB server on Kubernetes with default/configured version.
@@ -86,6 +85,9 @@ It could be limited to a single namespace or deployed cluster-wide. It is recomm
 * Future upgrades for MariaDB without affecting current services.
 * Database backups
 * Metrics for database
+
+# Newsletter
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
 <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/" target="_blank">Operator Pattern</a>  

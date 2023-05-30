@@ -162,6 +162,9 @@ Images built by `buildah` could then be executed using Podman and Docker or any 
 * Making ad-hoc changes to existing container images.
 * Automating build process.
 
+# Newsletter
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
 # Resources
 <a href="https://opencontainers.org/about/overview/" target="_blank">About the Open Container Initiative</a>  
 <a href="https://github.com/opencontainers/image-spec/blob/main/manifest.md" target="_blank">OCI Image Manifest Specification</a>  

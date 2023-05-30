@@ -139,6 +139,9 @@ Features of Weave:
 - Traffic could be encrypted.
 - Supports Amazon ECS, Apache Mesos, Kubernetes, etc.
 
+# Newsletter
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
 # Resources
 <a href="https://www.tigera.io/learn/guides/kubernetes-networking/kubernetes-cni/" target="_blank">Kubernetes CNI Explained</a>   
 <a href="https://www.youtube.com/watch?v=YjjrQiJOyME" target="_blank">Introduction to CNI, the Container Network Interface Project - Bryan Boreham & Dan Williams</a>   
