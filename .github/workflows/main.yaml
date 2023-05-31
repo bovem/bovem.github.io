@@ -37,7 +37,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: "0.83.0"
+      HUGO_VERSION: "0.111.0"
     steps:
       - name: Check version
         if: ${{ github.event.inputs.hugoVersion }}
