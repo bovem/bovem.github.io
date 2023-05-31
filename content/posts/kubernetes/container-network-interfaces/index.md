@@ -2,14 +2,14 @@
 author: "Avnish"
 title: "Container Network Interfaces (CNI)"
 date: "2023-05-24"
-description: "Container Network Interfaces provide plugin-based solutions for creating an configuring network interfaces for containers"
+description: "Container Network Interfaces provide plugin-based solutions for creating and configuring network interfaces for containers"
 tags: ["openshift", "kubernetes", "cni", "networking", "containers", "container-runtime", "docker"]
 categories: ["Microservices", "Cloud Computing", "Computer Networking"]
 series: ["Kubernetes"]
 aliases: ["container-network-interfaces"]
 ShowToc: true
 TocOpen: false
-comments: true
+comments: false
 cover:
   image: "CNI.png"
   linkFullImages: true
@@ -138,6 +138,9 @@ Features of Weave:
 - It can create networks between legacy systems and containers.
 - Traffic could be encrypted.
 - Supports Amazon ECS, Apache Mesos, Kubernetes, etc.
+
+
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
 <a href="https://www.tigera.io/learn/guides/kubernetes-networking/kubernetes-cni/" target="_blank">Kubernetes CNI Explained</a>   

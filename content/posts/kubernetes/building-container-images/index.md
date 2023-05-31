@@ -16,7 +16,7 @@ cover:
   caption: "Building container images from Containerfile"
   relative: false
   responsiveImages: false
-comments: true
+comments: false
 ---
 
 Public registries provide container images for most use cases but they might not cover all of them. That's why container engines such as Podman & Docker and CLI tools like `buildah` provide utilities for creating custom <a href="/posts/kubernetes/container-images" target="_blank">container images</a>.
@@ -161,6 +161,9 @@ Images built by `buildah` could then be executed using Podman and Docker or any 
 * Debug image building process by executing instructions manually with buildah.
 * Making ad-hoc changes to existing container images.
 * Automating build process.
+
+
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
 <a href="https://opencontainers.org/about/overview/" target="_blank">About the Open Container Initiative</a>  

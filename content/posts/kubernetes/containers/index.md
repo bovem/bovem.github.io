@@ -16,7 +16,7 @@ cover:
   caption: "Types of application deployment"
   relative: false
   responsiveImages: false
-comments: true
+comments: false
 ---
 
 While creating an application in any programming language or framework you have to install its dependencies on your system.
@@ -125,6 +125,7 @@ It also has other security-focused features like the containers don't run as roo
 `buildah` is another CLI utility used alongside `podman` and `skopeo` for building OCI container images.
 
 
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
 <a href="https://www.virtualbox.org/" target="_blank">Oracle VM VirtualBox</a>  

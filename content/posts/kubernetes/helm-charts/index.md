@@ -9,7 +9,7 @@ series: ["Kubernetes"]
 aliases: ["helm-charts"]
 ShowToc: true
 TocOpen: false
-comments: true
+comments: false
 ---
 
 Package managers like `dnf` and `apt` increase the convenience of installing, updating, and maintaining applications on operating systems. For developers, a package manager provides a standardized way of packaging and distributing their applications.
@@ -257,6 +257,9 @@ Similarly, a specific version of the chart could be pulled from DockerHub using 
 ```bash
 helm pull oci://docker.io/bovem/test-helm-chart --version 0.0.1
 ```
+
+
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
 <a href="https://docs.fedoraproject.org/en-US/quick-docs/dnf/" target="_blank">Using the DNF software package manager</a>  

@@ -30,9 +30,9 @@ languages:
                 - name: Archive
                   url: archives
                   weight: 5
-                - name: Index
-                  url: https://github.com/bovem/bovem.github.io#index
-                  weight: 10
+                # - name: Index
+                #   url: https://github.com/bovem/bovem.github.io#index
+                #   weight: 10
                 - name: Tags
                   url: tags/
                   weight: 15
@@ -42,6 +42,9 @@ languages:
                 - name: Search
                   url: search/
                   weight: 30
+                - name: Subscribe
+                  url: subscribe/
+                  weight: 35
 
 outputs:
     home:
@@ -86,22 +89,32 @@ params:
     homeInfoParams:
         Title: "Hi, I'm Avnish"
         Content: >
-           
-           - I'm an Open Source Developer currently working at Red Hat.
 
-           - I write about Self-Hosting, Homelab, and DevOps Technologies.
+           - As an Open Source Developer currently working at Red Hat, I strive to share my knowledge on Self-Hosting, Homelab, and DevOps Technologies through insightful articles. If you'd like to stay in the loop with the latest content from this blog, I invite you to subscribe to my <a target=_blank href="/subscribe">newsletter</a> or <a target=_blank href="index.xml">rss feed</a>. 
            
-           - Download <a target=_blank href="Resume-AvnishPal-DevOps-2YoE.pdf">my resume</a> to learn about my projects and work experience.
+           - For a glimpse into my journey and the projects I've been involved in, feel free to check my <a target=_blank href="Resume-AvnishPal-DevOps-2YoE.pdf">resume</a>. 
+           
+          #  - I'm an Open Source Developer currently working at Red Hat.
+
+          #  - I write about Self-Hosting, Homelab, and DevOps Technologies. 
+        
+          #  - <a target=_blank href="/subscribe">Subscribe</a> to my newsletter to stay up-to-date with latest articles published on this blog.
+           
+          #  - Download <a target=_blank href="Resume-AvnishPal-DevOps-2YoE.pdf">my resume</a> to learn about my projects and work experience.
 
     socialIcons:
         - name: cv
           url: "Resume-AvnishPal-DevOps-2YoE.pdf"
+        - name: email
+          url: "mailto:avnishnish07@gmail.com"
         - name: github
           url: "https://github.com/bovem"
-        # - name: substack
-        #   url: "https://bovem.substack.com/"
+        - name: substack
+          url: "https://bovem.substack.com/"
         - name: medium
           url: "https://bovem.medium.com/"
+        - name: ycombinator
+          url: "https://news.ycombinator.com/user?id=bovem"
         - name: linkedin
           url: "http://www.linkedin.com/in/avnish-pal"
         # - name: stackoverflow

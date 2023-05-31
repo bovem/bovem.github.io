@@ -9,7 +9,7 @@ series: ["Kubernetes"]
 aliases: ["operators-on-openshift"]
 ShowToc: true
 TocOpen: false
-comments: true
+comments: false
 ---
 
 OpenShift provides an *Operators* section in its web console UI for the installation and management of <a href="/posts/kubernetes/kubernetes-operators/" target="_blank">operators</a> on the cluster.
@@ -129,6 +129,9 @@ openshift-pipelines-operator-rh.v1.10.0   Red Hat OpenShift Pipelines   1.10.0
 # Deleting clusterserviceversion for OpenShift Pipelines Operator
 $ oc delete csv/openshift-pipelines-operator-rh.v1.10.0 -n openshift-operators
 ```
+
+
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
 <a href="https://docs.openshift.com/container-platform/4.12/operators/understanding/olm-understanding-operatorhub.html" target="_blank">OperatorHub</a>  

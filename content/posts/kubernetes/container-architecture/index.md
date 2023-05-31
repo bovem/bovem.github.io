@@ -16,7 +16,7 @@ cover:
   caption: "Linux features essential for the containers"
   relative: false
   responsiveImages: false
-comments: true
+comments: false
 ---
 
 To isolate the processes running inside a <a href="/posts/kubernetes/containers/" target="_blank">container</a> from its host system, container engine uses the following four features:
@@ -176,6 +176,7 @@ docker run --rm -it --security-opt seccomp=/path/to/seccomp/profile.json hello-w
 SELinux checks the *SELinux context* of the file or process to make decisions related to its access control. To view the SELinux context of a file use command `ls -Z <FILENAME>` and to view it for a process using the command `ps -eZ | grep <PROCESS_NAME>`. 
 
 
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
 <a href="https://www.youtube.com/watch?v=sK5i-N34im8" target="_blank">Cgroups, namespaces, and beyond: what are containers made from?</a>  

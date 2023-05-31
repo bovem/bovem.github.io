@@ -16,7 +16,7 @@ cover:
   caption: "Workflow of container images"
   relative: false
   responsiveImages: false
-comments: true
+comments: false
 ---
 
 A container image is a static file that contains the necessary resources (packages, configuration, other dependencies) required to provision a container. It consists of multiple layered-filesystems and a *Manifest* file, containing its metadata.
@@ -256,6 +256,9 @@ To create a container image from a running container, the `commit` subcommand co
 ```bash
 docker commit webserver-container quay.io/username/webserver:latest
 ```
+
+
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
 <a href="https://opencontainers.org/about/overview/" target="_blank">About the Open Container Initiative</a>  

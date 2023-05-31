@@ -16,7 +16,7 @@ cover:
   caption: "Lifecycle of a container"
   relative: false
   responsiveImages: false
-comments: true
+comments: false
 ---
 
 Container Engines like Podman and Docker provide GUI and CLI utilities for managing the state of containers. They also provide features such as container image management, metrics, logging, and debugging tools. The examples in this article use Podman but CLI commands are mostly interoperable with Docker. 
@@ -232,6 +232,7 @@ To access the container logs from Podman Desktop we can click on the container n
 We can also attach a terminal to the container from the **Terminal** tab.
 
 
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 # Resources
 <a href="https://podman.io/getting-started/installation" target="_blank">Podman Installation Instructions</a>  
