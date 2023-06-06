@@ -3,7 +3,7 @@ author: "Avnish"
 title: "Network Functions"
 date: "2023-06-07"
 description: "Network Functions (like routers, firewalls, and DHCP servers) are an integral part of the massive network deployments by telcos"
-tags: ["openshift", "kubernetes", "network-functions", "pnf", "vnf", "cnf", "networking", "containers"]
+tags: ["openshift", "kubernetes", "network-functions", "pnf", "vnf", "cnf", "networking", "container", "operator"]
 categories: ["Microservices", "Cloud Native", "Computer Networking"]
 series: ["Kubernetes"]
 aliases: ["network-functions"]

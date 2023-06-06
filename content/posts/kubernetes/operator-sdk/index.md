@@ -3,7 +3,7 @@ author: "Avnish"
 title: "Operator SDK and Bundle Images"
 date: "2023-05-10"
 description: "Operators are packaged and distributed as bundle images"
-tags: ["openshift", "kubernetes", "kubernetes-operators", "operatorshub", "operator-bundle-images", "go", "operator-sdk"]
+tags: ["openshift", "kubernetes", "operator", "operatorshub", "operator-bundle-images", "go", "operator-sdk"]
 categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
 aliases: ["operator-sdk", "operator-bundle-images"]

@@ -3,7 +3,7 @@ author: "Avnish"
 title: "Container Storage Interfaces (CSI)"
 date: "2023-05-31"
 description: "Container Storage Interface (CSI) plugins are developed by storage providers to establish a consistent interface between container orchestrators and storage solutions"
-tags: ["openshift", "kubernetes", "csi", "storage", "containers", "intel-optane", "docker", "persistent-memory", "memory"]
+tags: ["openshift", "kubernetes", "csi", "storage", "container", "intel-optane", "docker", "persistent-memory", "memory"]
 categories: ["Microservices", "Cloud Native", "Storage"]
 series: ["Kubernetes"]
 aliases: ["container-storage-interfaces"]
