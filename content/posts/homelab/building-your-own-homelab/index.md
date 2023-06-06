@@ -4,7 +4,7 @@ title: "Building Your Own Homelab"
 date: "2023-03-27"
 description: "A Guide to Selecting the Right Hardware for Self-Hosting Services"
 tags: ["hardware","homelab","self-hosting"]
-categories: ["Homelab", "Cloud Computing"]
+categories: ["Homelab", "Cloud Native"]
 series: ["Homelab"]
 aliases: ["building-your-own-homelab"]
 ShowToc: true

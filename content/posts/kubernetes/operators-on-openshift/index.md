@@ -4,7 +4,7 @@ title: "Operators on OpenShift"
 date: "2023-05-03"
 description: "OperatorHub and OLM have made it incredibly simple to work with operators on OpenShift"
 tags: ["openshift", "kubernetes", "kubernetes-operators", "operatorshub", "olm"]
-categories: ["Microservices", "Cloud Computing"]
+categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
 aliases: ["operators-on-openshift"]
 ShowToc: true

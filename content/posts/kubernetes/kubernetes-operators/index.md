@@ -4,7 +4,7 @@ title: "Kubernetes Operators"
 date: "2023-05-01"
 description: "Operators provide developers an option to package their applications with the necessary business logic required for their deployment and management"
 tags: ["openshift", "kubernetes", "kubernetes-controller", "kubernetes-operators"]
-categories: ["Microservices", "Cloud Computing"]
+categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
 aliases: ["kubernetes-operators"]
 ShowToc: true
