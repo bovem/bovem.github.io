@@ -4,7 +4,7 @@ title: "Container Lifecycle"
 date: "2023-02-10"
 description: "The state of a container is managed using the utilities provided by container engines."
 tags: ["container","podman","docker","skopeo","buildah","openshift","kubernetes","container-image","container-registry"]
-categories: ["Microservices", "Cloud Computing"]
+categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
 aliases: ["container-lifecycle"]
 ShowToc: true

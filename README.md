@@ -15,6 +15,7 @@ Blogs on Self-Hosting, Homelab and DevOps Technologies.
     -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/helm-charts/">Helm Charts</a>
     -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/container-network-interfaces/">Container Network Interfaces (CNI)</a>
     -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/container-storage-interfaces/">Container Storage Interfaces (CSI)</a>
+    -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/network-functions/">Network Functions</a>
 -  <a target=_blank href="https://www.bovem.in/posts/homelab/">Homelab</a>
     -  <a target=_blank href="https://www.bovem.in/posts/homelab/building-your-own-homelab/">Building Your Own Homelab</a>
 

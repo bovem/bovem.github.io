@@ -4,7 +4,7 @@ title: "Helm Charts"
 date: "2023-05-16"
 description: "Helm is a package manager for Kubernetes"
 tags: ["openshift", "kubernetes", "helm", "helm-charts", "go", "artifacthub"]
-categories: ["Microservices", "Cloud Computing"]
+categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
 aliases: ["helm-charts"]
 ShowToc: true
