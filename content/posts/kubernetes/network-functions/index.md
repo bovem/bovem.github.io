@@ -12,12 +12,12 @@ TocOpen: false
 comments: false
 ---
 
-**Telcos (Telecommunication companies)** deploy networks that are highly available, scalable, and resilient covering the entire country. Components like routers, firewalls, and DHCP servers (called **Network Functions**) are the building blocks of such large deployments. 
+**Telcos (Telecommunication companies)** deploy networks that have high availability, are scalable, and resilient covering entire countries. Components like routers, firewalls, and DHCP servers (called **Network Functions**) are the building blocks of such large network deployments. 
 
-Traditionally, the network functions were deployed on proprietary hardware with application-specific integrated circuits and installed on the telco's premise (baremetal deployment). Such network functions are called Platform Network Functions (PNFs). 
+Traditionally, network functions were deployed on proprietary hardware with application-specific integrated circuits and installed on the telco's premise (baremetal deployment). Such network functions are called Platform Network Functions (PNFs). 
 
-PNFs present the following challenges:
-- Hardware for network functions could not be moved between premises and redeployed easily.
+PNF deployments present the following challenges:
+- Hardware for network functions could not be moved easily and redeployed.
 - The deployment of PNFs required knowledge of proprietary hardware.
 - Services deployed on top of PNFs are tightly coupled with the hardware. Customization, scaling, and configuration of services could require change/upgrade of hardware components.
 - Access to PNFs is limited to the private cloud setup by the telco.
@@ -27,7 +27,7 @@ The concept of **Network Function Virtualization (NFV)** was introduced in 2012 
 
 Benefits of VNFs over PNFs
 * VNFs could be deployed on any generic hardware as long as they are supported by the hypervisor. This eliminates the need for proprietary hardware for deployment.
-* VNFs could be provisioned and moved easily between premises.
+* VNFs could be provisioned and moved easily.
 * The scalability of the network is improved.
 * Overall reduction in power and cooling requirements.
 
@@ -51,25 +51,25 @@ Now, network functions are transitioning from virtual machines to containers (<a
 
 - Improved scalability and efficient usage of resources.
 - Ability to use a mix of private, public, and hybrid cloud as containers could be deployed and migrated easily on any cloud environment.
-- Edge devices could be included in the network to improve its reach and latency to the end users.
+- Edge devices could also be included in the network to improve its reach and latency to the end users.
 
-Although <a href="/posts/kubernetes/container-network-interfaces/" target="_blank">CNIs</a> could be used to create and configure network interfaces between containers, for telco's use case a network function container could require network interfaces that could interact with the specialized hardware directly. In such cases, an <a href="/posts/kubernetes/kubernetes-operators/" target="_blank">operator</a> could be defined with custom resources that could procure the hardware directly to the workloads (containers) as network interfaces. CNFs themselves could also be packaged as Kubernetes operators.
+Although <a href="/posts/kubernetes/container-network-interfaces/" target="_blank">CNIs</a> could be used to create and configure network interfaces between containers, for telco's use case a network function container could require network interfaces that could interact with the specialized hardware directly. In such cases, an <a href="/posts/kubernetes/kubernetes-operators/" target="_blank">operator</a> could be defined with custom resources that could procure the hardware directly to the workloads (containers) as a network interface. CNFs themselves could also be packaged as Kubernetes operators.
 
 ## Example of a CNF: Nokia Cloud Mobility Manager
 Nokia's Cloud Mobility Manager is a control plane network function for packet networks following the 3GPP (3rd Generation Partnership Project) standard.
 
-It is designed to be deployed in a cloud-native environment as VNF (in OpenStack KVM or VMware vCloud environments) or as CNF (in Kubernetes using Red Hat OpenShift or standalone containers using Docker). It provides the following benefits
+It is designed to be deployed in a cloud-native environment as VNF (in OpenStack KVM or VMware vCloud environments) or as CNF (in OpenShift). It provides the following benefits
 
 - Performance and scalability depending on the workloads
 - Reliability and resiliency with fault monitoring, recovery, and overload control protection
 - Multi-generation access (2G/3G/4G/5G)
  
 # Transition from VNFs to CNFs
-The journey from VNFs to CNFs is not easy due to the following challenges:
+The journey from VNFs to CNFs for telcos is not easy due to the following challenges:
 * Virtualization of a workload is relatively easier compared to its containerization.
 * A container isolates the process running inside it using <a href="/posts/kubernetes/container-architecture/#namespaces" target="_blank">namespaces</a>. Some of the network function's workloads might not run as expected inside an isolated namespace.
 * Containers share the kernel with their host and traditionally the deployment of network functions requires kernel hacks.
-* The architecture of telco networks is complex. Migrating it to a container-based environment would not be easy.
+* The architecture of telco networks is complex. Migrating it to a container-based architecture would not be easy.
 
 In addition to this telcos work in a highly regulated environment where they are expected to have:
 * Service Level Agreements (SLAs) for the availability of the network. Usually, this is 99.999% (~5.26 minutes in a year).
@@ -92,7 +92,7 @@ The **CNF Test Suite** is defined by the Telecom User Group (TUG) and Cloud Nati
 ## CNF Testbed
 **CNF Testbed** provides reference code and test suites for benchmarking the performance and resiliency between network functions deployed as VNFs and CNFs.
 
-It provisions the hardware for a Kubernetes and OpenStack cluster. After that, it deploys similar workloads on both environments to benchmark their performance using testing tools such as NFVbench.
+It provisions the infrastructure for a Kubernetes and OpenStack cluster. After that, it deploys similar workloads on both environments to benchmark their performance using testing tools such as NFVbench.
 
 <iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
