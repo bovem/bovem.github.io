@@ -525,7 +525,7 @@ func main() {
 ```
 
 # Methods
-**Methods** refer to the functions created to be executed on a specific datatype (like `struct`). Their declaration is similar to functions with the addition of `struct` argument after `func` keyword like `func (d dog) showFields() () { }`
+**Methods** refer to the functions created to be executed on a specific datatype (like a `struct`). Their declaration is similar to functions with the addition of `struct` argument after `func` keyword like `func (d dog) showFields() () { }`
 
 ```Go
 package main
@@ -843,7 +843,7 @@ func main() {
 # Errors
 In Go, errors are like other return types. So a function can return two values one being the output of the function and the other value could be an `error` interface. We can declare this in the function's signature like `func sampleFunc(value int) (int, error) { }`.
 
-A custom error is created using `errors.New()` function is available in `errors` package.
+A custom error is created using `errors.New()` function is available in the `errors` package.
 
 ```Go
 package main
@@ -881,6 +881,8 @@ func main() {
 // Quotient: -1
 // Error: Divide by Zero Error. Change value2
 ```
+
+To catch an unexpected error and exit the program we call the `panic()` function with a string or the error as its argument. If we don't want the program to abort on `panic()` we can follow it up with a `recover()` function.
 
 <iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
