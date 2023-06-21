@@ -6,7 +6,7 @@ description: "Helm is a package manager for Kubernetes"
 tags: ["openshift", "kubernetes", "helm", "helm-charts", "go", "artifacthub"]
 categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
-aliases: ["helm-charts"]
+aliases: ["helm-charts", "helm"]
 ShowToc: true
 TocOpen: false
 comments: false

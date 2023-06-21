@@ -18,6 +18,8 @@ Blogs on Self-Hosting, Homelab and DevOps Technologies.
     -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/network-functions/">Network Functions</a>
 -  <a target=_blank href="https://www.bovem.in/posts/homelab/">Homelab</a>
     -  <a target=_blank href="https://www.bovem.in/posts/homelab/building-your-own-homelab/">Building Your Own Homelab</a>
+-  <a target=_blank href="https://www.bovem.in/posts/go/">Go</a>
+    -  <a target=_blank href="https://www.bovem.in/posts/go/go-programming-language/">Go Programming Language</a>
 
 ## Technologies Used
 - [Hugo Static Site Generator](https://gohugo.io/)
