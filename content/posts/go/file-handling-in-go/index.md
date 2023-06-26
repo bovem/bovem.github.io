@@ -86,13 +86,13 @@ func main() {
 // This will be executed after main() has ended
 ```
 
-We can define the functions for closing files & perform other resource cleanup cal, then call them with `defer` keyword to ensure they are executed after our program has finished. The statements will be executed in the reverse order of their declaration.
+We can define the functions for closing files & perform other resource cleanup, then call them with `defer` keyword to ensure they are executed after our program has finished. The statements will be executed in the reverse order of their declaration.
 
 # Managing Directories
 The `os` package in Go provides functions analogous to common Linux/Windows commands used for managing directories.
 
 - `os.Mkdir()`: Similar to the `mkdir` Linux command, it creates the directory given the filepath in string and the octal notation of directory permissions (like `0755`).
-- `os.MkdirAll()`: Creates the complete hierarchy of directories similar to the `mkdir` command executed with `-p` flag.
+- `os.MkdirAll()`: Creates the complete hierarchy of directories similar to the `mkdir` command executed with `--parents` or `-p` flag.
 - `os.RemoveAll()`: Removes directory (including subfolders and files).
 - `os.Getwd()`: Returns the present working directory similar to the `pwd` command.
 - `os.Chdir()`: Changes present working directory. Same as the `cd` command.
@@ -314,7 +314,7 @@ JSON, YAML, and XML are one of the most common file types for configuration, tes
 
 ## JSON
 ### Encoding JSON
-Encoding is the process of converting data into a specific format. To encode data into JSON format with Go we have to use the `encoding/json` package.
+Encoding is the process of converting data into a specific format. To encode data into JSON format we have to use the `encoding/json` package.
 
 The `json.Marshal()` function returns the JSON encoding for the struct instance passed as its argument. The fields in struct need to have their first character capitalized. 
 
