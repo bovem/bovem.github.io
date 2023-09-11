@@ -232,7 +232,12 @@ To access the container logs from Podman Desktop we can click on the container n
 We can also attach a terminal to the container from the **Terminal** tab.
 
 
-<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<hr>
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a> or newsletter.   
+
+&nbsp;
+
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>    
 
 # Resources
 <a href="https://podman.io/getting-started/installation" target="_blank">Podman Installation Instructions</a>  
