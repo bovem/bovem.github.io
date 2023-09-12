@@ -163,7 +163,12 @@ Images built by `buildah` could then be executed using Podman and Docker or any 
 * Automating build process.
 
 
-<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<hr>
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a> or newsletter.   
+
+&nbsp;
+
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>    
 
 # Resources
 <a href="https://opencontainers.org/about/overview/" target="_blank">About the Open Container Initiative</a>  

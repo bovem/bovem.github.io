@@ -4,7 +4,7 @@ title: "Go Programming Language"
 date: "2023-06-21"
 description: "Go is used to build applications for cloud, network services, and web development."
 tags: ["go","programming","pointers","procedural"]
-categories: ["Go", "Cloud Native"]
+categories: ["Go"]
 series: ["Go"]
 aliases: ["go-programming-language"]
 ShowToc: true
@@ -884,7 +884,12 @@ func main() {
 
 To catch an unexpected error and exit the program we call the `panic()` function with a string or the error as its argument. If we don't want the program to abort on `panic()` we can follow it up with a `recover()` function.
 
-<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<hr>
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a> or newsletter.   
+
+&nbsp;
+
+<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>        
 
 # Resources
 <a href="https://gobyexample.com/" target="_blank">Go by Example</a>  
