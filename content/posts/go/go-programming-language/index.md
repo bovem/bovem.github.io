@@ -4,7 +4,7 @@ title: "Go Programming Language"
 date: "2023-06-21"
 description: "Go is used to build applications for cloud, network services, and web development."
 tags: ["go","programming","pointers","procedural"]
-categories: ["Go", "Cloud Native"]
+categories: ["Go"]
 series: ["Go"]
 aliases: ["go-programming-language"]
 ShowToc: true

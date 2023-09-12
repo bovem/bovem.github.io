@@ -4,7 +4,7 @@ title: "File Handling in Go"
 date: "2023-06-27"
 description: "The os package in Go provides data structures, functions, and methods for managing files and directories"
 tags: ["go","programming","json","xml","yaml"]
-categories: ["Go", "Cloud Native"]
+categories: ["Go"]
 series: ["Go"]
 aliases: ["file-handling-in-go"]
 ShowToc: true
