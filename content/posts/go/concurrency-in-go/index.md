@@ -237,7 +237,7 @@ func main() {
 
 The values from the channel will be received in the same order as they were sent.
 # Select
-The `select` keyword is used to wait for values on multiple channels simultaneously. Its syntax is similar to a [switch]().
+The `select` keyword is used to wait for values on multiple channels simultaneously. Its syntax is similar to a <a href="/posts/go/go-programming-language/#switch-cases" target="_blank">`switch`</a>.
 
 `select` executes the first channel to receive value in `case` statements. If multiple channels are ready with values then one of them is selected at random.
 
