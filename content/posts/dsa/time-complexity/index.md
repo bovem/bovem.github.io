@@ -193,6 +193,7 @@ func main() {
 Exponential Time Complexity groups algorithms with $O(2^n)$, $O(e^n)$, $O(10^n)$, etc. time complexities. The $2^n$ function has widespread use in computer science like Moore's law or finding the number of memory addresses possible with $n$ bits arrangement.
 
 > The number of transistors in an Integrated Circuit (IC) doubles about every two years
+> 
 > <cite><a href="https://en.wikipedia.org/wiki/Gordon_Moore" target=_blank>Gordon Moore</a>, Co-Founder of Intel, 1965</cite>
 
 ## Logarithmic Time Complexity $O(\log_2{n})$
