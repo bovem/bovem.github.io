@@ -22,28 +22,30 @@ math: true
 
 While programming allows us to create virtually anything, the true test of performance arises when we deploy the same code on a significantly larger scale. 
 
-**Time Complexity** ($T(n)$) is a function that calculates the time taken by a program to produce results given the amount of data processed. It is a common benchmark used to measure an algorithm's performance.
+**Time Complexity** ($T(n)$) is a function that estimates the execution time of an algorithm given the amount of data to be processed as its input. It is a common benchmark used to measure an algorithm's performance.
 
 # Bounds of Time Complexity
-The value provided by the time complexity function will represent the time taken by a program but it doesn't factor the characteristics of data provided as input. With the same amount of data passed as input, some algorithms perform best when data is sorted in ascending order and worst when sorted in descending order. That's why we have bounds on a time complexity function, a range starting from best-case to worst-case algorithm performance for the same amount of data.
+The output of the time complexity function will be a close estimate of an algorithm's runtime yet it does not consider other characteristics of the data that could affect runtime.
+
+Some algorithms perform best when the input data is sorted in ascending order and worst when sorted in descending order. That's why we have bounds on the time complexity function, a range starting from best-case to worst-case execution time for the same amount of input data.
 
 ## Upper Bound ($O$)
-The "big O" function ($O(n)$) represents the upper bound (worst case scenario) on time complexity i.e. the algorithm won't perform worse than this.
+The "big O" ($O$) represents the upper bound (worst case scenario) on the time complexity function i.e. for an input dataset of size $n$ the algorithm's time complexity couldn't be worse than $O(n)$.
 
 ## Lower Bound ($\Omega$)
-The "big Omega" function ($\Omega(n)$) represents the lower bound (best case scenario) on time complexity i.e. the algorithm won't perform better than this.
+The "big Omega" ($\Omega$) represents the lower bound (best case scenario) on the time complexity function i.e. for an input dataset of size $n$ the algorithm's time complexity couldn't be better than $\Omega(n)$.
 
 ## Expected Case ($\Theta$)
-The "big Theta" function ($\Theta(n)$) represents the case where both upper and lower bounds are at the same point (expected case scenario) i.e. algorithm won't perform better or worse than this.
+The "big Theta" ($\Theta$) represents the case where both upper and lower bounds are at the same point (expected case scenario) i.e. for an input dataset of size $n$ the algorithm's time complexity couldn't get better or worse than $\Theta(n)$.
 
 # Common Time Complexity Functions
-Recurring patterns in algorithms could be categorized by their time complexity functions. It helps in calculating estimates for their performance on scale.
+The runtime of common programming patterns could be represented by the following time complexities. Subsequently, this will help in the runtime estimation of the entire program.
 
 ## Constant Time Complexity $O(1)$
 <p align="center"><img src="Constant.drawio.png" alt="Scaling an Algorithm with Constant Time Complexity"></p>
 <p align="center"><small>Scaling an Algorithm with Constant Time Complexity</small></p>
 
-An algorithm has **constant time complexity** when the time taken by it isn't affected by the amount of data passed as input. An example would be a function that performs addition on its two inputs.
+An algorithm has **constant time complexity** when its runtime isn't affected by the amount of data passed as input. An example would be a function that performs addition on its two inputs.
 
 ```Go
 package main
@@ -51,6 +53,9 @@ package main
 import "fmt"
 
 func addition(x int, y int) (int){
+	// The size of x and y does not affect
+	// the runtime of this function
+
 	return x+y
 }
 
@@ -64,7 +69,7 @@ func main(){
 // Addition of 2000 and 2132 is: 4132
 ```
 
-The above example is implemented in <a href="/posts/go/go-programming-language/" target="_blank">Go Programming Language</a>.
+The above example is implemented in the <a href="/posts/go/go-programming-language/" target="_blank">Go Programming Language</a>.
 
 ## Linear Time Complexity $O(n)$
 <p align="center"><img src="Linear.drawio.png" alt="Scaling an Algorithm with Linear Time Complexity"></p>
@@ -102,13 +107,13 @@ func main(){
 // Sum of the array: [1 2 3 2 1 1] will be 10
 ```
 
-If we call the function `arraySum()` twice then the time complexity of the program will be $O(2n)$. However, we can generalize it to $O(n)$ because even though the program performs two passes over the array, the growth rate in runtime remains linear with respect to the input size. 
+If we call the function `arraySum()` twice then the time complexity of the program will be $O(2n)$. However, we can generalize it to $O(n)$ because even though the program performs two passes over the array, the growth rate in runtime remains linear with respect to its input size. 
 
 ## Quadratic Time Complexity $O(n^2)$
 <p align="center"><img src="Quadratic.drawio.png" alt="Scaling an Algorithm with Quadratic Time Complexity"></p>
 <p align="center"><small>Scaling an Algorithm with Quadratic Time Complexity</small></p>
 
-Much like linear time complexity, algorithms exhibiting quadratic time complexity experience execution times that are directly proportional to the square of the number of inputs. These algorithms scale relatively slower (longer execution time) compared to linear time complexity algorithms like $O(n)$, $O(2n)$, etc.
+Similar to linear time complexity, algorithms exhibiting quadratic time complexity experience execution times that are directly proportional to the square of the number of inputs. These algorithms scale relatively slower (longer execution time) compared to linear time complexity algorithms like $O(n)$, $O(2n)$, etc.
 
 For example, a program that displays pair combinations of all elements in an array using nested loops.
 
@@ -190,7 +195,7 @@ func main() {
 // The 10 th Fibonacci number is: 55
 ```
 
-Algorithms with $O(2^n)$, $O(e^n)$, $O(10^n)$, etc. time complexities are grouped under **exponential** time. Among these, the $2^n$ function has widespread use in computer science like Moore's law or finding the number of memory addresses possible with $n$ bits arrangement.
+Algorithms with $O(2^n)$, $O(e^n)$, $O(10^n)$, etc. time complexities are grouped under **exponential** time. Among these, the $2^n$ function has widespread use in computer science like Moore's law or to find the number of memory addresses possible with $n$ bits arrangement.
 
 > The number of transistors in an Integrated Circuit (IC) doubles about every two years
 > 
@@ -216,7 +221,7 @@ func guessNumber(low int, high int)(int){
 func main(){
 	low := 0
 	high := 100
-	fmt.Println("Think of a number between 1 and 100")
+	fmt.Println("Think of a number between", low, "and", high)
 	numQuestions := 0
 
 	for {
@@ -293,7 +298,7 @@ func main(){
 <p align="center"><img src="Linearithmic.drawio.png" alt="Scaling an Algorithm with Linearithmic Time Complexity"></p>
 <p align="center"><small>Scaling an Algorithm with Linearithmic Time Complexity</small></p>
 
-<a href="/posts/dsa/merge-sort/" target="_blank">Merge Sort</a>, <a href="/posts/dsa/quick-sort/" target="_blank">Quick Sort</a>, and <a href="/posts/dsa/heap-sort/" target="_blank">Heap Sort</a> are some examples of algorithms with **linearithmic time complexity**. Their performance is relatively better than their linear counterparts but worse than logarithmic ones.
+<a href="/posts/dsa/merge-sort/" target="_blank">Merge Sort</a>, <a href="/posts/dsa/quick-sort/" target="_blank">Quick Sort</a>, and <a href="/posts/dsa/heap-sort/" target="_blank">Heap Sort</a> are some examples of algorithms with **linearithmic time complexity**.
 
 ## Factorial Time Complexity $O(n!)$
 <p align="center"><img src="Factorial.drawio.png" alt="Scaling an Algorithm with Factorial Time Complexity"></p>
@@ -302,15 +307,15 @@ func main(){
 The solution to the <a href="/posts/dsa/travelling-salesman-problem/" target="_blank">Travelling Salesman Problem</a> has factorial time complexity.
 
 # Comparing Algorithm Performance Using Time Complexity
-In a hypothetical scenario where we have to sort elements in an array, we can compare the performance of each algorithm by their time complexity. Assuming the output of the time complexity function is the algorithm's execution time in seconds.
+In a hypothetical scenario, we have benchmark sorting performance of different algorithms by their time complexity. 
 
-Execution time to sort 100 elements by an algorithm with 
-* $O(\log_2{ n})$ time complexity: 6.644 seconds
-* $O(n)$ time complexity: 100 seconds 
-* $O(n \log_2 n)$ time complexity: 664.4 seconds
-* $O(n^2)$ time complexity: 10000 seconds (2.7 hours)
-* $O(2^n)$ time complexity: $1.26 \times 10^{30}$ seconds ($3.99 \times 10^{22}$ years)
-* $O(n!)$ time complexity: $9.33 \times 10^{157}$ seconds ($2.9585 \times 10^{150}$ years)
+Assuming the output of the time complexity function is the algorithm's execution time in seconds. The runtime of a sorting algorithm on 100 elements with 
+* $O(\log_2{ n})$ time complexity is 6.644 seconds
+* $O(n)$ time complexity is 100 seconds 
+* $O(n \log_2 n)$ time complexity is 664.4 seconds
+* $O(n^2)$ time complexity is 10000 seconds (2.7 hours)
+* $O(2^n)$ time complexity is $1.26 \times 10^{30}$ seconds ($3.99 \times 10^{22}$ years)
+* $O(n!)$ time complexity is $9.33 \times 10^{157}$ seconds ($2.9585 \times 10^{150}$ years)
 
 <p align="center"><img src="Time Complexity.drawio.png" alt="Time Complexity Comparison of Algorithms"></p>
 <p align="center"><small>Time Complexity Comparison of Algorithms</small></p>
