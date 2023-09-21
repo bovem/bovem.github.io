@@ -299,7 +299,7 @@ package main
 import "fmt"
 
 func evaluateGrades (marks int) string {
-    if marks < 100{
+    if marks < 101{
     	if marks < 40{
     		return "D"
     	} else if marks >= 40{
@@ -309,8 +309,6 @@ func evaluateGrades (marks int) string {
     	} else if (marks >= 60){
     		return "A"
     	} 
-    } else {
-    		return "INVALID"
     }
     return "INVALID"
 }
@@ -437,11 +435,17 @@ func main() {
     
     lowIndex := 2
     highIndex := 5
-    fmt.Println("Slice of arrayExample starting from index", lowIndex, "to", highIndex, "is:", arrayExample2[lowIndex:highIndex])
-    fmt.Println("Slice of arrayExample starting from index", lowIndex, "till (including)", highIndex, "is:", arrayExample2[lowIndex:highIndex+1])
+    fmt.Println("Slice of arrayExample starting from index",
+                lowIndex, "to", highIndex, "is:",
+                arrayExample2[lowIndex:highIndex])
+
+    fmt.Println("Slice of arrayExample starting from index",
+                lowIndex, "till (including)", highIndex, "is:",
+                arrayExample2[lowIndex:highIndex+1])
     
     fmt.Println("Slice Length:", len(arrayExample2[lowIndex:highIndex+1]))
-    fmt.Println("Capacity of the original array:", cap(arrayExample2[lowIndex:highIndex+1]))
+    fmt.Println("Capacity of the original array:",
+                cap(arrayExample2[lowIndex:highIndex+1]))
 }
 
 // Output

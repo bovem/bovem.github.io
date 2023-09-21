@@ -59,7 +59,8 @@ func main() {
 	apiID := "XXXXXX"
 
 	// HTTP endpoint with path of resource (vehicles)
-	createResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles", apiID)
+	createResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles",
+									apiID)
 
 	// JSON payload containing resource information
 	requestBody, _ := json.Marshal(map[string]string{
@@ -102,7 +103,8 @@ func main() {
 }
 
 // Output
-// {"color":"White","license":"ABC123","numWheels":"4","type":"Car","_id":"6501480bb987ad03e8769e4
+// {"color":"White","license":"ABC123","numWheels":"4","type":"Car",
+// "_id":"6501480bb987ad03e8769e4}
 ```
 
 To check the resource on the server side you can click on the "Check Endpoint Information" button on the crudcrud.com page. A new REST resource named `vehicles` would have been created.
@@ -134,7 +136,8 @@ func main() {
 	apiID := "XXXXXX"
 
 	// HTTP endpoint with the path of the resource (vehicles)
-	fetchResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles", apiID)
+	fetchResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles", 
+									apiID)
 
 	// Performing GET request
 	response, err := http.Get(fetchResourceURL)
@@ -213,7 +216,8 @@ func main() {
 	vehicleResourceID := "65014c59b987ad03e8769e5e"
 
 	// HTTP endpoint with the path of the resource (vehicles)
-	fetchResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles/%s", apiID, vehicleResourceID)
+	fetchResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles/%s",	
+							apiID, vehicleResourceID)
 
 	// Performing GET request
 	response, err := http.Get(fetchResourceURL)
@@ -269,7 +273,8 @@ func main() {
 	vehicleResourceID := "65014c0ab987ad03e8769e5c"
 
 	// HTTP endpoint with path (vehicle) of the resource
-	updateResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles/%s", apiID, vehicleResourceID)
+	updateResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles/%s",	
+							apiID, vehicleResourceID)
 
 	// JSON payload as bytes
 	requestBody, _ := json.Marshal(map[string]string{
@@ -320,7 +325,8 @@ func main() {
 }
 
 // Output
-// Updated Resource: {"_id":"65014c0ab987ad03e8769e5c","color":"Black","license":"XYZ435","numWheels":"2","vehicleType":"Motorcycle"}
+// Updated Resource: {"_id":"65014c0ab987ad03e8769e5c","color":"Black",
+// "license":"XYZ435","numWheels":"2","vehicleType":"Motorcycle"}
 ```
 
 ## `DELETE`
@@ -342,7 +348,8 @@ func main() {
 	vehicleResourceID := "65014c0ab987ad03e8769e5c"
 
 	// HTTP endpoint with path (vehicle) of the resource
-	deleteResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles/%s", apiID, vehicleResourceID)
+	deleteResourceURL := fmt.Sprintf("https://crudcrud.com/api/%s/vehicles/%s", 
+							apiID, vehicleResourceID)
 
 	// Creating a DELETE request on deleteResourceURL
 	request, err := http.NewRequest("DELETE", deleteResourceURL, nil)
@@ -381,7 +388,8 @@ func main() {
 }
 
 // Output
-// Deleted Resource: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Not Found","status":404,"traceId":"0HMTFDGO4V3QF:00000001"}
+// Deleted Resource: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4",
+// "title":"Not Found","status":404,"traceId":"0HMTFDGO4V3QF:00000001"}
 ```
 
 <hr>
