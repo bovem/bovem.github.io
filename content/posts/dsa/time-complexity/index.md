@@ -190,7 +190,7 @@ func main() {
 // The 10 th Fibonacci number is: 55
 ```
 
-Exponential Time Complexity groups algorithms with $O(2^n)$, $O(e^n)$, $O(10^n)$, etc. time complexities. The $2^n$ function has widespread use in computer science like Moore's law or finding the number of memory addresses possible with $n$ bits arrangement.
+Algorithms with $O(2^n)$, $O(e^n)$, $O(10^n)$, etc. time complexities are grouped under **exponential** time. Among these, the $2^n$ function has widespread use in computer science like Moore's law or finding the number of memory addresses possible with $n$ bits arrangement.
 
 > The number of transistors in an Integrated Circuit (IC) doubles about every two years
 > 
