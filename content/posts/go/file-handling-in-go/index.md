@@ -45,7 +45,8 @@ func main() {
 	if err!=nil {
 		panic(err)
 	} else {
-		fmt.Println("Relative path between /tmp and exampleFile will be:", value)
+		fmt.Println("Relative path between /tmp and exampleFile will be:", 
+				value)
 	}
 }
 
@@ -436,7 +437,13 @@ type Vehicle struct {
 
 func main() {
 	// Writing an instance of Vehicle to vehicle.yaml
-	v := Vehicle{Name:"Aston Martin Vantage", Color: "green", NumWheels:4, Uses:VehicleUses{F1SafetyCar: true}}
+	v := Vehicle{
+	Name:"Aston Martin Vantage", 
+	Color: "green", 
+	NumWheels:4, 
+	Uses:VehicleUses{F1SafetyCar: true}
+	}
+
 	fmt.Println("Vehicle Instance:", v)
 
 	yamlData, err := yaml.Marshal(&v)
@@ -509,7 +516,12 @@ type Student struct{
 
 func main() {
 	// Storing an instance of Student in XML format
-	student1 := Student{Name: "John Doe", IdNum: 98, Subjects:[]string{"English", "Maths", "Science"}}
+	student1 := Student{
+	Name: "John Doe", 
+	IdNum: 98, 
+	Subjects:[]string{"English", "Maths", "Science"}
+	}
+
 	fmt.Println("Example of a Student instance:", student1)
 
 	xmlFile, err := os.OpenFile("student.xml", os.O_CREATE|os.O_RDWR, 0755)
