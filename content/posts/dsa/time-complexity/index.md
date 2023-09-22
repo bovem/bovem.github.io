@@ -38,8 +38,10 @@ The "big Omega" ($\Omega$) represents the lower bound (best case scenario) on th
 ## Expected Case ($\Theta$)
 The "big Theta" ($\Theta$) represents the case where both upper and lower bounds are at the same point (expected case scenario) i.e. for an input dataset of size $n$ the algorithm's time complexity couldn't get better or worse than $\Theta(n)$.
 
+Big $O$ is the preferred time complexity function for an algorithm's runtime analysis because it provides a conservative estimate and its result is independent of factors like hardware performance, characteristics of data, compiler optimization, etc.
+
 # Common Time Complexity Functions
-The runtime of common programming patterns could be represented by the following time complexities. Subsequently, this will help in the runtime estimation of the entire program.
+The runtime of recurring patterns in programming could be represented by common time complexity functions. This helps us estimate the time complexity of the entire program.
 
 ## Constant Time Complexity $O(1)$
 <p align="center"><img src="Constant.drawio.png" alt="Scaling an Algorithm with Constant Time Complexity"></p>
