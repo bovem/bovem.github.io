@@ -400,7 +400,6 @@ Thank you for taking the time to read this blog post! If you found this content 
 <iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>        
 
 # Resources
-<a href="https://www.freecodecamp.org/news/big-theta-and-asymptotic-notation-explained/" target="_blank">Big Theta and Asymptotic Notation Explained</a>  
-<a href="http://watson.latech.edu/book/future/futureMoores1.html" target="_blank">What is Moore's Law</a>  
-<a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs/x2ec2f6f830c9fb89:log-intro/v/plotting-exponential-logarithm" target="_blank">Relationship between exponentials & logarithms</a>  
-<a href="https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/the-factorial-function" target="_blank">The factorial function</a>  
+<a href="https://www.freecodecamp.org/news/hash-tables/" target="_blank">Hash Table Explained: What it Is and How to Implement It</a>  
+<a href="https://www.freecodecamp.org/news/java-list-tutorial-util-list-api-example/" target="_blank">Java List Methods Tutorial – Util List API Example</a>  
+<a href="https://www.freecodecamp.org/news/efficient-string-building-in-javascript/" target="_blank">How to Work with Strings in JavaScript – Tips for Efficient String Concatenation</a>  
