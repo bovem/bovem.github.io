@@ -393,11 +393,7 @@ func main() {
 ```
 
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a> or newsletter.   
-
-&nbsp;
-
-<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>        
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.    
 
 # Resources
 <a href="https://restfulapi.net/" target="_blank">REST API Tutorial</a>  
