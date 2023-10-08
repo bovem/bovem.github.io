@@ -4,7 +4,7 @@ title: "Time Complexity"
 date: "2023-09-22"
 description: "The time complexity metric is used to assess an algorithm's performance on scale"
 tags: ["data-structures","algorithms","time-complexity","go"]
-categories: ["Data Structures", "Algorithms"]
+categories: ["Algorithms"]
 series: ["Data Structures and Algorithms"]
 aliases: ["time-complexity"]
 ShowToc: true
@@ -325,11 +325,7 @@ Assuming the output of the time complexity function is the algorithm's execution
 With the same computation power, an algorithm with $O(2^n)$ time complexity will sort 100 elements in $3.99 \times 10^{22}$ years while an algorithm with $O(n \log_2{n})$ time complexity will take only 664.4 seconds .
 
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a> or newsletter.   
-
-&nbsp;
-
-<iframe src="https://bovem.substack.com/embed" width="100%" height="320" style="border:2px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>        
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.    
 
 # Resources
 <a href="https://www.freecodecamp.org/news/big-theta-and-asymptotic-notation-explained/" target="_blank">Big Theta and Asymptotic Notation Explained</a>  
