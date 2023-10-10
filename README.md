@@ -27,6 +27,7 @@ Blogs on Self-Hosting, Homelab and DevOps Technologies.
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/time-complexity/">Time Complexity</a>
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/arrays-strings-hashmaps/">Arrays, Strings, and HashMaps</a>
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/rabin-karp-substring-search/">Rabin-Karp Substring Search</a>
+    -  <a target=_blank href="https://www.bovem.in/posts/dsa/contains-duplicate/">Checking an Array for Duplicate Values</a>
 
 ## Technologies Used
 - [Hugo Static Site Generator](https://gohugo.io/)
