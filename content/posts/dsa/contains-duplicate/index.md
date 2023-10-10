@@ -74,7 +74,7 @@ func main(){
 ```
 
 # Optimized Solution
-Instead of iterating the array for each element selected by the outer loop, we can store all the elements inside a Hashmap. If the element is already present in HashMap, then we have encountered a duplicate and we can exit the function with the value `true`.
+Instead of iterating the array for each element selected by the outer loop, we can store all the elements inside a <a href="/posts/dsa/arrays-strings-hashmaps/#hashmaps" target="_blank">HashMap</a>. If the element is already present in HashMap, then we have encountered a duplicate and we can exit the function with the value `true`.
 
 ## Best Case Scenario
 The best case scenario for the optimized solution is the same as the brute-force solution i.e. first and second elements are duplicated resulting in constant ($O(1)$) runtime.
