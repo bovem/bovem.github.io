@@ -39,8 +39,8 @@ The first solution that comes to mind for this problem would be sorting both str
 
 We can preemptively exit the function if both strings are of different lengths as they can't be anagrams.
 
-Psuedo-code for Brute Force Solution
-```
+## Psuedo-code for the Brute Force Solution
+```text
 if length(string1) != length(string2)
 	return false
 	
@@ -131,8 +131,8 @@ To improve on this we can create a hashmap that stores the count of characters a
 
 <p align="center"><img src="hashmap-strings-compare.png" alt="Best Case scenario for containsDuplicate"></p>
 
-Psuedo code for Optimized Solution
-```
+## Psuedo code for the Optimized Solution
+```text
 counter = hashmap()
 
 loop char in string1
