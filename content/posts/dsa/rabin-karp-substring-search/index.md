@@ -35,9 +35,9 @@ Throughout this article, I'll be referring to the two strings as the following
 # Brute Force Solution
 A brute force solution of substring search will loop over characters in the search string and for each character, it will perform another loop over characters in the input string to check for equality.
 
-Here is the psuedo code for the brute force algorithm.
+## Psuedo Code for the Brute Force Solution
 
-```
+```text
 loop(index1 in search_string)
     matchFlag = true
     
@@ -163,8 +163,8 @@ $$ hash(ICT) = (hash(DIC) - code(D)*128)*128 + code(T)*128^0 $$
 
 We can repeat this operation to calculate all rolling hash values.
 
-Psuedo code for Rabin-Karp Substring search
-```
+## Psuedo Code for Rabin-Karp Substring Search
+```text
 loop (index in M)
 	if rollingHash[index] == rollingHash(N):
 		if match(M[index:index+len(N)], N):

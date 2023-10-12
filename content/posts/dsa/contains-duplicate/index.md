@@ -26,6 +26,15 @@ We have to implement a function `containsDuplicate()` that takes an integer arra
 # Brute Force Solution
 The simplest solution for this problem would be two nested loops, where the first loop will select an element and the second loop will select another element from the array and compare them. On the first occurrence of a duplicate element, the function will exit while returning `true`.
 
+## Psuedo Code for the Brute Force Solution
+```text
+loop index1 in array
+    loop index2 in array
+        if index1!=index2 and array[index1]==array[index2]
+            return true
+return false
+```
+
 ## Best Case Scenario
 The best-case scenario for the brute-force solution would be when the first and second elements are duplicated. In this scenario, the outer and inner loop will execute only once so the time complexity will be $O(1)$.
 
@@ -75,6 +84,17 @@ func main(){
 
 # Optimized Solution
 Instead of iterating the array for each element selected by the outer loop, we can store all the elements inside a <a href="/posts/dsa/arrays-strings-hashmaps/#hashmaps" target="_blank">HashMap</a>. If the element is already present in HashMap, then we have encountered a duplicate and we can exit the function with the value `true`.
+
+## Psuedo Code for the Optimized Solution
+```text
+hashmap = {}
+loop value in array
+    if hashmap.get(value)
+        return true
+    else
+        hashmap[value] = 1
+return false
+```
 
 ## Best Case Scenario
 The best case scenario for the optimized solution is the same as the brute-force solution i.e. first and second elements are duplicated resulting in constant ($O(1)$) runtime.
