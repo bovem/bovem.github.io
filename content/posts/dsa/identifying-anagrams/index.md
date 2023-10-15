@@ -6,7 +6,7 @@ description: "Implementing an isAnagram() function that returns true if its two 
 tags: ["data-structures", "strings", "hashmaps", "go", "neetcode-150"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
-aliases: ["identifying-anagrams"]
+aliases: ["identifying-anagrams", "is-anagram"]
 ShowToc: true
 TocOpen: false
 comments: false
