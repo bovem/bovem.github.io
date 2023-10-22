@@ -3,7 +3,7 @@ author: "Avnish"
 title: "Checking an Array for Duplicate Values"
 date: "2023-10-10"
 description: "Implementing a containsDuplicate function that returns true if there are duplicate elements present in the array and false otherwise"
-tags: ["data-structures", "arrays", "hashmaps", "go", "neetcode-150"]
+tags: ["data-structures", "arrays", "hashmaps", "go", "neetcode-150", "leetcode-easy"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases: ["contains-duplicate"]
