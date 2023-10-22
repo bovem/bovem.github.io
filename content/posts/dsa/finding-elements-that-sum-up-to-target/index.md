@@ -3,7 +3,7 @@ author: "Avnish"
 title: "Finding Elements in an Array that Sum Up to a Target Value"
 date: "2023-10-15"
 description: "Implementing a twoSums(inputArray, targetValue) function that returns the indices of two elements in inputArray which could be summed up to the targetValue"
-tags: ["data-structures", "arrays", "hashmaps", "go", "neetcode-150"]
+tags: ["data-structures", "arrays", "hashmaps", "go", "neetcode-150", "leetcode-easy"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases: ["finding-elements-that-sum-up-to-target", "two-sums"]

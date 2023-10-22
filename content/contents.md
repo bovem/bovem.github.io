@@ -1,8 +1,10 @@
-[![Blog Cover Image](./static/bovem-cover.png)](https://www.bovem.in/)
+---
+title: "Index"
+layout: "contents"
+url: "/contents"
+summary: "Index of all content"
+---
 
-Blogs on Self-Hosting, Homelab and DevOps Technologies.
-
-## Index
 -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/">Kubernetes</a>
     -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/containers/">Containers</a>
     -  <a target=_blank href="https://www.bovem.in/posts/kubernetes/container-architecture/">Container Architecture</a>
@@ -29,35 +31,6 @@ Blogs on Self-Hosting, Homelab and DevOps Technologies.
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/rabin-karp-substring-search/">Rabin-Karp Substring Search</a>
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/contains-duplicate/">Checking an Array for Duplicate Values</a>
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/identifying-anagrams/">Identifying Anagrams</a>
-    -  <a target=_blank href="https://www.bovem.in/posts/dsa/finding-elements-that-sum-up-to-target/">Finding Elements in an Array that Sum Up to a Target Value</a>  
+    -  <a target=_blank href="https://www.bovem.in/posts/dsa/finding-elements-that-sum-up-to-target/">Finding Elements in an Array that Sum Up to a Target Value</a>
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/group-anagrams-in-an-array/">Group Anagrams in an Array</a>
 
-## Technologies Used
-- [Hugo Static Site Generator](https://gohugo.io/)
-- [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod)
-
-## Local Deployment (with Docker)
-
-### After cloning
-```bash
-git submodule update --init --recursive
-```
-
-### Updating theme
-```bash
-git submodule update --remote --merge
-```
-
-### Dev Environment (with Drafts and Future Posts)
-1. Change directory to `/deploy/dev`
-2. Deploy container
-```bash
-docker compose up -d
-```
-
-### Prod Environment
-1. Change directory to `/deploy/prod`
-2. Deploy container
-```bash
-docker compose up -d
-```

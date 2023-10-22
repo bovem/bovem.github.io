@@ -2,8 +2,8 @@
 author: "Avnish"
 title: "Identify Anagrams"
 date: "2023-10-12"
-description: "Implementing an isAnagram() function that returns true if its two input strings are anagrams and false otherwise"
-tags: ["data-structures", "strings", "hashmaps", "go", "neetcode-150"]
+description: "Implementing an isAnagram function that returns true if its two input strings are anagrams and false otherwise"
+tags: ["data-structures", "strings", "hashmaps", "go", "neetcode-150", "leetcode-easy"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases: ["identifying-anagrams", "is-anagram"]

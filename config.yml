@@ -30,9 +30,9 @@ languages:
                 - name: Archive
                   url: archives
                   weight: 5
-                # - name: Index
-                #   url: https://github.com/bovem/bovem.github.io#index
-                #   weight: 10
+                - name: Index
+                  url: contents
+                  weight: 10
                 - name: Tags
                   url: tags/
                   weight: 15
