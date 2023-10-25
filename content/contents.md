@@ -33,4 +33,4 @@ summary: "Index of all content"
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/identifying-anagrams/">Identifying Anagrams</a>
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/finding-elements-that-sum-up-to-target/">Finding Elements in an Array that Sum Up to a Target Value</a>
     -  <a target=_blank href="https://www.bovem.in/posts/dsa/group-anagrams-in-an-array/">Group Anagrams in an Array</a>
-
+    -  <a target=_blank href="https://www.bovem.in/posts/dsa/finding-most-frequent-elements-in-an-array/">Finding Most Frequent Elements in an Array</a>  
