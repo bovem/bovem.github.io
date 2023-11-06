@@ -1,6 +1,6 @@
 [![Blog Cover Image](./static/avnish-cover.png)](https://www.avni.sh/)
 
-Blogs on Self-Hosting, Homelab and DevOps Technologies.
+Blogs on Computer Science, Mathematics and Technology.
 
 ## Index
 -  <a target=_blank href="https://www.avni.sh/posts/kubernetes/">Kubernetes</a>
