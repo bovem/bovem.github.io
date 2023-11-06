@@ -1,4 +1,4 @@
-[![Blog Cover Image](./static/bovem-cover.png)](https://www.avni.sh/)
+[![Blog Cover Image](./static/avnish-cover.png)](https://www.avni.sh/)
 
 Blogs on Self-Hosting, Homelab and DevOps Technologies.
 
@@ -34,6 +34,7 @@ Blogs on Self-Hosting, Homelab and DevOps Technologies.
       -  <a target=_blank href="https://www.avni.sh/posts/dsa/finding-most-frequent-elements-in-an-array/">Finding Most Frequent Elements in an Array</a>
       -  <a target=_blank href="https://www.avni.sh/posts/dsa/building-a-product-array-without-the-element-itself/">Building a Product Array without the Element Itself</a>
       -  <a target=_blank href="https://www.avni.sh/posts/dsa/is-valid-sudoku/">Checking Validity of a Sudoku Grid</a>
+      -  <a target=_blank href="https://www.avni.sh/posts/dsa/encoding-and-decoding-strings//">Encoding and Decoding Functions for Strings</a>
 
 ## Technologies Used
 - [Hugo Static Site Generator](https://gohugo.io/)
