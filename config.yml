@@ -1,5 +1,5 @@
-baseURL: "https://www.bovem.in"
-title: "bovem"
+baseURL: "https://www.avni.sh"
+title: "avni.sh"
 paginate: 5
 theme: PaperMod
 
@@ -68,7 +68,7 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
-    images: ["bovem-cover.png"]
+    images: ["avnish-cover.png"]
 
     profileMode:
         enabled: false
