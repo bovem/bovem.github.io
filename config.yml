@@ -101,7 +101,7 @@ params:
 
     socialIcons:
         - name: cv
-          url: "https://www.avni.sh/Resume-AvnishPal.pdf"
+          url: "Resume-AvnishPal.pdf"
         - name: email
           url: "mailto:avnishnish07@gmail.com"
         - name: github
