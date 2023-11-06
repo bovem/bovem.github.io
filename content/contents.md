@@ -36,3 +36,4 @@ summary: "Index of all content"
         -  <a target=_blank href="/posts/dsa/top-k-frequent/">Finding Most Frequent Elements in an Array</a>  
         -  <a target=_blank href="/posts/dsa/product-except-self/">Building a Product Array without the Element Itself</a>  
         -  <a target=_blank href="/posts/dsa/is-valid-sudoku/">Checking Validity of a Sudoku Grid</a>
+        -  <a target=_blank href="/posts/dsa/encoding-and-decoding-strings/">Encoding and Decoding Functions for Strings</a>
