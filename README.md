@@ -26,15 +26,15 @@ Blogs on Computer Science, Mathematics and Technology.
 -  <a target=_blank href="https://www.avni.sh/posts/dsa/">Data Structures and Algorithms</a>
     -  <a target=_blank href="https://www.avni.sh/posts/dsa/time-complexity/">Time Complexity</a>
     -  <a target=_blank href="https://www.avni.sh/posts/dsa/arrays-strings-hashmaps/">Arrays, Strings, and HashMaps</a>
-      -  <a target=_blank href="https://www.avni.sh/posts/dsa/rabin-karp-substring-search/">Rabin-Karp Substring Search</a>
-      -  <a target=_blank href="https://www.avni.sh/posts/dsa/contains-duplicate/">Checking an Array for Duplicate Values</a>
-      -  <a target=_blank href="https://www.avni.sh/posts/dsa/identifying-anagrams/">Identifying Anagrams</a>
-      -  <a target=_blank href="https://www.avni.sh/posts/dsa/finding-elements-that-sum-up-to-target/">Finding Elements in an Array that Sum Up to a Target Value</a>  
-      -  <a target=_blank href="https://www.avni.sh/posts/dsa/group-anagrams-in-an-array/">Group Anagrams in an Array</a>
-      -  <a target=_blank href="https://www.avni.sh/posts/dsa/finding-most-frequent-elements-in-an-array/">Finding Most Frequent Elements in an Array</a>
-      -  <a target=_blank href="https://www.avni.sh/posts/dsa/building-a-product-array-without-the-element-itself/">Building a Product Array without the Element Itself</a>
-      -  <a target=_blank href="https://www.avni.sh/posts/dsa/is-valid-sudoku/">Checking Validity of a Sudoku Grid</a>
-      -  <a target=_blank href="https://www.avni.sh/posts/dsa/encoding-and-decoding-strings//">Encoding and Decoding Functions for Strings</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/rabin-karp-substring-search/">Rabin-Karp Substring Search</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/contains-duplicate/">Checking an Array for Duplicate Values</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/identifying-anagrams/">Identifying Anagrams</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/finding-elements-that-sum-up-to-target/">Finding Elements in an Array that Sum Up to a Target Value</a>  
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/group-anagrams-in-an-array/">Group Anagrams in an Array</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/finding-most-frequent-elements-in-an-array/">Finding Most Frequent Elements in an Array</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/building-a-product-array-without-the-element-itself/">Building a Product Array without the Element Itself</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/is-valid-sudoku/">Checking Validity of a Sudoku Grid</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/encoding-and-decoding-strings//">Encoding and Decoding Functions for Strings</a>
 
 ## Technologies Used
 - [Hugo Static Site Generator](https://gohugo.io/)
