@@ -87,7 +87,7 @@ params:
         Title: "Hi, I'm Avnish"
         Content: >
 
-           - As an Open Source Developer working at Red Hat, I strive to share my knowledge on self-hosting, homelab, and DevOps technologies through insightful articles. If you'd like to stay in the loop with the latest content from this blog, I invite you to subscribe to my <b><a target=_blank href="index.xml">RSS feed</a></b>. 
+           - As an Open Source Developer working at Red Hat, I strive to share my knowledge on computer science, mathematics, and technology through articles. If you'd like to stay in the loop with the latest content from this blog, I invite you to subscribe to my <b><a target=_blank href="index.xml">RSS feed</a></b>. 
            
            - For a glimpse into my journey and the projects I've been involved in, feel free to check my <b><a target=_blank href="Resume-AvnishPal.pdf">resume</a></b>. 
            
@@ -101,7 +101,7 @@ params:
 
     socialIcons:
         - name: cv
-          url: "Resume-AvnishPal-DevOps-2YoE.pdf"
+          url: "Resume-AvnishPal.pdf"
         - name: email
           url: "mailto:avnishnish07@gmail.com"
         - name: github

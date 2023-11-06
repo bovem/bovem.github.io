@@ -1,6 +1,9 @@
 [![Blog Cover Image](./static/avnish-cover.png)](https://www.avni.sh/)
 
-Blogs on Computer Science, Mathematics and Technology.
+Hi, I’m Avnish.
+As an Open Source Developer working at Red Hat, I strive to share my knowledge on computer science, mathematics, and technology through articles. If you'd like to stay in the loop with the latest content from this blog, I invite you to subscribe to my <b><a target=_blank href="https://www.avni.sh/index.xml">RSS feed</a></b>. 
+For a glimpse into my journey and the projects I've been involved in, feel free to check my <b><a target=_blank href="https://www.avni.sh/Resume-AvnishPal.pdf">resume</a></b>. 
+
 
 ## Index
 -  <a target=_blank href="https://www.avni.sh/posts/kubernetes/">Kubernetes</a>
