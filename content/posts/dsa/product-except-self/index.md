@@ -2,7 +2,7 @@
 author: "Avnish"
 title: "Building a Product Array without the Element Itself"
 date: "2023-10-28"
-description: "Implementing a productExceptSelf function that returns an array of products of all the elements without the element at same index in input array"
+description: "Implementing a productExceptSelf function that returns an array of products of all the elements without the element at the same index in input array"
 tags: ["data-structures", "arrays", "go", "neetcode-150", "leetcode-medium"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
@@ -14,7 +14,7 @@ comments: false
 cover:
   image: "product-except-self-cover.png"
   linkFullImages: true
-  alt: "The productExceptSelf function will returns an array of products of all the elements without the element at same index in input array"
+  alt: "The productExceptSelf function will returns an array of products of all the elements without the element at the same index in input array"
   caption: ""
   relative: false
   responsiveImages: false
@@ -47,15 +47,19 @@ loop index on nums
 return answer
 ```
 
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 
 The brute-force solution will return the `answer` array in $O(n^2)$ time for the best-case input. Since both the loops will iterate completely over the `nums` array.
 
-## Worst Case Scenario
+### Worst Case Scenario
 
 The worst-case scenario will also take $O(n^2)$ to return the solution.
 
-## Code for Brute Force Solution
+## Space Complexity Analysis
+The `answer` array will require additional $O(n)$ memory.
+
+## Code for the Brute Force Solution
 
 ```Go
 package main
@@ -129,17 +133,19 @@ loop index on prefix
  return answer
 ```
 
-## Best Case Scenario
-
+## Time Complexity Analysis
+### Best Case Scenario
 The optimized solution will return the `answer` array in $O(n)$ time (generalized from $O(3n)$) since the time complexity of iterating over all three arrays (`prefix`, `suffix`, and `answer`) is $O(n)$.
 
-We can improve the space complexity further if we use a single array for storing products of `prefix` and `suffix` and return it as the `answer`.
 
-## Worst Case Scenario
-
+### Worst Case Scenario
 The time complexity of iterating over arrays in worst-case input is the same as in the best-case scenario. Thus, the total time complexity of the function remains the same i.e. $O(n)$.
 
-## Code for Optimized Solution
+## Space Complexity Analysis
+To store the `prefix`, `suffix`, and `answer` array we will need additional $O(3n)$ memory.
+We can improve the space complexity if we use a single array for storing the products of `prefix` and `suffix` and return it as the `answer`.
+
+## Code for the Optimized Solution
 
 ```Go
 package main
@@ -190,9 +196,9 @@ func main(){
 // Product Except Self: [4505884 5963670 3026340 2357730 8815860]
 ```
 
-## Code for Optimized Solution (Constant Space Complexity)
+## Code for the Optimized Solution (Constant Space Complexity)
 
-We aren't considering the memory space acquired by the `answer` array.
+Assuming the memory space required by the `answer` array is constant i.e. $O(1)$.
 
 ```Go
 package main
@@ -236,7 +242,7 @@ func main(){
 
 <hr>
 
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
 
 # Resources
 

@@ -53,18 +53,21 @@ loop index in string1
 
 return true
 ```
-
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 The best time complexity of a sorting function is $O(n \log(n))$, so the total time complexity of sorting operations is $O(s \log(s)) + O(t \log(t))$ where $s$ and $t$ are the sizes of strings. Since both strings are of the same length (for anagrams) we can generalize time complexity to $O(s \log(s))$.
 
 If the inputs are of different lengths (non-anagrams) then the time complexity of the complete function will be: $O(1)$ as the function will exit preemptively.
 
 Even though we have to compare characters in a loop ($O(s)$) the sorting time will scale relatively slower. Thus, the total time complexity of the best-case scenario will be $O(s \log(s))$.
 
-## Worst Case Scenario
+### Worst Case Scenario
 The worst-case scenario for a brute force solution will compare all the characters in sorted strings to find that they aren't anagrams. Its total time complexity will be $2*O(s \log(s)) + O(s)$ but we can generalize it to $O(s \log(s))$.
 
-## Code for Brute Force Solution
+## Space Complexity Analysis
+The sorting of input strings is performed in-place. Thus, there is no requirement for additional memory space by the brute-force solution and its space complexity will be $O(1)$.
+
+## Code for the Brute Force Solution
 ```Go
 package main
 
@@ -84,7 +87,7 @@ func sortString(inputString string)(string){
   return strings.Join(str, "")
 }
 
-func validAnagram(string1 string, string2 string)(bool){
+func isAnagram(string1 string, string2 string)(bool){
   if len(string1) != len(string2){
 	  return false
   }
@@ -107,15 +110,15 @@ func main(){
   string1 := "counter"
   string2 := "trounce"
   fmt.Println(string1, "is an Anagram of", 
-              string2, ":", validAnagram(string1, string2))
+              string2, ":", isAnagram(string1, string2))
 
   string2 = "trouncee"
   fmt.Println(string1, "is an Anagram of",
-              string2, ":", validAnagram(string1, string2))
+              string2, ":", isAnagram(string1, string2))
 
   string2 = "trounc"
   fmt.Println(string1, "is an Anagram of", 
-              string2, ":", validAnagram(string1, string2))
+              string2, ":", isAnagram(string1, string2))
 }
 
 // Output
@@ -156,19 +159,23 @@ else
 	return false
 ```
 
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 In the best-case scenario for an optimized solution both strings will be anagram and the time complexity will be $O(s)$ (generalized from $O(s) + O(s)$).
 
-## Worst Case Scenario
+### Worst Case Scenario
 The time complexity of the worst-case scenario will be the same as the best-case scenario i.e. $O(s)$ but the input strings won't be anagrams.
 
-## Code for Optimized Solution
+## Space Complexity Analysis
+The `counter` hashmap will take additional $O(n)$ memory space.
+
+## Code for the Optimized Solution
 ```Go
 package main
 
 import "fmt"
 
-func validAnagram(inputString1 string, inputString2 string)(bool){
+func isAnagram(inputString1 string, inputString2 string)(bool){
   if len(inputString1) != len(inputString2){
     return false
   }
@@ -209,15 +216,15 @@ func main(){
   string1 := "counter"
   string2 := "trounce"
   fmt.Println(string1, "is an Anagram of", 
-              string2, ":", validAnagram(string1, string2))
+              string2, ":", isAnagram(string1, string2))
 
   string2 = "trouncee"
   fmt.Println(string1, "is an Anagram of",
-              string2, ":", validAnagram(string1, string2))
+              string2, ":", isAnagram(string1, string2))
 
   string2 = "trounc"
   fmt.Println(string1, "is an Anagram of", 
-              string2, ":", validAnagram(string1, string2))
+              string2, ":", isAnagram(string1, string2))
 }
 
 // Output
@@ -227,8 +234,8 @@ func main(){
 ```
 
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.    
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.    
 
 # Resources
-<a href="https://leetcode.com/problems/contains-duplicate/" target="_blank">242. Valid Anagram</a>  
+<a href="https://leetcode.com/problems/valid-anagram/" target="_blank">242. Valid Anagram</a>  
 <a href="https://www.youtube.com/watch?v=9UtInBqnCgA" target="_blank">Valid Anagram - Leetcode 242 - Python</a>  

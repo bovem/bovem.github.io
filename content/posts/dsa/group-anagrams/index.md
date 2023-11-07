@@ -52,19 +52,23 @@ loop key, value in hashmap
 return returnedList
 ```
 
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 The time taken to sort individual strings is assumed to be $O(k \log(k))$ (the time complexity of the best sorting algorithm) where $k$ is the size of the string. Since we have to perform this operation on every element the sorting operation will be repeated $n$ time, where $n$ is the size of the array, resulting in $O(n \times k \log(k))$ time.
 
 <p align="center"><img src="group-anagrams-brute-force-best.png" alt="Best case scenario for Brute Force solution for groupAnagrams"></p>
 
 The best-case input will contain just a single set of anagrams i.e. the hashmap will contain just one key. The loop over hashmap values will be executed only once. Thus, the total time complexity of grouping anagrams will be $O(n \times k \log(k))$.
 
-## Worst Case Scenario
+### Worst Case Scenario
 <p align="center"><img src="group-anagrams-brute-force-worst.png" alt="Worst case scenario for Brute Force solution for groupAnagrams"></p>
 
 The worst-case input array will contain zero anagrams and the hashmap will contain a key for each array element i.e. $n$ keys. Thus, the total time complexity of the function in the worst-case scenario will be $O(n + n \times k \log(k))$, which could be simplified to $O(n \times k \log(k))$. 
 
-## Code for Brute Force Solution
+## Space Complexity Analysis
+The additional space required to store the `hashmap` and `returnedList` will be $O(n)+O(n)$ or simply $O(n)$.
+
+## Code for the Brute Force Solution
 ```Go
 package main
 
@@ -80,24 +84,24 @@ func sortString(inputString string)(string){
     return strings.Join(listInputString, "")
 }
 
-func groupAnagrams(inputArray []string)([][]string){
+func groupAnagrams(strs []string)([][]string){
     hashmap := make(map[string][]string)
     
-    // Loop over the inputArray and sort every string element
-    for index:=0;index<len(inputArray);index++{
+    // Loop over the strs and sort every string element
+    for index:=0;index<len(strs);index++{
         
         // The time complexity of the sorting operation
         // is assumed to be O(nlog(n))
         // where n is the size of the string
-        sortedString := sortString(inputArray[index])
+        sortedString := sortString(strs[index])
         
         // Group elements by their sorted order 
         _, key_exists := hashmap[sortedString]
         if key_exists{
             hashmap[sortedString] = append(hashmap[sortedString], 
-                                           inputArray[index])
+                                           strs[index])
         } else {
-            hashmap[sortedString] = []string{inputArray[index]}
+            hashmap[sortedString] = []string{strs[index]}
         }
     }
     
@@ -150,13 +154,17 @@ for key, value in anagramHashmap
 return returnedList
 ```
 
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 The best-case input will contain only one set of anagrams. Thus the total time complexity of the function will be $O(n \times k)$.
 
-## Worst Case Scenario
+### Worst Case Scenario
 For the worst-case input (none of the strings are anagrams) the loop over `anagramHashMap` will take $O(n)$ time. Hence, the time complexity of the function will be $O(n \times k)$ (generalized from $O(n + n \times k)$).
 
-## Code for Optimized Solution
+## Space Complexity Analysis
+The size of `countHashMap` is constant i.e. $O(26)$. After adding the space required by `anagramHashMap` and `returnedList`, the total space complexity of the optimized solution will be $O(n)+O(n)+O(26)$, which could be simplified to $O(n)$.
+
+## Code for the Optimized Solution
 First, we have to implement a `generateCountHashMap` function that will return a hashmap with keys ranging from `a` to `z` mapped to their initial count i.e. `0`.
 
 ```Go
@@ -206,11 +214,11 @@ func loadStringValue(countHashMap map[string]int,
 Finally, we use `generateCountHashMap` and `loadStringValue` to implement the `groupAnagrams` function.
 
 ```Go
-func groupAnagrams(inputArray []string)([][]string){
+func groupAnagrams(strs []string)([][]string){
   anagramHashMap := make(map[string][]string)
 
-  for index:=0;index<len(inputArray);index++{
-    stringValue := inputArray[index]
+  for index:=0;index<len(strs);index++{
+    stringValue := strs[index]
 
     // Constant time complexity
     countHashMap := generateCountHashMap()
@@ -287,11 +295,11 @@ func loadStringValue(countHashMap map[string]int,
     return strings.Join(returnString, "")
 }
 
-func groupAnagrams(inputArray []string)([][]string){
+func groupAnagrams(strs []string)([][]string){
   anagramHashMap := make(map[string][]string)
   
-  for index:=0;index<len(inputArray);index++{
-    stringValue := inputArray[index]
+  for index:=0;index<len(strs);index++{
+    stringValue := strs[index]
 
     // Constant time complexity
     countHashMap := generateCountHashMap()
@@ -333,7 +341,7 @@ func main(){
 
 <hr>
 
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
 
 # Resources
 <a href="https://leetcode.com/problems/group-anagrams/description/" target="_blank">49. Group Anagrams</a>  

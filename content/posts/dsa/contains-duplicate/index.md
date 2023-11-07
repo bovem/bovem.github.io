@@ -34,32 +34,35 @@ loop index1 in array
             return true
 return false
 ```
-
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 The best-case scenario for the brute-force solution would be when the first and second elements are duplicated. In this scenario, the outer and inner loop will execute only once so the time complexity will be $O(1)$.
 
 <p align="center"><img src="contains-duplicate-best-case.png" alt="Best Case scenario for containsDuplicate"></p>
 
-## Worst Case Scenario
+### Worst Case Scenario
 If all the elements in the array are unique then the brute-force algorithm will take $O(n^2)$ time for completion, where $n$ is the size of the array.
 
 <p align="center"><img src="contains-duplicate-worst-case.png" alt="Worst Case scenario for containsDuplicate"></p>
 
-## Code for Brute Force Solution
+## Space Complexity Analysis
+Since the brute-force solution does not use any data structures other than the input array, its space complexity will be $O(1)$.
+
+## Code for the Brute Force Solution
 ```Go
 package main
 
 import "fmt"
 
-func containsDuplicate(array []int)(bool){
-    for i:=0;i<len(array);i++{
-        for j:=0;j<len(array);j++{
+func containsDuplicate(nums []int)(bool){
+    for i:=0;i<len(nums);i++{
+        for j:=0;j<len(nums);j++{
             // Checking if the element selected by index j
             // is not the same as the outer loop
 			
             // If the value of both elements is the same
             // then exit the function with the value true 
-            if i!=j && array[i]==array[j]{
+            if i!=j && nums[i]==nums[j]{
                 return true
             }
         }
@@ -96,24 +99,28 @@ loop value in array
 return false
 ```
 
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 The best case scenario for the optimized solution is the same as the brute-force solution i.e. first and second elements are duplicated resulting in constant ($O(1)$) runtime.
 
-## Worst Case Scenario
+### Worst Case Scenario
 If the input array contains unique elements, then the optimized solution will iterate over the complete array adding each element to HashMap but the time complexity of completing this would still be $O(n)$ which is much better than brute force solution ($O(n^2)$).
 
-## Code for Optimized Solution
+## Space Complexity Analysis
+The hashmap in the optimized solution will use extra $O(n)$ memory space.
+
+## Code for the Optimized Solution
 ```Go
 package main
 
 import "fmt"
 
-func containsDuplicate(array []int)(bool){
+func containsDuplicate(nums []int)(bool){
     hashmap := make(map[int]int)
 
-    for i:=0;i<len(array);i++{
+    for i:=0;i<len(nums);i++{
         // Check if a value at key exists in the hashmap
-        value, key_exists := hashmap[array[i]]
+        value, key_exists := hashmap[nums[i]]
 
         if key_exists{
             // If the value exists then exit the function
@@ -121,7 +128,7 @@ func containsDuplicate(array []int)(bool){
         } else {
             // If the value does not exist
             // add it to the hashmap
-            hashmap[array[i]] = value
+            hashmap[nums[i]] = value
         }
     }
     return false
@@ -143,7 +150,7 @@ func main(){
 ```
 
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.    
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.    
 
 # Resources
 <a href="https://leetcode.com/problems/contains-duplicate/" target="_blank">217. Contains Duplicate</a>  

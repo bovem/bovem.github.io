@@ -81,15 +81,20 @@ func decode(encodedString)
 
   return decodedList
 ```
-## Best Case Scenario
+
+## Time Complexity Analysis
+### Best Case Scenario
 The best-case input for the brute force solution would be a string full of delimiters since the decoding process will finish earlier (the `index` is incremented by 2 while encountering the escape character `\`). 
 
 The time complexity of encoding and decoding in the best-case scenario would be $O(k \times n)$ where $k$ is the average size of the string and $n$ is the size of the input array.
 
-## Worst Case Scenario
+### Worst Case Scenario
 For the worst-case time complexity of the brute-force solution, the input should not contain the delimiter or escape characters. The time complexity of encoding and decoding would still be $O(k \times n)$.
 
-## Code for Brute Force Solution
+## Space Complexity Analysis
+The additional space required to store the `encodedString` and `decodedList` will be $O(kn)$.
+
+## Code for the Brute Force Solution
 ```Go
 package main
 
@@ -233,19 +238,23 @@ func decode(encodedString)
 
   return decodedList
 ```
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 The best-case input for the optimized solution will contain strings with length < 9. 
 
 The time complexity of the encoding loop will be $O(n)$ because it will iterate over all the elements in the array. 
 
 For the decoding loop, the time complexity appears to be $O(kn)$ but we are incrementing the `index` by the length of string value ($k$) on every iteration. Thus, the time complexity of decoding is also $O({kn \over k}) = O(n)$.
 
-## Worst Case Scenario
+### Worst Case Scenario
 The worst-case time complexity of encoding is the same as the best-case i.e. $O(n)$.
 
 The time complexity of the decoding function will depend on the number of digits (in the length of the largest string). For example: If the length of the largest individual string is `199990` then the time complexity of decoding the string will be $O(6 \times n)$ (because `199990` has 6 digits).
 
-## Code for Optimized Solution
+## Space Complexity Analysis
+The space complexity of the optimized solution will be the same as the brute force solution ($O(kn)$) as no additional data structures are used.
+
+## Code for the Optimized Solution
 ```Go
 package main
 
@@ -331,7 +340,7 @@ func main(){
 
 <hr>
 
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
 
 # Resources
 <a href="https://www.lintcode.com/problem/659/" target="_blank">659 · Encode and Decode Strings</a>  

@@ -2,7 +2,7 @@
 author: "Avnish"
 title: "Finding Most Frequent Elements in an Array"
 date: "2023-10-26"
-description: "Implementing a topKFrequent(inputArray, k) function that takes an array of integers and a value k as inputs and returns top k most frequent elements."
+description: "Implementing a topKFrequent(nums, k) function that takes an array of integers and a value k as inputs and returns top k most frequent elements."
 tags:
   [
     "data-structures",
@@ -77,7 +77,8 @@ loop index on freq
       return topKElements
 ```
 
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 
 The first loop over the array has $O(n)$ time complexity, where $n$ is the size of the input array.
 
@@ -89,11 +90,14 @@ The final loop (over `freq`) will execute `k` times. On each iteration, it will 
 
 Thus, the total time complexity of the best-case scenario for brute force solution will be $O(n) + O(1) + O(n \log(n)) + O(k)$, which could be generalized to $O(n \log n)$.
 
-## Worst Case Scenario
+### Worst Case Scenario
 
 In the worst-case scenario, all the elements in the input array will have distinct frequencies. Thus, the length of `counter` and `reverseCounter` will be the same resulting in total time complexity $O(n) + O(n) + O(n \log(n)) + O(k)$, which could also be generalized to $O(n \log n)$.
 
-## Code for Brute Force Solution
+## Space Complexity Analysis
+The memory space used by `counter` and `reverseCounter` will be $O(n)+O(n)$. We are assuming that the `freq` array is sorted in place so it won't require additional memory space. Finally, the space complexity of the `topKElements` array will be $O(n)$ if `k=length(nums)`. Thus, the total space complexity of the brute-force solution could be simplified to $O(n)$.
+
+## Code for the Brute Force Solution
 
 ```Go
 package main
@@ -103,18 +107,18 @@ import (
     "sort"
 )
 
-func topKElements(inputArray []int, k int)([]int){
+func topKElements(nums []int, k int)([]int){
 
   // counter hashmap for storing frequency data
-  // of elements in inputArray
+  // of elements in nums
   // Time Complexity: O(n)
   counter := make(map[int]int)
-  for index:=0;index<len(inputArray);index++{
-      _, key_exists := counter[inputArray[index]]
+  for index:=0;index<len(nums);index++{
+      _, key_exists := counter[nums[index]]
       if key_exists{
-          counter[inputArray[index]] += 1
+          counter[nums[index]] += 1
       } else {
-          counter[inputArray[index]] = 1
+          counter[nums[index]] = 1
       }
   }
 
@@ -122,7 +126,7 @@ func topKElements(inputArray []int, k int)([]int){
   var freq []int
 
   // reverseCounter maps frequencies to elements of
-  // inputArray
+  // nums
   // Time Complexity: O(n)
   reverseCounter := make(map[int][]int)
   for key, value := range counter{
@@ -156,18 +160,18 @@ func topKElements(inputArray []int, k int)([]int){
 }
 
 func main(){
-  inputArray := []int{1, 1, 1, 2, 2, 3, 3, 4}
+  nums := []int{1, 1, 1, 2, 2, 3, 3, 4}
   k := 3
-  fmt.Println("Top", k, "elements in inputArray:", topKElements(inputArray, k))
+  fmt.Println("Top", k, "elements in nums:", topKElements(nums, k))
 
-  inputArray = []int{1, 2}
+  nums = []int{1, 2}
   k = 2
-  fmt.Println("Top", k, "elements in inputArray:", topKElements(inputArray, k))
+  fmt.Println("Top", k, "elements in nums:", topKElements(nums, k))
 }
 
 // Output
-// Top 3 elements in inputArray: [1 2 3]
-// Top 2 elements in inputArray: [1 2]
+// Top 3 elements in nums: [1 2 3]
+// Top 2 elements in nums: [1 2]
 ```
 
 # Optimized Solution
@@ -194,7 +198,7 @@ loop key, value on counter
     reverseCounter[value] = [key]
 
 topKElements = []
-loop index from (len(inputArray), 1)
+loop index from (len(nums), 1)
   if reverseCounter[index]
     for value in reverseCounter[index]
       topKElements.append(value)
@@ -205,29 +209,33 @@ loop index from (len(inputArray), 1)
 return topKElements
 ```
 
-## Best Case Scenario
+## Time Complexity Analysis
+### Best Case Scenario
 
-In the best case scenario (all elements have the same frequency), the time complexity of all loops except the one on `reverseCounter` will be $O(n)$ which sums up to $O(2n)$ for the complete function (could also be generalized to $O(n)$).
+In the best-case scenario (all elements have the same frequency), the time complexity of all loops except the one on `reverseCounter` will be $O(n)$ which sums up to $O(2n)$ for the complete function (could also be generalized to $O(n)$).
 
-## Worst Case Scenario
+### Worst Case Scenario
 
 For the worst-case scenario, where all elements have distinct frequencies, the time complexity of every loop is $O(n)$ resulting in $O(3n)$ (generalized to $O(n)$) time complexity for the complete function.
 
-## Code for Optimized Solution
+## Space Complexity Analysis
+The additional memory required by the optimized solution to store `counter`, `reverseCounter`, and `topKElements` will be $O(n)$. 
+
+## Code for the Optimized Solution
 
 ```Go
 package main
 
 import "fmt"
 
-func topKElements(inputArray []int, k int)([]int){
+func topKElements(nums []int, k int)([]int){
     counter := make(map[int]int)
-    for index:=0;index<len(inputArray);index++{
-        _, key_exists := counter[inputArray[index]]
+    for index:=0;index<len(nums);index++{
+        _, key_exists := counter[nums[index]]
         if key_exists{
-            counter[inputArray[index]] += 1
+            counter[nums[index]] += 1
         } else {
-            counter[inputArray[index]] = 1
+            counter[nums[index]] = 1
         }
     }
 
@@ -242,11 +250,11 @@ func topKElements(inputArray []int, k int)([]int){
     }
 
     // Instead of sorting the list of frequencies
-    // We can loop over range (len(inputArray), 1)
+    // We can loop over range (len(nums), 1)
     // and check if the value is present in
     // reverseCounter
     var topKElements []int
-    for freq:=len(inputArray);freq>0;freq--{
+    for freq:=len(nums);freq>0;freq--{
         value, key_exists := reverseCounter[freq]
         if key_exists{
             for _, val := range value{
@@ -263,19 +271,19 @@ func topKElements(inputArray []int, k int)([]int){
 }
 
 func main(){
-    inputArray := []int{1, 1, 1, 2, 2, 3, 3, 4}
+    nums := []int{1, 1, 1, 2, 2, 3, 3, 4}
     k := 3
-    fmt.Println("Top", k, "elements in inputArray:", topKElements(inputArray, k))
+    fmt.Println("Top", k, "elements in nums:", topKElements(nums, k))
 
-    inputArray = []int{1, 2}
+    nums = []int{1, 2}
     k = 2
-    fmt.Println("Top", k, "elements in inputArray:", topKElements(inputArray, k))
+    fmt.Println("Top", k, "elements in nums:", topKElements(nums, k))
 }
 ```
 
 <hr>
 
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
 
 # Resources
 
