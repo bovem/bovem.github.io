@@ -82,13 +82,18 @@ loop row_index from 0 to 6 with step 3
           sub_matrix_hashmap[r_value][c_value] = 1
 	
 ```
-## Best Case Scenario
+
+## Time Complexity Analysis
+### Best Case Scenario
 The best-case input for the optimal solution will be a completed Sudoku grid. The time taken to return the result will be $9 \times O(9) + 9 \times O(9) + O(81)$ which could be simplified to $O(1)$. 
 
-## Worst Case Scenario
+### Worst Case Scenario
 In the worst-case scenario, the input will be an invalid Sudoku grid. The time taken to produce the result will be the same as the best-case scenario i.e. O(1).
 
-## Code for Optimal Solution
+## Space Complexity Analysis
+The space complexity for the optimal solution will be the sum of memory space required by the `row_hashmap`, `column_hashmap`, and `sub_matrix_hashmap` i.e. $O(9)+O(9)+O(9)$ which could be simplified to $O(1)$.
+
+## Code for the Optimal Solution
 First, we will implement the `validCellValue` function to check if the value in a cell is within 1 to 9.
 ```Go
 func validCellValue(inputValue byte)(bool){
@@ -272,7 +277,7 @@ func isValidSudoku(board [][]byte)(bool){
 }
 
 ```
-### Complete Code for Optimal Solution
+### Complete Code for the Optimal Solution
 ```Go
 package main
 
@@ -530,7 +535,7 @@ func main(){
 
 <hr>
 
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
 
 # Resources
 <a href="https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/" target="_blank">How to Play Sudoku?</a>  

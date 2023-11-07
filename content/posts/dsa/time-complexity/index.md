@@ -325,7 +325,7 @@ Assuming the output of the time complexity function is the algorithm's execution
 With the same computation power, an algorithm with $O(2^n)$ time complexity will sort 100 elements in $3.99 \times 10^{22}$ years while an algorithm with $O(n \log_2{n})$ time complexity will take only 664.4 seconds .
 
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.    
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.    
 
 # Resources
 <a href="https://www.freecodecamp.org/news/big-theta-and-asymptotic-notation-explained/" target="_blank">Big Theta and Asymptotic Notation Explained</a>  
