@@ -269,7 +269,7 @@ I selected <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-
 
 
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
 
 # Resources
 <a href="https://support.google.com/a/answer/2855120?hl=en" target="_blank">G Suite legacy free edition</a>  

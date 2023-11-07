@@ -511,7 +511,7 @@ func main(){
 `WaitGroup` starts a counter at `0` and a delta (`int` value) is added to it using the `Add()` method. The `Done()` method decrements the counter by `1` and the `Wait()` method waits for the counter to reach `0` and moves to the next statements in the program.
 
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.    
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.    
 
 # Resources
 <a href="https://freecontent.manning.com/concurrency-vs-parallelism/" target="_blank">Concurrency vs Parallelism</a>  

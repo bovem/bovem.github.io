@@ -132,7 +132,7 @@ $ oc delete csv/openshift-pipelines-operator-rh.v1.10.0 -n openshift-operators
 
 
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
 
 # Resources
 <a href="https://docs.openshift.com/container-platform/4.12/operators/understanding/olm-understanding-operatorhub.html" target="_blank">OperatorHub</a>  

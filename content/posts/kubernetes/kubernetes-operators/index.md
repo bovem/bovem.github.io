@@ -88,7 +88,7 @@ It could be limited to a single namespace or deployed cluster-wide. It is recomm
 
 
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.bovem.in/index.xml" target="_blank">RSS Feed</a>.
+Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
 
 # Resources
 <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/" target="_blank">Operator Pattern</a>  
