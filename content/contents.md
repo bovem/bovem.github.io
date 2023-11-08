@@ -37,3 +37,4 @@ summary: "Index of all content"
         -  <a target=_blank href="/posts/dsa/product-except-self/">Building a Product Array without the Element Itself</a>  
         -  <a target=_blank href="/posts/dsa/is-valid-sudoku/">Checking Validity of a Sudoku Grid</a>
         -  <a target=_blank href="/posts/dsa/encoding-and-decoding-strings/">Encoding and Decoding Functions for Strings</a>
+        -  <a target=_blank href="/posts/dsa/longest-consecutive/">Finding the Longest Consecutive Sequence in an Array</a>
