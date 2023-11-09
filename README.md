@@ -37,7 +37,8 @@ For a glimpse into my journey and the projects I've been involved in, feel free 
         -  <a target=_blank href="https://www.avni.sh/posts/dsa/finding-most-frequent-elements-in-an-array/">Finding Most Frequent Elements in an Array</a>
         -  <a target=_blank href="https://www.avni.sh/posts/dsa/building-a-product-array-without-the-element-itself/">Building a Product Array without the Element Itself</a>
         -  <a target=_blank href="https://www.avni.sh/posts/dsa/is-valid-sudoku/">Checking Validity of a Sudoku Grid</a>
-        -  <a target=_blank href="https://www.avni.sh/posts/dsa/encoding-and-decoding-strings//">Encoding and Decoding Functions for Strings</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/encoding-and-decoding-strings/">Encoding and Decoding Functions for Strings</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/longest-consecutive/">Finding the Longest Consecutive Sequence in an Array</a>
 
 ## Technologies Used
 - [Hugo Static Site Generator](https://gohugo.io/)
