@@ -3,7 +3,7 @@ author: "Avnish"
 title: "Checking the Validity of a Sudoku Grid"
 date: "2023-11-02"
 description: "Implementing an isValidSudoku function that takes a matrix representing a Sudoku grid as inputs and returns true if it is valid and false otherwise"
-tags: ["data-structures", "arrays", "sudoku", "hashmaps", "go", "neetcode-150", "leetcode-medium"]
+tags: ["data-structures", "arrays", "sudoku", "hashmaps", "go", "neetcode-150", "leetcode-medium", "nested-arrays"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases:
