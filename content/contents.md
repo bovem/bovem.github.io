@@ -39,3 +39,5 @@ summary: "Index of all content"
         *  <a target=_blank href="/posts/dsa/encoding-and-decoding-strings/">Encoding and Decoding Functions for Strings</a>
         *  <a target=_blank href="/posts/dsa/longest-consecutive/">Finding the Longest Consecutive Sequence in an Array</a>
     -  <a target=_blank href="/posts/dsa/linked-lists/">Linked Lists</a>
+-  <a target=_blank href="/posts/developer-tools/">Developer Tools</a>  
+    -  <a target=_blank href="/posts/developer-tools/my-development-environment/">My Development Environment: kitty, zsh, Neovim, tmux, and lazygit</a>
