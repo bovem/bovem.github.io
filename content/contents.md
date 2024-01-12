@@ -20,6 +20,7 @@ summary: "Index of all content"
     -  <a target=_blank href="/posts/kubernetes/network-functions/">Network Functions</a>
 -  <a target=_blank href="/posts/homelab/">Homelab</a>
     -  <a target=_blank href="/posts/homelab/building-your-own-homelab/">Building Your Own Homelab</a>
+    -  <a target=_blank href="/posts/homelab/self-hosting-ollama/">Self Hosting LLMs using Ollama</a>
 -  <a target=_blank href="/posts/go/">Go</a>
     -  <a target=_blank href="/posts/go/go-programming-language/">Go Programming Language</a>
     -  <a target=_blank href="/posts/go/file-handling-in-go/">File Handling in Go</a>

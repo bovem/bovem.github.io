@@ -21,6 +21,7 @@ For a glimpse into my journey and the projects I've been involved in, feel free 
     -  <a target=_blank href="https://www.avni.sh/posts/kubernetes/network-functions/">Network Functions</a>
 -  <a target=_blank href="https://www.avni.sh/posts/homelab/">Homelab</a>
     -  <a target=_blank href="https://www.avni.sh/posts/homelab/building-your-own-homelab/">Building Your Own Homelab</a>
+    -  <a target=_blank href="https://www.avni.sh/posts/homelab/self-hosting-ollama/">Self Hosting LLMs using Ollama</a>
 -  <a target=_blank href="https://www.avni.sh/posts/go/">Go</a>
     -  <a target=_blank href="https://www.avni.sh/posts/go/go-programming-language/">Go Programming Language</a>
     -  <a target=_blank href="https://www.avni.sh/posts/go/file-handling-in-go/">File Handling in Go</a>
