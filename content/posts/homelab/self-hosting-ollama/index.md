@@ -1,7 +1,7 @@
 ---
 author: "Avnish"
 title: "Self Hosting LLMs using Ollama"
-date: "2024-01-14"
+date: "2024-01-12"
 description: "Hosting Large Language Models (LLMs) on your infrastructure and integrating them with your development environment"
 tags: ["homelab","self-hosting","LLM","machine-learning","AI",
       "ollama","vim","neovim","vscode","proxmox", "NVIDIA","nvidia-container-tookit","CUDA"]
