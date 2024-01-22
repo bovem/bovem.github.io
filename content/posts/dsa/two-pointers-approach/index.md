@@ -1,7 +1,7 @@
 ---
 author: "Avnish"
 title: "Two-Pointer Approach"
-date: "2024-01-26"
+date: "2024-01-23"
 description: "The two-pointer approach provides an efficient alternative for solving problems related to substrings, subarrays, and sequences."
 tags: ["data-structures", "linked-lists", "fast-slow-pointers", "two-pointer", "sliding-window", "pointers", "go"]
 categories: ["Data Structures"]
