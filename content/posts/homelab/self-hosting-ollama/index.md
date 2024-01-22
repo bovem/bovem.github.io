@@ -387,8 +387,8 @@ used by our Ollama container.
 
 Watch Ollama in action inside VSCode
 
-<p align="center"><img src="ollama-vscode.gif" alt="Adding Comments to code using Ollama in VSCode"></p>
-<p align="center"><small>Adding Comments to code using Ollama in VSCode</small></p>
+<p align="center"><img src="ollama-vscode.gif" alt="Optimizing code using Ollama in VSCode"></p>
+<p align="center"><small>Optimizing code using Ollama in VSCode</small></p>
 
 <hr>
 Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
