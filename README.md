@@ -44,6 +44,7 @@ For a glimpse into my journey and the projects I've been involved in, feel free 
         -  <a target=_blank href="https://www.avni.sh/posts/dsa/two-pointers-approach/">Two-Pointer Approach</a>
         -  <a target=_blank href="https://www.avni.sh/posts/dsa/reverse-linked-lists/">Reversing Linked Lists</a>
         -  <a target=_blank href="https://www.avni.sh/posts/dsa/merge-sorted-linked-lists/">Merge Two Sorted Linked Lists</a>
+        -  <a target=_blank href="https://www.avni.sh/posts/dsa/reorder-linked-list/">Reorder Linked Lists</a>
 -  <a target=_blank href="https://www.avni.sh/posts/developer-tools/">Developer Tools</a>
     - <a target=_blank href="https://www.avni.sh/posts/developer-tools/my-development-environment/">My Development Environment: kitty, zsh, Neovim, tmux, and lazygit</a>
 
