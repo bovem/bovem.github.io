@@ -1,7 +1,7 @@
 ---
 author: "Avnish"
 title: "Reorder Linked Lists"
-date: "2024-02-07"
+date: "2024-02-15"
 description: "Implement a reorderList function that takes the head of a linked list (node(0) -> node(1) -> node(2) -> .. -> node(n-1) -> node(n)) as input and reorders its nodes in the form node(0) -> node(n) -> node(1) -> node(n-1) -> node(2) -> .. ."
 tags: ["data-structures", "linked-lists", "go", "neetcode-150", "leetcode-medium"]
 categories: ["Data Structures"]
