@@ -87,7 +87,9 @@ params:
         Title: "Hi, I'm Avnish"
         Content: >
 
-           - I'm a Software Developer at Autodesk. I write articles on computer science, mathematics and technology.  
+           - I'm a Software Developer at Autodesk. 
+           
+           - I write articles on computer science, mathematics and technology.  
            
            - Explore my other <b><a href="/posts/projects/" target=_blank>projects</a></b> or check out my <b><a target=_blank href="resume/latest/Resume_Avnish_Pal.pdf">resume</a></b> to learn more about my work experience. 
            
