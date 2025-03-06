@@ -51,7 +51,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Hi, I'm Avnish. I’m a Software Developer at Autodesk, passionate about exploring the intersections of computer science and mathematics. Through this blog, I share insights and discoveries from my professional journey, breaking down complex concepts into accessible articles."
+    description: "Hi, I'm Avnish. I’m a Software Developer at Autodesk. I write articles on computer science, mathematics and technology."
     author: "Avnish Pal"
     # author: ["Me", "You"] # multiple authors
 
@@ -87,9 +87,13 @@ params:
         Title: "Hi, I'm Avnish"
         Content: >
 
-           - I'm a Software Developer at Autodesk, passionate about exploring the intersections of computer science and mathematics. Through this blog, I share insights and discoveries from my professional journey, breaking down complex concepts into accessible articles. Explore my <b><a href="/posts/projects/" target=_blank>project portfolio</a></b> to see my work in action, or check out my <b><a target=_blank href="resume/latest/Resume_Avnish_Pal.pdf">resume</a></b> to learn more about my experience. 
+           - I'm a Software Developer at Autodesk. 
            
-           - To never miss a new article, subscribe to my <b><a target=_blank href="index.xml">RSS feed</a></b>.
+           - I write articles on computer science, mathematics and technology.  
+           
+           - Explore my other <b><a href="/posts/projects/" target=_blank>projects</a></b> or check out my <b><a target=_blank href="resume/latest/Resume_Avnish_Pal.pdf">resume</a></b> to learn more about my work experience. 
+           
+           - Subscribe to my <b><a target=_blank href="index.xml">RSS feed</a></b> to be notified about my future articles.
            
     socialIcons:
         - name: cv
