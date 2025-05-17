@@ -5,7 +5,6 @@ date: "2023-03-20"
 description: "Container images are built from Containerfile, a plaintext file containing the steps to be executed during the build process."
 tags: ["container","podman","docker","buildah","openshift","kubernetes","container-image"]
 categories: ["Microservices", "Cloud Native"]
-series: ["Kubernetes"]
 aliases: ["building-container-images"]
 ShowToc: true
 TocOpen: false
