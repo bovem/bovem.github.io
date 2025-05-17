@@ -1,8 +1,8 @@
 ---
-title: "Index"
+title: "Contents"
 layout: "contents"
 url: "/contents"
-summary: "Index of all content"
+summary: "List of blog content"
 ---
 
 -  <a target=_blank href="/posts/math">Math</a>

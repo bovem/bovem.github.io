@@ -30,7 +30,7 @@ languages:
                 - name: Archive
                   url: archives
                   weight: 5
-                - name: Index
+                - name: Contents
                   url: contents
                   weight: 10
                 - name: Tags
