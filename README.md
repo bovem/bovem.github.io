@@ -7,7 +7,7 @@
 * Connect with me on <a target=_blank href="https://github.com/bovem">GitHub</a> or <a target=_blank href="https://www.linkedin.com/in/avnish-pal/">LinkedIn</a> to discuss ideas or collaborate.  
 * Subscribe to my <a target=_blank href="https://www.avni.sh/index.xml">RSS feed</a> to be notified when I publish new articles.  
 
-<a target=_blank href="https://www.avni.sh/contents">Index of Blog Contents</a>
+## <a target=_blank href="https://www.avni.sh/contents">Index of Blog Contents</a>
 
 ## Technologies Used
 - [Hugo Static Site Generator](https://gohugo.io/)
