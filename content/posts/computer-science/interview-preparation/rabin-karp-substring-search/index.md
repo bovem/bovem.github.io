@@ -132,7 +132,7 @@ In this algorithm, we calculate a *rolling* hash for all characters in the searc
 
 then we use the same hashing function on the input string.
 
-The hash value of the input string is searched within rolling hashes of the search string. If a match is found then the characters of both strings are compared to confirm the match, as different strings could have the same hash value due to <a href="/posts/dsa/arrays-strings-hashmaps/#hash-function" target="_blank">hash collisions</a>.
+The hash value of the input string is searched within rolling hashes of the search string. If a match is found then the characters of both strings are compared to confirm the match, as different strings could have the same hash value due to <a href="/posts/computer-science/interview-preparation/arrays-strings-hashmaps/#hash-function" target="_blank">hash collisions</a>.
 
 The hash function could be defined like following
 

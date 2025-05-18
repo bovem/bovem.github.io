@@ -302,13 +302,13 @@ func main(){
 <p align="center"><img src="Linearithmic.drawio.png" alt="Scaling an Algorithm with Linearithmic Time Complexity"></p>
 <p align="center"><small>Scaling an Algorithm with Linearithmic Time Complexity</small></p>
 
-<a href="/posts/dsa/merge-sort/" target="_blank">Merge Sort</a>, <a href="/posts/dsa/quick-sort/" target="_blank">Quick Sort</a>, and <a href="/posts/dsa/heap-sort/" target="_blank">Heap Sort</a> are some examples of algorithms with **linearithmic time complexity**.
+<a href="/posts/computer-science/interview-preparation/merge-sort/" target="_blank">Merge Sort</a>, <a href="/posts/computer-science/interview-preparation/quick-sort/" target="_blank">Quick Sort</a>, and <a href="/posts/computer-science/interview-preparation/heap-sort/" target="_blank">Heap Sort</a> are some examples of algorithms with **linearithmic time complexity**.
 
 ## Factorial Time Complexity $O(n!)$
 <p align="center"><img src="Factorial.drawio.png" alt="Scaling an Algorithm with Factorial Time Complexity"></p>
 <p align="center"><small>Scaling an Algorithm with Factorial Time Complexity</small></p>
 
-The solution to the <a href="/posts/dsa/travelling-salesman-problem/" target="_blank">Travelling Salesman Problem</a> has factorial time complexity.
+The solution to the <a href="/posts/computer-science/interview-preparation/travelling-salesman-problem/" target="_blank">Travelling Salesman Problem</a> has factorial time complexity.
 
 # Comparing Algorithm Performance Using Time Complexity 
 Let's say we've been provided with a set of algorithms and we have to choose the one which scales best with respect to the growing input size. 

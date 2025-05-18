@@ -55,7 +55,7 @@ func main(){
 // Element at index 5 is: 78
 ```
 
-The <a href="/posts/dsa/time-complexity/" target="_blank">time complexity</a> of this loop is $O(n)$ where $n$ is the size of `arrayExample`.
+The <a href="/posts/computer-science/interview-preparation/time-complexity/" target="_blank">time complexity</a> of this loop is $O(n)$ where $n$ is the size of `arrayExample`.
 
 ## Nested Arrays
 A simple array will store data in just one dimension but we can nest arrays to store multidimensional data like _matrices_.
@@ -323,7 +323,7 @@ The <a href="/posts/go/go-programming-language/#maps" target="_blank">Map</a> in
 ## Hash Function
 While inserting a value in HashMap, a **Hash Function** calculates a hash from the input value and allocates a location to store the value.
 
-A HashMap collision occurs when two values have the same hash or they are allocated the same storage location. In the case of collision, multiple values could be stored in the same location using an array or <a href="/posts/dsa/linked-lists" target="_blank">LinkedList</a>.
+A HashMap collision occurs when two values have the same hash or they are allocated the same storage location. In the case of collision, multiple values could be stored in the same location using an array or <a href="/posts/computer-science/interview-preparation/linked-lists" target="_blank">LinkedList</a>.
 
 An ideal hash function will produce the least collisions, resulting in $O(1)$ lookup time. But in the worst-case scenario (all values are inserted in the same location) the lookup time will increase to $O(n)$, same as an array.
 

@@ -27,7 +27,7 @@ A vector could represent the magnitude of a quantity broken down into its variou
 
 On a 2D plane $8$ and $9$ could be called the horizontal and vertical components of the vector $\vec{v}$ respectively. But the words *horizontal* and *vertical* on a 2D or 3D plane are relative to the viewer (try rotating the figure above anti-clockwise). 
 
-By using **unit vectors** $\hat{i}$, $\hat{j}$, and $\hat{k}$ (vectors with <a href="/posts/linear-algebra/tensors/#magnitude-of-a-vector" target="_blank">magnitude</a> 1 along the x, y, and z axis respectively) we can define the orientation of each component of the vector. Thus, vector $\vec{v}$ could be redefined as $8\hat{i} + 9\hat{j} + 0\hat{k}$ in a 3D plane or $8\hat{i} + 9\hat{j}$ on a 2D plane.
+By using **unit vectors** $\hat{i}$, $\hat{j}$, and $\hat{k}$ (vectors with <a href="/posts/math/linear-algebra/tensors/#magnitude-of-a-vector" target="_blank">magnitude</a> 1 along the x, y, and z axis respectively) we can define the orientation of each component of the vector. Thus, vector $\vec{v}$ could be redefined as $8\hat{i} + 9\hat{j} + 0\hat{k}$ in a 3D plane or $8\hat{i} + 9\hat{j}$ on a 2D plane.
   
 
 <p align="center"><img src="unit_vectors.png" alt="Unit vectors along the x, y, and z axis"></p>
@@ -87,7 +87,7 @@ $$| \vec{u} \times \vec{v}| = |\vec{u}||\vec{v}|\sin(\phi)$$
 Unlike the dot product, the cross product is not commutative.
 $$\vec{u} \times \vec{v} \neq \vec{v} \times \vec{u}$$
 
-If we have to find the cross product of two vectors using their elements, we have to create a matrix of both vectors and calculate its <a href="/posts/linear-algebra/determinants/" target="_blank">determinant</a>.
+If we have to find the cross product of two vectors using their elements, we have to create a matrix of both vectors and calculate its <a href="/posts/math/linear-algebra/determinants/" target="_blank">determinant</a>.
 
 $$\vec{u} \times \vec{v} = \begin{bmatrix} u_1 \\\ u_2 \end{bmatrix} \times \begin{bmatrix} v_1 \\\ v_2 \end{bmatrix} = \begin{vmatrix} u_1 & v_1 \\\ u_2 & v_2 \end{vmatrix} = u_1 v_2 - v_1 \ u_2$$
 

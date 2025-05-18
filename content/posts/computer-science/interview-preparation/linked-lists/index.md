@@ -24,7 +24,7 @@ The linked list data structure is used to store sequential data using *nodes*. A
 
 <p align="center"><img src="linked-list.png" alt="Linked List"></p>
 
-Memory for a new node is allocated dynamically i.e. nodes are stored in the next available memory location. Unlike <a href="/posts/dsa/arrays-strings-hashmaps/#arrays" target="_blank">arrays</a> where contiguous blocks of memory are allocated during declaration.
+Memory for a new node is allocated dynamically i.e. nodes are stored in the next available memory location. Unlike <a href="/posts/computer-science/interview-preparation/arrays-strings-hashmaps/#arrays" target="_blank">arrays</a> where contiguous blocks of memory are allocated during declaration.
 
 The first element in a linked list is marked by its *head* pointer.
 

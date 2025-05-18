@@ -35,7 +35,7 @@ $$\begin{bmatrix} 2x - y \\\ 4x+y \\\ 5x-3y \end{bmatrix} = \begin{bmatrix} 3 \\
 
 # Row Picture
 
-The representation of a system of linear equations as a <a href="/posts/linear-algebra/matrices/#multiplication-of-matrices" target="_blank">matrix multiplication</a> product of the coefficients and the variable matrix is called the **row picture**. Each row represents a different linear equation.
+The representation of a system of linear equations as a <a href="/posts/math/linear-algebra/matrices/#multiplication-of-matrices" target="_blank">matrix multiplication</a> product of the coefficients and the variable matrix is called the **row picture**. Each row represents a different linear equation.
 
 $$\begin{bmatrix} 2 & -1 \\\ 4 & 1 \\\ 5 & -3 \end{bmatrix} \times \begin{bmatrix} x \\\ y \end{bmatrix} = \begin{bmatrix} 3 \\\ 9  \\\ 7\end{bmatrix}$$
 
@@ -154,11 +154,11 @@ $$\begin{bmatrix} 2 & -1 & | & 3 \\\ 4 & 1 & | & 9 \\\ 5 & -3 & | & 7\end{bmatri
 Then, we reduce this augmented matrix to its row echelon form.
 
 ## Row Echelon Form
-The **row echelon form** of a matrix is an <a href="/posts/linear-algebra/matrices/#triangular-matrix" target="_blank">upper-triangular matrix</a> representation (the last row of the matrix could be just $0$s) of the augmented matrix.
+The **row echelon form** of a matrix is an <a href="/posts/math/linear-algebra/matrices/#triangular-matrix" target="_blank">upper-triangular matrix</a> representation (the last row of the matrix could be just $0$s) of the augmented matrix.
 
-To obtain the row echelon form, we can perform <a href="/posts/linear-algebra/matrices/#addition-and-subtraction-of-matrices" target="_blank">matrix addition</a>, <a href="/posts/linear-algebra/matrices/#multiplication-and-division-with-a-scalar-value" target="_blank">scalar multiplication</a> (with values other than $0$) and swaps between the rows of the augmented matrix. 
+To obtain the row echelon form, we can perform <a href="/posts/math/linear-algebra/matrices/#addition-and-subtraction-of-matrices" target="_blank">matrix addition</a>, <a href="/posts/math/linear-algebra/matrices/#multiplication-and-division-with-a-scalar-value" target="_blank">scalar multiplication</a> (with values other than $0$) and swaps between the rows of the augmented matrix. 
 
-Initially, the first element in the <a href="/posts/linear-algebra/matrices/#diagonal-of-a-matrix" target="_blank">diagonal</a> of the matrix is the **pivot**. All the elements below the pivot have to be reduced to $0$s by performing scalar multiplication and matrix addition/subtraction between the pivot row and the rows below it. 
+Initially, the first element in the <a href="/posts/math/linear-algebra/matrices/#diagonal-of-a-matrix" target="_blank">diagonal</a> of the matrix is the **pivot**. All the elements below the pivot have to be reduced to $0$s by performing scalar multiplication and matrix addition/subtraction between the pivot row and the rows below it. 
 
 $$\begin{bmatrix} {\color{blue} 2} & -1 & | & 3 \\\ 4 & 1 & | & 9 \\\ 5 & -3 & | & 7\end{bmatrix}$$
 

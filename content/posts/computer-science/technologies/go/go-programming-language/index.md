@@ -19,7 +19,7 @@ Some of the popular projects created with Go
 - Docker: Container Engine
 - Kubernetes: Container Orchestrator
 - Hugo: Static Site Generator (Also used to generate this blog)
-- <a href="/posts/kubernetes/helm-charts" target="_blank">Helm</a>: Package manager for Kubernetes
+- <a href="/posts/computer-science/technologies/cloud-native/helm-charts" target="_blank">Helm</a>: Package manager for Kubernetes
 
 # Packages
 A **Package** abstraction is created in Go to group functions that are related to each other or associated with a specific task. At the start of each source file (`*.go`) a package name is assigned to it using the `package` keyword, for example, `package main`. 

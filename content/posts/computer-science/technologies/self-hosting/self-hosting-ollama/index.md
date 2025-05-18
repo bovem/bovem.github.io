@@ -23,7 +23,7 @@ comments: false
 Ollama provides an interface to self-host and interact with 
 open-source LLMs (Large Language Models) using its binary 
 or container image. Managing LLMs using Ollama 
-is like managing <a href="/posts/kubernetes/container-lifecycle" target="_blank">container lifecycle</a> using container engines like `docker` or `podman`.
+is like managing <a href="/posts/computer-science/technologies/cloud-native/container-lifecycle" target="_blank">container lifecycle</a> using container engines like `docker` or `podman`.
 
 * Ollama commands `pull` and `run` are used to download and execute
 LLMs respectively, just like the ones used to manage containers

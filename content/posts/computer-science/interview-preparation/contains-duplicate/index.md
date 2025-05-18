@@ -86,7 +86,7 @@ func main(){
 ```
 
 # Optimized Solution
-Instead of iterating the array for each element selected by the outer loop, we can store all the elements inside a <a href="/posts/dsa/arrays-strings-hashmaps/#hashmaps" target="_blank">HashMap</a>. If the element is already present in HashMap, then we have encountered a duplicate and we can exit the function with the value `true`.
+Instead of iterating the array for each element selected by the outer loop, we can store all the elements inside a <a href="/posts/computer-science/interview-preparation/arrays-strings-hashmaps/#hashmaps" target="_blank">HashMap</a>. If the element is already present in HashMap, then we have encountered a duplicate and we can exit the function with the value `true`.
 
 ## Psuedo Code for the Optimized Solution
 ```text

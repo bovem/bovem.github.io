@@ -37,7 +37,7 @@ $$Node_0 \rightarrow Node_n \rightarrow Node_1 \rightarrow Node_{(n-1)} \rightar
 
 # Brute Force Solution
 To solve this problem we use two iterators: one starting from the `head` of the input list and another 
-starting from the `head` of the <a href="/posts/dsa/reverse-linked-lists/" target="_blank">reversed input list</a>. 
+starting from the `head` of the <a href="/posts/computer-science/interview-preparation/reverse-linked-lists/" target="_blank">reversed input list</a>. 
 
 We pick values alternatively from both iterators and create a new 
 linked list. The loop will continue until the length of the length of the new linked list is equal to the length of 
@@ -215,7 +215,7 @@ func main(){
 
 # Optimized Solution
 To solve this problem in linear time while also reducing the space complexity (by performing operations in-place) we 
-have to switch to the <a href="/posts/dsa/two-pointers-approach/#fast-slow-pointers" target="_blank">Fast-Slow Pointer Approach</a>. 
+have to switch to the <a href="/posts/computer-science/interview-preparation/two-pointers-approach/#fast-slow-pointers" target="_blank">Fast-Slow Pointer Approach</a>. 
 
 We have to break the input linked list from the middle 
 (or the `middle.Next` node in the case of an odd number of nodes). Then we will insert the nodes from the second half of 

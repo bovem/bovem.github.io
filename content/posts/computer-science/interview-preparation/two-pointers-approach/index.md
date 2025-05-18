@@ -20,12 +20,12 @@ cover:
 math: true
 ---
 
-To solve problems like <a href="/posts/dsa/two-sums/" target="_blank">Two Sums</a>, 
-<a href="/posts/dsa/product-except-self/" target="_blank">Product Except Self</a>, or 
-<a href="/posts/dsa/contains-duplicate/" target="_blank">Contains Duplicate</a> we have to 
+To solve problems like <a href="/posts/computer-science/interview-preparation/two-sums/" target="_blank">Two Sums</a>, 
+<a href="/posts/computer-science/interview-preparation/product-except-self/" target="_blank">Product Except Self</a>, or 
+<a href="/posts/computer-science/interview-preparation/contains-duplicate/" target="_blank">Contains Duplicate</a> we have to 
 access multiple values at the same time from a sequential data structure (for example, a 
-<a href="/posts/dsa/linked-lists/" target="_blank">Linked List</a> or an 
-<a href="/posts/dsa/arrays-strings-hashmaps/#arrays" target="_blank">Array</a>).
+<a href="/posts/computer-science/interview-preparation/linked-lists/" target="_blank">Linked List</a> or an 
+<a href="/posts/computer-science/interview-preparation/arrays-strings-hashmaps/#arrays" target="_blank">Array</a>).
 
 The initial instinct while solving these problems is to use nested loops where each layer 
 of the loop will maintain a different iterator on the data structure. But this 
@@ -67,7 +67,7 @@ while(startPointer<endPointer){
 return none, none
 ```
 
-Unlike the <a href="/posts/dsa/two-sums/#brute-force-solution" target="_blank">brute-force solution to two sums</a> problem which uses nested loops to 
+Unlike the <a href="/posts/computer-science/interview-preparation/two-sums/#brute-force-solution" target="_blank">brute-force solution to two sums</a> problem which uses nested loops to 
 return results in quadratic time ($O(n^2)$), this approach will return results 
 in linear time ($O(1)$) while also maintaining a constant space complexity.
 

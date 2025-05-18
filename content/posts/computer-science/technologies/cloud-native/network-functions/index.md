@@ -23,7 +23,7 @@ PNF deployments present the following challenges:
 - Access to PNFs is limited to the private cloud setup by the telco.
 
 # Virtualized Network Functions (VNFs)
-The concept of **Network Function Virtualization (NFV)** was introduced in 2012 by a group of leading telcos. It proposed the transition of network functions from proprietary hardware to virtual machines. Individual network functions could be provisioned as a Virtual Machine on top of a hypervisor (<a href="/posts/kubernetes/containers/#virtual-machines-vms" target="_blank">Virtualized Deployment</a>), such network functions are called **Virtualized Network Functions (VNF)**. 
+The concept of **Network Function Virtualization (NFV)** was introduced in 2012 by a group of leading telcos. It proposed the transition of network functions from proprietary hardware to virtual machines. Individual network functions could be provisioned as a Virtual Machine on top of a hypervisor (<a href="/posts/computer-science/technologies/cloud-native/containers/#virtual-machines-vms" target="_blank">Virtualized Deployment</a>), such network functions are called **Virtualized Network Functions (VNF)**. 
 
 Benefits of VNFs over PNFs
 * VNFs could be deployed on any generic hardware as long as they are supported by the hypervisor. This eliminates the need for proprietary hardware for deployment.
@@ -47,13 +47,13 @@ The NFV provided by Infoblox has the following features:
 - Integration with other Infoblox products like Infoblox IPAM and Infoblox vDiscovery.
 
 # Cloud-Native Network Functions (CNFs)
-Now, network functions are transitioning from virtual machines to containers (<a href="/posts/kubernetes/containers/#containers" target="_blank">Containerized Deployment</a>). This will provide further benefits over PNFs like
+Now, network functions are transitioning from virtual machines to containers (<a href="/posts/computer-science/technologies/cloud-native/containers/#containers" target="_blank">Containerized Deployment</a>). This will provide further benefits over PNFs like
 
 - Improved scalability and efficient usage of resources.
 - Ability to use a mix of private, public, and hybrid cloud as containers could be deployed and migrated easily on any cloud environment.
 - Edge devices could also be included in the network to improve its reach and latency to the end users.
 
-Although <a href="/posts/kubernetes/container-network-interfaces/" target="_blank">CNIs</a> could be used to create and configure network interfaces between containers, for telco's use case a network function container could require network interfaces that could interact with the specialized hardware directly. In such cases, an <a href="/posts/kubernetes/kubernetes-operators/" target="_blank">operator</a> could be defined with custom resources that could procure the hardware directly to the workloads (containers) as a network interface. CNFs themselves could also be packaged as Kubernetes operators.
+Although <a href="/posts/computer-science/technologies/cloud-native/container-network-interfaces/" target="_blank">CNIs</a> could be used to create and configure network interfaces between containers, for telco's use case a network function container could require network interfaces that could interact with the specialized hardware directly. In such cases, an <a href="/posts/computer-science/technologies/cloud-native/kubernetes-operators/" target="_blank">operator</a> could be defined with custom resources that could procure the hardware directly to the workloads (containers) as a network interface. CNFs themselves could also be packaged as Kubernetes operators.
 
 ## Example of a CNF: Nokia Cloud Mobility Manager
 Nokia's Cloud Mobility Manager is a control plane network function for packet networks following the 3GPP (3rd Generation Partnership Project) standard.
@@ -67,7 +67,7 @@ It is designed to be deployed in a cloud-native environment as VNF (in OpenStack
 # Transition from VNFs to CNFs
 The journey from VNFs to CNFs for telcos is not easy due to the following challenges:
 * Virtualization of a workload is relatively easier compared to its containerization.
-* A container isolates the process running inside it using <a href="/posts/kubernetes/container-architecture/#namespaces" target="_blank">namespaces</a>. Some of the network function's workloads might not run as expected inside an isolated namespace.
+* A container isolates the process running inside it using <a href="/posts/computer-science/technologies/cloud-native/container-architecture/#namespaces" target="_blank">namespaces</a>. Some of the network function's workloads might not run as expected inside an isolated namespace.
 * Containers share the kernel with their host and traditionally the deployment of network functions requires kernel hacks.
 * The architecture of telco networks is complex. Migrating it to a container-based architecture would not be easy.
 
@@ -82,7 +82,7 @@ To ease this transition we have CNF Test Suite and CNF Testbed
 The **CNF Test Suite** is defined by the Telecom User Group (TUG) and Cloud Native Network Function Working Group (CNF WG) for telcos to test their network functions deployed in a cloud-native environment for cloud-native principles:
 
 - Configuration: The configuration for CNF should be defined in a declarative manner in ConfigMaps, Operators, or any other resource.
-- Compatibility, Installability & Upgradability: CNFs should work with Certified Kubernetes Products. CNFs should be distributed & deployed as Containers, Operators, or <a href="/posts/kubernetes/helm-charts/" target="_blank">Helm Charts</a>.
+- Compatibility, Installability & Upgradability: CNFs should work with Certified Kubernetes Products. CNFs should be distributed & deployed as Containers, Operators, or <a href="/posts/computer-science/technologies/cloud-native/helm-charts/" target="_blank">Helm Charts</a>.
 - Microservice: CNFs should be built as microservices.
 - State: The state of CNFs should be stored in a custom resource or a database like `etcd`.
 - Reliability, Resilience & Availability: Failures are inevitable in a non-carrier grade cloud environment. So a CNF should be reliable, resilient, and available during such failures.

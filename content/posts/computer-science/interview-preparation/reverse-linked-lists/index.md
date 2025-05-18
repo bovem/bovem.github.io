@@ -28,7 +28,7 @@ and returns the `head` node of the reversed linked list in the output.
 <p align="center"><img src="reverse-linked-lists-problem.png" alt="Problem statement for the reverseList"></p>
 
 # Brute Force Solution
-If we iterate over the input linked list and insert its <a href="/posts/dsa/linked-lists/#inserting-an-element-at-the-beginning" target="_blank">value at the beginning</a> of a new list the result would be a reversed linked list.
+If we iterate over the input linked list and insert its <a href="/posts/computer-science/interview-preparation/linked-lists/#inserting-an-element-at-the-beginning" target="_blank">value at the beginning</a> of a new list the result would be a reversed linked list.
 
 <p align="center"><img src="reverse-linked-lists-brute-force.png" alt="Brute-force solution for the reverseList"></p>
 
@@ -122,7 +122,7 @@ Since reversing a linked list will require traversal of all the nodes, the time 
 could not be improved from $O(n)$. But if we could reverse the `next` node reference in place for each 
 node the space complexity would be reduced to $O(n)$.
 
-We will use the <a href="/posts/dsa/two-pointers-approach/" target="_blank">two-pointer approach</a> to maintain references to nodes `current` and `previous`. The 
+We will use the <a href="/posts/computer-science/interview-preparation/two-pointers-approach/" target="_blank">two-pointer approach</a> to maintain references to nodes `current` and `previous`. The 
 `current` pointer will start from the `head` node and iterate till the `nil` at the end. Whereas, the 
 `previous` pointer will be one step behind the `current`.
 

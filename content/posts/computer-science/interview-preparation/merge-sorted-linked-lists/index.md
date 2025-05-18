@@ -28,8 +28,8 @@ and returns the `head` node of the merged linked list as the output.
 <p align="center"><img src="merge-sorted-linked-lists-problem.png" alt="Problem statement for the mergeTwoLists"></p>
 
 # Optimal Solution
-To merge both linked lists we can use the <a href="/posts/dsa/two-pointers-approach/" target="_blank">two-pointer approach</a> by maintaining an iterator on both linked lists and 
-comparing their values. The smaller value will be selected and <a href="/posts/dsa/linked-lists/#inserting-an-element-at-the-end" target="_blank">inserted at the end of a new list</a>. The result would 
+To merge both linked lists we can use the <a href="/posts/computer-science/interview-preparation/two-pointers-approach/" target="_blank">two-pointer approach</a> by maintaining an iterator on both linked lists and 
+comparing their values. The smaller value will be selected and <a href="/posts/computer-science/interview-preparation/linked-lists/#inserting-an-element-at-the-end" target="_blank">inserted at the end of a new list</a>. The result would 
 be a merged sorted linked list.
 
 If all the values from any one of the linked lists are added then the other linked list will be joined at the end of 

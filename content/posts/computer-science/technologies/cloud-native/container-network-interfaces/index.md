@@ -19,7 +19,7 @@ cover:
   responsiveImages: false
 ---
 
-<a href="/posts/kubernetes/containers/#container-runtime" target="_blank">Container runtimes</a> allocate <a href="/posts/kubernetes/container-architecture/#network" target="_blank">network namespaces</a> for containers deployed on the host. A network interface (like `docker0`, `bridge`,  or `host`) is configured inside the namespace to facilitate the communication with host, the internet, or other containers.
+<a href="/posts/computer-science/technologies/cloud-native/containers/#container-runtime" target="_blank">Container runtimes</a> allocate <a href="/posts/computer-science/technologies/cloud-native/container-architecture/#network" target="_blank">network namespaces</a> for containers deployed on the host. A network interface (like `docker0`, `bridge`,  or `host`) is configured inside the namespace to facilitate the communication with host, the internet, or other containers.
 
 The **Container Network Interface (CNI)** project provides specifications and libraries for implementing a plugin-based solution for managing network interfaces for containers. The runtime executes the CNI plugins provided as binary executable files.
 

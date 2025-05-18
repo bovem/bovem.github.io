@@ -145,7 +145,7 @@ Intel Optane is a tiered persistent memory technology. It is used as a high-perf
 
 The PMEM-CSI storage driver is provided by Intel to configure the Optane Persistent Memory as a storage solution for Kubernetes. The persistent volumes could be provisioned dynamically on the Optane memory and mounted on the containers present on the cluster.
 
-Using this driver the developers can take advantage of Optane memory in their cache data store like <a href="/posts/kubernetes/operator-sdk/#creating-a-go-based-operator" target="_blank">Memcached Operator</a>.
+Using this driver the developers can take advantage of Optane memory in their cache data store like <a href="/posts/computer-science/technologies/cloud-native/operator-sdk/#creating-a-go-based-operator" target="_blank">Memcached Operator</a>.
 
 
 <hr>

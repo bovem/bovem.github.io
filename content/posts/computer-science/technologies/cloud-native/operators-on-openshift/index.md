@@ -12,7 +12,7 @@ TocOpen: false
 comments: false
 ---
 
-OpenShift provides an *Operators* section in its web console UI for the installation and management of <a href="/posts/kubernetes/kubernetes-operators/" target="_blank">operators</a> on the cluster.
+OpenShift provides an *Operators* section in its web console UI for the installation and management of <a href="/posts/computer-science/technologies/cloud-native/kubernetes-operators/" target="_blank">operators</a> on the cluster.
 
 # OperatorHub
 The **OperatorHub** is an interface for searching and installing operators. It has the following categories of operators: 

@@ -12,17 +12,17 @@ TocOpen: false
 comments: false
 ---
 
-An Operator Bundle Image (OBI) is created to package custom resources and metadata associated with an <a href="/posts/kubernetes/kubernetes-operators/" target="_blank">operator</a>. It's like any other <a href="/posts/kubernetes/container-images/" target="_blank">container image</a> only difference is that it couldn't be executed but it could be distributed through an OCI-compliant image registry. 
+An Operator Bundle Image (OBI) is created to package custom resources and metadata associated with an <a href="/posts/computer-science/technologies/cloud-native/kubernetes-operators/" target="_blank">operator</a>. It's like any other <a href="/posts/computer-science/technologies/cloud-native/container-images/" target="_blank">container image</a> only difference is that it couldn't be executed but it could be distributed through an OCI-compliant image registry. 
 
 Contents of a bundle image are:
 - Kubernetes Custom Resource Definitions (CRDs)
-- <a href="/posts/kubernetes/operators-on-openshift/#clusterserviceversion" target="_blank">ClusterServiceVersion (CSV)</a>
+- <a href="/posts/computer-science/technologies/cloud-native/operators-on-openshift/#clusterserviceversion" target="_blank">ClusterServiceVersion (CSV)</a>
 - Specification of operator's dependencies
 - Operator metadata like its name, version, channels, etc.
 
-The <a href="/posts/kubernetes/kubernetes-operators/#control-loop" target="_blank">control loops</a> associated with the operator are defined in its **Controller Manager**. It is an executable that contains one or more custom controllers.
+The <a href="/posts/computer-science/technologies/cloud-native/kubernetes-operators/#control-loop" target="_blank">control loops</a> associated with the operator are defined in its **Controller Manager**. It is an executable that contains one or more custom controllers.
 
-The <a href="/posts/kubernetes/operators-on-openshift/#operator-lifecycle-manager-olm" target="_blank">Operator Lifecycle Manager (OLM)</a> pulls the bundle image from a registry and installs it on the cluster.
+The <a href="/posts/computer-science/technologies/cloud-native/operators-on-openshift/#operator-lifecycle-manager-olm" target="_blank">Operator Lifecycle Manager (OLM)</a> pulls the bundle image from a registry and installs it on the cluster.
 
 # Operator SDK
 **Operator SDK** is a project under Operator Framework that provides tools for building, testing, and packaging operators using the `operator-sdk` utility.
@@ -146,7 +146,7 @@ make install run
 ```
 
 ## Building the Operator Bundle Image
-`Makefile` target `bundle` will create a `bundle/` directory in the project's root containing manifests (CRDs) and metadata associated with the operator. A <a href="/posts/kubernetes/building-container-images/" target="_blank">Containerfile</a> named `bundle.Dockerfile` will be created as well.
+`Makefile` target `bundle` will create a `bundle/` directory in the project's root containing manifests (CRDs) and metadata associated with the operator. A <a href="/posts/computer-science/technologies/cloud-native/building-container-images/" target="_blank">Containerfile</a> named `bundle.Dockerfile` will be created as well.
 
 Targets `bundle-build` and `bundle-push` will build and push the bundle image respectively.
 ```bash

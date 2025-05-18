@@ -19,7 +19,7 @@ cover:
 comments: false
 ---
 
-To isolate the processes running inside a <a href="/posts/kubernetes/containers/" target="_blank">container</a> from its host system, container engine uses the following four features:
+To isolate the processes running inside a <a href="/posts/computer-science/technologies/cloud-native/containers/" target="_blank">container</a> from its host system, container engine uses the following four features:
 * Namespaces
 * Control Groups
 * Secure Computing

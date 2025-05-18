@@ -43,7 +43,7 @@ A Sudoku grid is valid if
 The input Sudoku table could be incomplete where "`.`" will  represent an empty cell.
 
 # Optimal Solution
-The time complexity of validating a single row or column for repetition using a hashmap (like in <a href="/posts/dsa/contains-duplicate/" target="_blank">containsDuplicate</a>) will be $O(9)$. Repeating this process for every row and column in the input matrix will result in total time complexity of $9 \times O(9) + 9 \times O(9)$.
+The time complexity of validating a single row or column for repetition using a hashmap (like in <a href="/posts/computer-science/interview-preparation/contains-duplicate/" target="_blank">containsDuplicate</a>) will be $O(9)$. Repeating this process for every row and column in the input matrix will result in total time complexity of $9 \times O(9) + 9 \times O(9)$.
 
 To validate all 3x3 sub-matrices we have to iterate over every 3rd row and column of the Sudoku grid. On each iteration, we will start from the top-left corner of the 3x3 grid and reach the bottom-right corner using nested loops. The total time complexity of validating each 3x3 submatrix will be $9 \times O(3) \times O(3)$.
 

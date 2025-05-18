@@ -21,7 +21,7 @@ math: true
 ---
 
 # Problem Statement
-We have to implement a `groupAnagram` function that takes an array of strings as input and returns a new array with <a href="/posts/dsa/identifying-anagrams/" target="_blank">anagrams</a> grouped.
+We have to implement a `groupAnagram` function that takes an array of strings as input and returns a new array with <a href="/posts/computer-science/interview-preparation/identifying-anagrams/" target="_blank">anagrams</a> grouped.
 
 <p align="center"><img src="group-anagrams-problem.png" alt="Problem Statement for groupAnagrams"></p>
 
