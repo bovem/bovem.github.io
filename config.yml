@@ -30,7 +30,7 @@ languages:
                 - name: Archive
                   url: archives
                   weight: 5
-                - name: Index
+                - name: Contents
                   url: contents
                   weight: 10
                 - name: Tags
@@ -51,7 +51,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Hi, I'm Avnish. I’m a Software Developer at Autodesk. I write articles on computer science, mathematics and technology."
+    description: "Hi, I'm Avnish. I’m a Software Developer at Autodesk. I write articles on computer science and math."
     author: "Avnish Pal"
     # author: ["Me", "You"] # multiple authors
 
@@ -86,15 +86,15 @@ params:
     homeInfoParams:
         Title: "Hi, I'm Avnish"
         Content: >
+           - Building software at Autodesk, passionate about simplifying technical concepts.  
 
-           - I'm a Software Developer at Autodesk. 
-           
-           - I write articles on computer science, mathematics and technology.  
-           
-           - Explore my other <b><a href="/posts/projects/" target=_blank>projects</a></b> or check out my <b><a target=_blank href="resume/latest/Resume_Avnish_Pal.pdf">resume</a></b> to learn more about my work experience. 
-           
-           - Subscribe to my <b><a target=_blank href="index.xml">RSS feed</a></b> to be notified about my future articles.
-           
+           - I document my learnings on computer science and mathematics through articles.  
+
+           - Explore my <a target=_blank href="/posts/projects">personal projects</a> or check my <a target=_blank href="/resume/latest/Resume_Avnish_Pal.pdf">resume</a> for professional experience.  
+
+           - Connect with me on <a target=_blank href="https://github.com/bovem">GitHub</a> or <a target=_blank href="https://www.linkedin.com/in/avnish-pal/">LinkedIn</a> to discuss ideas or collaborate.  
+
+           - Subscribe to my <a target=_blank href="index.xml">RSS feed</a> to be notified when I publish new articles.  
     socialIcons:
         - name: cv
           url: "resume/latest/Resume_Avnish_Pal.pdf"
@@ -129,6 +129,7 @@ params:
 
     assets:
         favicon: "/assets/favicon.ico"
+        disableHLJS: true
     #     favicon16x16: "<link / abs url>"
     #     favicon32x32: "<link / abs url>"
     #     apple_touch_icon: "<link / abs url>"
@@ -152,13 +153,13 @@ markup:
     goldmark:
         renderer:
             unsafe: true
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         # noClasses: false
-#         style: monokai
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: true
+        # noClasses: false
+        style: tokyonight-night
 
 privacy:
     vimeo:
