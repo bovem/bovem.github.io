@@ -153,6 +153,8 @@ Once we have found the first element of consecutive sequence we can keep looking
 
 <p align="center"><img src="longest-consecutive-optimized3.png" alt="Optimized solution for the longestConsecutive"></p>
 
+During the second iteration we can utilize the hashmap to avoid duplicate values in the input array.
+
 ## Psuedo code for the Optimized Solution
 ```text
 hashmap = HashMap()
@@ -162,10 +164,9 @@ loop value in inputArray
 
 longest_sequence = 0
 sequence = 0
-loop index in inputArray
-	value = inputArray[index]
-	if not hashmap[value-1]
-		while hashmap[value+1]
+loop key in hashmap.keys()
+	if not hashmap[key-1]
+		while hashmap[key+1]
 			sequence += 1
 			value+=1
 	else
@@ -191,7 +192,6 @@ package main
 
 import (
     "fmt"
-    "math"
 )
 
 func longestConsecutive(nums []int)(int){
@@ -210,39 +210,39 @@ func longestConsecutive(nums []int)(int){
         }
     }
     
-    longestSequence := 1
-    sequence := 1
-    
-    for index:=0;index<len(nums);index++{
-        value := nums[index]
-        _, key_exists := hashmap[value-1]
-        
+    maxSeqLen := 1
+    for value, _ := range hashmap {
+        seqLen := 1
+
         // If value-1 does not exist in the hashmap
         // it is the start of a sequence
-        if !key_exists{
-            
-            // Increment the value and sequence length
-            // until we can't find value+1 in the hashmap
-            for ;true;{
-                value+=1
-                _, key_exists = hashmap[value]
-                if key_exists{
-                    sequence+=1
+        _, found := hashmap[value-1]
+
+        if !found {
+            for {
+
+                // Increment the value and sequence length
+                // until we can't find value+1 in the hashmap
+                value++
+                _, found = hashmap[value]
+                if found {
+                    seqLen++
                 } else {
                     break
                 }
+
             }
         }
-        
+
         // Reset the value of longestSequence to the maximum
         // of current sequence and the current value of 
         // the longestSequence
-        longestSequence = int(math.Max(float64(sequence), 
-                                        float64(longestSequence)))
-        sequence = 1
+        if seqLen > maxSeqLen {
+            maxSeqLen = seqLen
+        }
     }
     
-    return longestSequence
+    return maxSeqLen
 }
 
 func main(){
