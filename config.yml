@@ -1,6 +1,5 @@
 baseURL: "https://www.avni.sh"
 title: "avni.sh"
-paginate: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -12,6 +11,9 @@ enableEmoji: true
 pygmentsUseClasses: true
 publishDir: "docs"
 # googleAnalytics: UA-123-45
+
+pagination:
+  pageSize: 5
 
 minify:
     disableXML: true
