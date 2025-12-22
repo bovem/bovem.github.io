@@ -1,7 +1,7 @@
 ---
 services:
   hugo-server:
-    image: hugomods/hugo:0.125.7
+    image: hugomods/hugo:0.146.7
     command: "hugo server --buildFuture --buildDrafts --bind=0.0.0.0"
     volumes:
       - "../..:/src"

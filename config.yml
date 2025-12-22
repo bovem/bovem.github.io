@@ -1,5 +1,5 @@
 baseURL: "https://www.avni.sh"
-title: "avni.sh"
+title: "» avni.sh"
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -94,7 +94,7 @@ params:
 
            - Explore my <a href="/posts/personal-projects">personal projects</a> or check my <a target=_blank href="/resume/latest/Resume_Avnish_Pal.pdf">resume</a> for professional experience.  
 
-           - Connect with me on <a target=_blank href="https://github.com/bovem">GitHub</a> or <a target=_blank href="https://www.linkedin.com/in/avnish-pal/">LinkedIn</a> to discuss ideas or collaborate.  
+           - Connect with me on <a target=_blank href="https://github.com/bovem">GitHub</a> or <a target=_blank href="https://www.linkedin.com/in/avnish-pal/">LinkedIn</a>.  
 
            - Subscribe to my <a target=_blank href="index.xml">RSS feed</a> to be notified when I publish new articles.  
     socialIcons:
