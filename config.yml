@@ -54,7 +54,7 @@ outputs:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Hi, I'm Avnish. I’m a Software Developer at Autodesk. I write articles on computer science and math."
-    author: "Avnish Pal"
+    author: "Avnish"
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
@@ -88,7 +88,7 @@ params:
     homeInfoParams:
         Title: "Hi, I'm Avnish"
         Content: >
-           - Building software at Autodesk in Singapore  
+           - Building software at Autodesk in Singapore.  
 
            - Passionate about simplifying concepts from computer science and math.  
 
