@@ -88,20 +88,18 @@ params:
     homeInfoParams:
         Title: "Hi, I'm Avnish"
         Content: >
-           - Building software at Autodesk, passionate about simplifying technical concepts.  
+           - Building software at Autodesk in Singapore.  
 
-           - I document my learnings on computer science and mathematics through articles.  
+           - Passionate about simplifying concepts from computer science and math.  
 
-           - Explore my <a href="/posts/personal-projects">personal projects</a> or check my <a target=_blank href="/resume/latest/Resume_Avnish_Pal.pdf">resume</a> for professional experience.  
-
-           - Connect with me on <a target=_blank href="https://github.com/bovem">GitHub</a> or <a target=_blank href="https://www.linkedin.com/in/avnish-pal/">LinkedIn</a>.  
+           - Check my <a target=_blank href="/resume/latest/Resume_Avnish_Pal.pdf">resume</a> to learn more about my professional experience.  
 
            - Subscribe to my <a target=_blank href="index.xml">RSS feed</a> to be notified when I publish new articles.  
     socialIcons:
         - name: cv
           url: "resume/latest/Resume_Avnish_Pal.pdf"
         - name: email
-          url: "mailto:avnishnish07@gmail.com"
+          url: "mailto:contact.avnish@proton.me"
         - name: github
           url: "https://github.com/bovem"
         - name: medium
@@ -168,7 +166,7 @@ privacy:
         disabled: false
         simple: true
 
-    twitter:
+    x:
         disabled: false
         enableDNT: true
         simple: true
@@ -184,5 +182,5 @@ privacy:
 services:
     instagram:
         disableInlineCSS: true
-    twitter:
+    x:
         disableInlineCSS: true
