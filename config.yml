@@ -99,7 +99,7 @@ params:
         - name: cv
           url: "resume/latest/Resume_Avnish_Pal.pdf"
         - name: email
-          url: "mailto:avnishnish07@gmail.com"
+          url: "mailto:contact.avnish@proton.me"
         - name: github
           url: "https://github.com/bovem"
         - name: medium
