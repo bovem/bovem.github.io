@@ -70,7 +70,7 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
-    images: ["avnish-cover.png"]
+    images: ["cover.png"]
 
     profileMode:
         enabled: false
