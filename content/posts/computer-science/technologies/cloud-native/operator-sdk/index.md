@@ -239,9 +239,11 @@ Tests are defined in `config/scorecard/bases` as **stages** and executed on pods
 operator-sdk scorecard docker.io/bovem/memcached-operator-bundle:v0.0.1
 ```
 
-
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
+
+Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
+
+If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
 
 # Resources
 <a href="https://github.com/operator-framework/operator-registry/blob/v1.16.1/docs/design/operator-bundle.md" target="_blank">Operator Bundle</a>  

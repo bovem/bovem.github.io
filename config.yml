@@ -1,5 +1,5 @@
 baseURL: "https://www.avni.sh"
-title: "» avni.sh"
+title: "avni.sh"
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -70,7 +70,7 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
-    images: ["avnish-cover.png"]
+    images: ["cover.png"]
 
     profileMode:
         enabled: false

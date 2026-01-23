@@ -258,9 +258,11 @@ Similarly, a specific version of the chart could be pulled from DockerHub using 
 helm pull oci://docker.io/bovem/test-helm-chart --version 0.0.1
 ```
 
-
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
+
+Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
+
+If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
 
 # Resources
 <a href="https://docs.fedoraproject.org/en-US/quick-docs/dnf/" target="_blank">Using the DNF software package manager</a>  

@@ -98,6 +98,12 @@ The result of the Hadamard product will be the same irrespective of the order of
 $$\vec{v} \odot \vec{u} = \vec{u} \odot \vec{v}$$
 Some use cases of the Hadamard product operation are JPEG image compression and LSTM (Long Short-Term Memory) cells of RNNs (Recurrent Neural Networks). It is also known as Schur Product (named after Issai Schur).
 
+<hr>
+
+Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
+
+If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
+
 # Resources
 <a href="https://medium.com/linear-algebra/part-12-vectors-a99364499121" target="_blank">Part 12 : Vectors</a>  
 <a href="https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:vectors/x9e81a4f98389efdf:component-form/v/vector-components-from-magnitude-and-direction" target="_blank">Vector components from magnitude & direction</a>  

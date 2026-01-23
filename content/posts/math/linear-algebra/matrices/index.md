@@ -142,6 +142,12 @@ $$\textbf{B} \times \textbf{B}^{-1} = \textbf{I}$$
 The inverse matrix has the same order as the original matrix. 
 We can find the inverse of any square matrix using the process of <a href="/posts/math/linear-algebra/gauss-jordan-elimitation/" target="_blank">Gauss-Jordan Elimination</a>.
 
+<hr>
+
+Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
+
+If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
+
 # Resources
 <a href="https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices/x9e81a4f98389efdf:properties-of-matrix-multiplication/a/matrix-multiplication-dimensions" target="_blank">Matrix multiplication dimensions</a>  
 <a href="https://medium.com/linear-algebra/part-2-operations-on-matrices-3caab542aebd" target="_blank">Part 2 : Operations on Matrices</a>  
