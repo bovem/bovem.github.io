@@ -175,9 +175,11 @@ docker run --rm -it --security-opt seccomp=/path/to/seccomp/profile.json hello-w
 
 SELinux checks the *SELinux context* of the file or process to make decisions related to its access control. To view the SELinux context of a file use command `ls -Z <FILENAME>` and to view it for a process using the command `ps -eZ | grep <PROCESS_NAME>`. 
 
-
 <hr>
-Thank you for taking the time to read this blog post! If you found this content valuable and would like to stay updated with my latest posts consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.
+
+Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
+
+If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
 
 # Resources
 <a href="https://www.youtube.com/watch?v=sK5i-N34im8" target="_blank">Cgroups, namespaces, and beyond: what are containers made from?</a>  
