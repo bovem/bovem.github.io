@@ -70,7 +70,7 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
-    images: ["cover.png"]
+    images: ["cover.webp"]
 
     profileMode:
         enabled: false
