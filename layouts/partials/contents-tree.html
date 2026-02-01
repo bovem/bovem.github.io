@@ -1,0 +1,15 @@
+{{- range .Sections }}
+<li>
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{- if or .Sections .RegularPages }}
+  <ul>
+    {{- partial "contents-tree.html" . }}
+  </ul>
+  {{- end }}
+</li>
+{{- end }}
+{{- range .RegularPages.ByDate }}
+<li>
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+</li>
+{{- end }}

@@ -1,0 +1,23 @@
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- with .Params.categories }}
+  {{- $firstCat := index . 0 }}
+  {{- $pages = where $pages "Params.categories" "intersect" (slice $firstCat) }}
+{{- end }}
+{{- if and (gt (len $pages) 1) (in $pages .) }}
+<nav class="paginav">
+  {{- with $pages.Prev . }}
+  <a class="prev" href="{{ .Permalink }}">
+    <span class="title">{{ i18n "prev_page" }} »</span>
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end }}
+  {{- with $pages.Next . }}
+  <a class="next" href="{{ .Permalink }}">
+    <span class="title">« {{ i18n "next_page" }}</span>
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end }}
+</nav>
+{{- end }}

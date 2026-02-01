@@ -1,4 +1,4 @@
-[![Blog Cover Image](./static/cover.png)](https://www.avni.sh/)
+[![Blog Cover Image](./static/cover.webp)](https://www.avni.sh/)
 
 ## Hi I'm Avnish.  
 * Building software at Autodesk in Singapore.  
