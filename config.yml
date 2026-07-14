@@ -32,15 +32,9 @@ languages:
                 - name: Archive
                   url: archives
                   weight: 5
-                - name: Contents
+                - name: Index
                   url: contents
                   weight: 10
-                - name: Tags
-                  url: tags/
-                  weight: 15
-                - name: Categories
-                  url: categories/
-                  weight: 25
                 - name: Search
                   url: search/
                   weight: 30
@@ -87,14 +81,14 @@ params:
 
     homeInfoParams:
         Title: "Hi, I'm Avnish"
-        Content: >
-           - Building software at Autodesk in Singapore.  
+        Content: |
+           Building software at Autodesk in Singapore.
 
-           - Passionate about simplifying concepts from computer science and math.  
+           Passionate about simplifying concepts from computer science and math.
 
-           - Check my <a target=_blank href="/resume/latest/Resume_Avnish_Pal.pdf">resume</a> to learn more about my professional experience.  
+           Check my <a target=_blank href="/resume/latest/Resume_Avnish_Pal.pdf">resume</a> to learn more about my professional experience.
 
-           - Subscribe to my <a target=_blank href="index.xml">RSS feed</a> to be notified when I publish new articles.  
+           Subscribe to my <a target=_blank href="index.xml">RSS feed</a> to be notified when I publish new articles.
     socialIcons:
         - name: cv
           url: "resume/latest/Resume_Avnish_Pal.pdf"
