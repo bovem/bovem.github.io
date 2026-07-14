@@ -12,8 +12,8 @@
 <div class="post-content">
   {{- $postsSection := site.GetPage "posts" }}
   {{- with $postsSection }}
-  <ul>
-    {{- partial "contents-tree.html" . }}
+  <ul class="index-tree">
+    {{- partial "contents-tree.html" (dict "page" . "depth" 1) }}
   </ul>
   {{- end }}
 </div>

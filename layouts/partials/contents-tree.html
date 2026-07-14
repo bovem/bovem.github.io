@@ -1,15 +1,31 @@
-{{- range .Sections }}
-<li>
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
-  {{- if or .Sections .RegularPages }}
-  <ul>
-    {{- partial "contents-tree.html" . }}
-  </ul>
-  {{- end }}
+{{- $depth := .depth | default 1 }}
+{{- $page  := .page  | default . }}
+
+{{- range $page.Sections }}
+{{- $postCount    := len .RegularPages }}
+{{- $sectionCount := len .Sections }}
+
+<li class="index-level-{{ $depth }}">
+  <details>
+    <summary>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{- if gt $postCount 0 }}
+      <span class="index-count">{{ $postCount }} posts</span>
+      {{- else if gt $sectionCount 0 }}
+      <span class="index-count">{{ $sectionCount }} topics</span>
+      {{- end }}
+    </summary>
+    {{- if or .Sections .RegularPages }}
+    <ul>
+      {{- partial "contents-tree.html" (dict "page" . "depth" (add $depth 1)) }}
+    </ul>
+    {{- end }}
+  </details>
 </li>
 {{- end }}
-{{- range .RegularPages.ByDate }}
-<li>
+
+{{- range $page.RegularPages.ByDate }}
+<li class="index-post">
   <a href="{{ .Permalink }}">{{ .Title }}</a>
 </li>
 {{- end }}
