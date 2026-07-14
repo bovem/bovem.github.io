@@ -6,7 +6,7 @@ description: "The state of a container is managed using the utilities provided b
 tags: ["container","podman","docker","skopeo","buildah","openshift","kubernetes","container-image","container-registry"]
 categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
-aliases: ["container-lifecycle"]
+aliases: ["container-lifecycle", "/posts/computer-science/technologies/cloud-native/container-lifecycle/"]
 ShowToc: true
 TocOpen: false
 cover:

@@ -6,7 +6,7 @@ description: "I am switching to Neovim"
 tags: ["tools","vim","neovim","code-editor","IDE","tmux","kitty","zsh","lazygit","dotfiles"]
 categories: ["Developer Tools"]
 series: ["Developer Tools"]
-aliases: ["my-development-environment"]
+aliases: ["my-development-environment", "/posts/computer-science/technologies/developer-tools/my-development-environment/"]
 ShowToc: true
 TocOpen: false
 cover:

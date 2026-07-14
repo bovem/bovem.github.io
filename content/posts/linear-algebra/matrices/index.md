@@ -6,7 +6,7 @@ description: "A matrix is a two dimensional array of data."
 tags: ["math", "linear-algebra", "vectors", "matrices", "matrix-multiplication", "matrix-transpose", "matrix-inverse", "idempotent-matrix", "symmetric-matrix", "skew-symmetric-matrix"]
 categories: ["Math", "Linear Algebra"]
 series: ["Linear Algebra"]
-aliases: ["matrices"]
+aliases: ["matrices", "/posts/math/linear-algebra/matrices/"]
 ShowToc: true
 TocOpen: false
 comments: false

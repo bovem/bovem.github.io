@@ -7,7 +7,7 @@ tags: ["data-structures", "strings", "go", "neetcode-150", "leetcode-medium"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases:
-  ["encoding-and-decoding-functions-for-strings", "encoding-and-decoding-strings"]
+  ["encoding-and-decoding-functions-for-strings", "encoding-and-decoding-strings", "/posts/computer-science/interview-preparation/encoding-and-decoding-strings/", "/posts/interview-preparation/encoding-and-decoding-strings/"]
 ShowToc: true
 TocOpen: false
 comments: false

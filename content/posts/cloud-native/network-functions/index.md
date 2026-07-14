@@ -6,7 +6,7 @@ description: "Network Functions (like routers, firewalls, and DHCP servers) are 
 tags: ["openshift", "kubernetes", "network-functions", "pnf", "vnf", "cnf", "networking", "container", "operator"]
 categories: ["Microservices", "Cloud Native", "Computer Networking"]
 series: ["Kubernetes"]
-aliases: ["network-functions"]
+aliases: ["network-functions", "/posts/computer-science/technologies/cloud-native/network-functions/"]
 ShowToc: true
 TocOpen: false
 comments: false

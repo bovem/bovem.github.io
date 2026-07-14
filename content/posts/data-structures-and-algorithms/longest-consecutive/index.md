@@ -7,7 +7,7 @@ tags: ["data-structures", "arrays", "hashmaps", "go", "neetcode-150", "leetcode-
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases:
-  ["finding-the-longest-consecutive-sequence-in-an-arrray", "longest-consecutive"]
+  ["finding-the-longest-consecutive-sequence-in-an-arrray", "longest-consecutive", "/posts/computer-science/interview-preparation/longest-consecutive/", "/posts/interview-preparation/longest-consecutive/"]
 ShowToc: true
 TocOpen: false
 comments: false

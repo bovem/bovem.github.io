@@ -6,7 +6,7 @@ description: "A container is a set of one or more isolated processes running on 
 tags: ["container", "podman", "docker","openshift", "kubernetes", "skopeo", "buildah", "vm"]
 categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
-aliases: ["containers"]
+aliases: ["containers", "/posts/computer-science/technologies/cloud-native/containers/"]
 ShowToc: true
 TocOpen: false
 cover:

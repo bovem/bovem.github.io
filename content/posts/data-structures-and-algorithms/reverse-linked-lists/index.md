@@ -7,7 +7,7 @@ tags: ["data-structures", "linked-lists", "go", "neetcode-150", "leetcode-easy"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases:
-  ["reversing-linked-lists"]
+  ["reversing-linked-lists", "/posts/computer-science/interview-preparation/reverse-linked-lists/", "/posts/interview-preparation/reverse-linked-lists/"]
 ShowToc: true
 TocOpen: false
 comments: false

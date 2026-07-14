@@ -6,7 +6,7 @@ description: "Rabin-Karp Substring Search is an efficient algorithm to search a 
 tags: ["algorithms", "strings", "searching", "hashmap-collision", "go"]
 categories: ["Algorithms"]
 series: ["Data Structures and Algorithms"]
-aliases: ["rabin-karp-substring-search"]
+aliases: ["rabin-karp-substring-search", "/posts/computer-science/interview-preparation/rabin-karp-substring-search/", "/posts/interview-preparation/rabin-karp-substring-search/"]
 ShowToc: true
 TocOpen: false
 comments: false

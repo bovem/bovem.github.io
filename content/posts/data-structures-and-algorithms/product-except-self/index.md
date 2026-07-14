@@ -7,7 +7,7 @@ tags: ["data-structures", "arrays", "go", "neetcode-150", "leetcode-medium"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases:
-  ["building-a-product-array-without-the-element-itself", "product-except-self"]
+  ["building-a-product-array-without-the-element-itself", "product-except-self", "/posts/computer-science/interview-preparation/product-except-self/", "/posts/interview-preparation/product-except-self/"]
 ShowToc: true
 TocOpen: false
 comments: false

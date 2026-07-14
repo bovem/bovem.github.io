@@ -7,7 +7,7 @@ tags: ["math", "linear-algebra", "vectors", "matrices", "projections", "dot-prod
       "cross-product", "hadamard-product", "schur-product"]
 categories: ["Math", "Linear Algebra"]
 series: ["Linear Algebra"]
-aliases: ["vectors"]
+aliases: ["vectors", "/posts/math/linear-algebra/vectors/"]
 cover:
   image: "vectors_cover.png"
   linkFullImages: true

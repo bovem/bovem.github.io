@@ -6,7 +6,7 @@ description: "The time complexity metric is used to assess an algorithm's perfor
 tags: ["data-structures","algorithms","time-complexity","go"]
 categories: ["Algorithms"]
 series: ["Data Structures and Algorithms"]
-aliases: ["time-complexity"]
+aliases: ["time-complexity", "/posts/computer-science/interview-preparation/time-complexity/", "/posts/interview-preparation/time-complexity/"]
 ShowToc: true
 TocOpen: false
 comments: false

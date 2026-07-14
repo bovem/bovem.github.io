@@ -7,7 +7,7 @@ tags: ["data-structures", "linked-lists", "go", "neetcode-150", "leetcode-easy"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases:
-  ["merge-sorted-linked-lists"]
+  ["merge-sorted-linked-lists", "/posts/computer-science/interview-preparation/merge-sorted-linked-lists/", "/posts/interview-preparation/merge-sorted-linked-lists/"]
 ShowToc: true
 TocOpen: false
 comments: false

@@ -6,7 +6,7 @@ description: "Container Network Interfaces provide plugin-based solutions for cr
 tags: ["openshift", "kubernetes", "cni", "networking", "container", "container-runtime", "docker"]
 categories: ["Microservices", "Cloud Native", "Computer Networking"]
 series: ["Kubernetes"]
-aliases: ["container-network-interfaces"]
+aliases: ["container-network-interfaces", "/posts/computer-science/technologies/cloud-native/container-network-interfaces/"]
 ShowToc: true
 TocOpen: false
 comments: false

@@ -6,11 +6,11 @@ description: "The os package in Go provides data structures, functions, and meth
 tags: ["go","programming","json","xml","yaml"]
 categories: ["Go"]
 series: ["Go"]
-aliases: ["file-handling-in-go"]
+aliases: ["file-handling-in-go", "/posts/computer-science/technologies/go/file-handling-in-go/"]
 ShowToc: true
 TocOpen: false
 comments: false
-math: true
+math: false
 ---
 
 Reading and writing files is one of the most common tasks in programming projects. Using this skill we can store data persistently and decrease the memory consumption of our program.

@@ -6,11 +6,11 @@ description: "Implementing concurrent programs in Go using goroutines, channels,
 tags: ["go","programming","concurrency","goroutines","select","channels","waitgroups"]
 categories: ["Go"]
 series: ["Go"]
-aliases: ["concurrency-in-go"]
+aliases: ["concurrency-in-go", "/posts/computer-science/technologies/go/concurrency-in-go/"]
 ShowToc: true
 TocOpen: false
 comments: false
-math: true
+math: false
 ---
 
 We can make a program concurrent if we can split it as multiple independent tasks executed at the same time. 

@@ -14,7 +14,7 @@ tags:
   ]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
-aliases: ["finding-most-frequent-elements-in-an-array", "top-k-frequent"]
+aliases: ["finding-most-frequent-elements-in-an-array", "top-k-frequent", "/posts/computer-science/interview-preparation/top-k-frequent/", "/posts/interview-preparation/top-k-frequent/"]
 ShowToc: true
 TocOpen: false
 comments: false

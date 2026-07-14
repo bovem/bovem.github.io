@@ -7,7 +7,7 @@ tags: ["data-structures", "linked-lists", "go", "neetcode-150", "leetcode-medium
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases:
-  ["reorder-linked-lists"]
+  ["reorder-linked-lists", "/posts/computer-science/interview-preparation/reorder-linked-list/", "/posts/interview-preparation/reorder-linked-list/"]
 ShowToc: true
 TocOpen: false
 comments: false

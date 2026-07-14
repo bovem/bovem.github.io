@@ -6,7 +6,7 @@ description: "OperatorHub and OLM have made it incredibly simple to work with op
 tags: ["openshift", "kubernetes", "operator", "operatorshub", "olm"]
 categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
-aliases: ["operators-on-openshift"]
+aliases: ["operators-on-openshift", "/posts/computer-science/technologies/cloud-native/operators-on-openshift/"]
 ShowToc: true
 TocOpen: false
 comments: false

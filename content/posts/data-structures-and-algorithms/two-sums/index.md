@@ -6,7 +6,7 @@ description: "Implementing a twoSums(nums, targetValue) function that returns th
 tags: ["data-structures", "arrays", "hashmaps", "go", "neetcode-150", "leetcode-easy"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
-aliases: ["finding-elements-that-sum-up-to-target", "two-sums"]
+aliases: ["finding-elements-that-sum-up-to-target", "two-sums", "/posts/computer-science/interview-preparation/two-sums/", "/posts/interview-preparation/two-sums/"]
 ShowToc: true
 TocOpen: false
 comments: false

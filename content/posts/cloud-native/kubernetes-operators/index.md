@@ -6,7 +6,7 @@ description: "Operators provide developers an option to package their applicatio
 tags: ["openshift", "kubernetes", "kubernetes-controller", "operator"]
 categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
-aliases: ["kubernetes-operators", "operators"]
+aliases: ["kubernetes-operators", "operators", "/posts/computer-science/technologies/cloud-native/kubernetes-operators/"]
 ShowToc: true
 TocOpen: false
 comments: false

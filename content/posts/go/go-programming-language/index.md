@@ -6,7 +6,7 @@ description: "Go is used to build applications for cloud, network services, and 
 tags: ["go","programming","pointers","procedural"]
 categories: ["Go"]
 series: ["Go"]
-aliases: ["go-programming-language"]
+aliases: ["go-programming-language", "/posts/computer-science/technologies/go/go-programming-language/"]
 ShowToc: true
 TocOpen: false
 comments: false

@@ -6,7 +6,7 @@ description: "Implementing a groupAnagrams function that takes an array of strin
 tags: ["data-structures", "strings", "hashmaps", "go", "neetcode-150", "leetcode-medium"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
-aliases: ["group-anagrams-in-an-array", "group-anagrams"]
+aliases: ["group-anagrams-in-an-array", "group-anagrams", "/posts/computer-science/interview-preparation/group-anagrams/", "/posts/interview-preparation/group-anagrams/"]
 ShowToc: true
 TocOpen: false
 comments: false

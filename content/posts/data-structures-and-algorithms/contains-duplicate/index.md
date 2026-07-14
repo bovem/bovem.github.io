@@ -6,7 +6,7 @@ description: "Implementing a containsDuplicate function that returns true if the
 tags: ["data-structures", "arrays", "hashmaps", "go", "neetcode-150", "leetcode-easy"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
-aliases: ["contains-duplicate"]
+aliases: ["contains-duplicate", "/posts/computer-science/interview-preparation/contains-duplicate/", "/posts/interview-preparation/contains-duplicate/"]
 ShowToc: true
 TocOpen: false
 comments: false

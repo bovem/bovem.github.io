@@ -7,7 +7,7 @@ tags: ["data-structures", "arrays", "sudoku", "hashmaps", "go", "neetcode-150", 
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
 aliases:
-  ["checking-the-validity-of-a-sudoku-grid", "is-valid-sudoku"]
+  ["checking-the-validity-of-a-sudoku-grid", "is-valid-sudoku", "/posts/computer-science/interview-preparation/is-valid-sudoku/", "/posts/interview-preparation/is-valid-sudoku/"]
 ShowToc: true
 TocOpen: false
 comments: false

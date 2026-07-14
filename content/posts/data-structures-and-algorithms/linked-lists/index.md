@@ -6,7 +6,7 @@ description: "A Linked List uses dynamic allocation of memory to store sequentia
 tags: ["data-structures", "linked-lists", "doubly-linked-lists", "circular-linked-lists", "go"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
-aliases: ["linked-lists"]
+aliases: ["linked-lists", "/posts/computer-science/interview-preparation/linked-lists/", "/posts/interview-preparation/linked-lists/"]
 ShowToc: true
 TocOpen: false
 comments: false

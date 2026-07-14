@@ -6,7 +6,7 @@ description: "A tensor is an array of data expanding in multiple independent dim
 tags: ["math", "linear-algebra", "tensors", "vectors", "matrices"]
 categories: ["Math", "Linear Algebra"]
 series: ["Linear Algebra"]
-aliases: ["tensors"]
+aliases: ["tensors", "/posts/math/linear-algebra/tensors/"]
 cover:
   image: "tensors-cover.png"
   linkFullImages: true

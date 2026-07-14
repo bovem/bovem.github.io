@@ -6,7 +6,7 @@ description: "The Gaussian Elimination algorithm is used to find the solution of
 tags: ["math", "linear-algebra", "matrices", "matrix-multiplication", "linear-equations", "gaussian-elimination"]
 categories: ["Math", "Linear Algebra"]
 series: ["Linear Algebra"]
-aliases: ["gaussian-elimination"]
+aliases: ["gaussian-elimination", "/posts/math/linear-algebra/gaussian-elimination/"]
 ShowToc: true
 TocOpen: false
 comments: false

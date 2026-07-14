@@ -6,7 +6,7 @@ description: "Container Storage Interface (CSI) plugins are developed by storage
 tags: ["openshift", "kubernetes", "csi", "storage", "container", "intel-optane", "docker", "persistent-memory", "memory"]
 categories: ["Microservices", "Cloud Native", "Storage"]
 series: ["Kubernetes"]
-aliases: ["container-storage-interfaces"]
+aliases: ["container-storage-interfaces", "/posts/computer-science/technologies/cloud-native/container-storage-interfaces/"]
 ShowToc: true
 TocOpen: false
 comments: false

@@ -6,7 +6,7 @@ description: "Implementing an isAnagram function that returns true if its two in
 tags: ["data-structures", "strings", "hashmaps", "go", "neetcode-150", "leetcode-easy"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
-aliases: ["identifying-anagrams", "is-anagram"]
+aliases: ["identifying-anagrams", "is-anagram", "/posts/computer-science/interview-preparation/is-anagram/", "/posts/interview-preparation/is-anagram/"]
 ShowToc: true
 TocOpen: false
 comments: false

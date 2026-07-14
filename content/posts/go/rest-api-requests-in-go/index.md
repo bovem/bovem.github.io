@@ -6,11 +6,11 @@ description: "Performing HTTP requests on REST APIs with Go"
 tags: ["go","programming","rest","api","http","get","post","put","delete"]
 categories: ["Go"]
 series: ["Go"]
-aliases: ["rest-api-requests-in-go"]
+aliases: ["rest-api-requests-in-go", "/posts/computer-science/technologies/go/rest-api-requests-in-go/"]
 ShowToc: true
 TocOpen: false
 comments: false
-math: true
+math: false
 ---
 
 # What is REST?

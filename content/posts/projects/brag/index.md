@@ -6,7 +6,7 @@ description: "Create and maintain a bragging document from your development envi
 tags: ["projects","go","go-cli","cobra-cli","ollama","AI","LLM","machine-learning","programming"]
 categories: ["Projects"]
 series: ["Personal Projects"]
-aliases: ["brag"]
+aliases: ["brag", "/posts/personal-projects/brag/"]
 ShowToc: true
 TocOpen: false
 comments: false

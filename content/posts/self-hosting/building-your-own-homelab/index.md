@@ -6,7 +6,7 @@ description: "A Guide to Selecting the Right Hardware for Self-Hosting Services"
 tags: ["hardware","homelab","self-hosting"]
 categories: ["Homelab", "Cloud Native"]
 series: ["Homelab"]
-aliases: ["building-your-own-homelab"]
+aliases: ["building-your-own-homelab", "/posts/computer-science/technologies/self-hosting/building-your-own-homelab/"]
 ShowToc: true
 TocOpen: false
 cover:

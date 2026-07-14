@@ -6,7 +6,7 @@ description: "The two-pointer approach provides an efficient alternative for sol
 tags: ["data-structures", "linked-lists", "fast-slow-pointers", "two-pointer", "sliding-window", "pointers"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
-aliases: ["two-pointer-approach", "sliding-window", "fast-slow-pointers"]
+aliases: ["two-pointer-approach", "sliding-window", "fast-slow-pointers", "/posts/computer-science/interview-preparation/two-pointers-approach/", "/posts/interview-preparation/two-pointers-approach/"]
 ShowToc: true
 TocOpen: false
 comments: false

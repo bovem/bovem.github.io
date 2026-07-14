@@ -6,7 +6,7 @@ description: "Creation and execution of container is enabled using features like
 tags: ["container", "podman", "docker","openshift", "kubernetes", "linux", "namespaces", "cgroups", "seccomp", "selinux"]
 categories: ["Microservices", "Operating Systems"]
 series: ["Kubernetes"]
-aliases: ["container-architecture"]
+aliases: ["container-architecture", "/posts/computer-science/technologies/cloud-native/container-architecture/"]
 ShowToc: true
 TocOpen: false
 cover:

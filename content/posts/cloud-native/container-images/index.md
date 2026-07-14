@@ -6,7 +6,7 @@ description: "Container Images are static files containing the necessary resourc
 tags: ["container","podman","docker","buildah","openshift","kubernetes","container-image","container-registry"]
 categories: ["Microservices", "Cloud Native"]
 series: ["Kubernetes"]
-aliases: ["container-images"]
+aliases: ["container-images", "/posts/computer-science/technologies/cloud-native/container-images/"]
 ShowToc: true
 TocOpen: false
 cover:

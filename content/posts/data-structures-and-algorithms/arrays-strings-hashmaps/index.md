@@ -6,7 +6,7 @@ description: "Understanding basic data structures like arrays, strings, and hash
 tags: ["data-structures", "arrays", "arraylists", "nested-arrays", "matrices", "hashmaps", "hashtables", "strings", "string-builders", "hashmap-collision", "go"]
 categories: ["Data Structures"]
 series: ["Data Structures and Algorithms"]
-aliases: ["arrays-strings-hashmaps"]
+aliases: ["arrays-strings-hashmaps", "/posts/computer-science/interview-preparation/arrays-strings-hashmaps/", "/posts/interview-preparation/arrays-strings-hashmaps/"]
 ShowToc: true
 TocOpen: false
 comments: false
