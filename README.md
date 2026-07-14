@@ -10,7 +10,7 @@
 
 ## Technologies Used
 - [Hugo Static Site Generator](https://gohugo.io/)
-- [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod)
+- [PaperMod Theme](https://github.com/bovem/hugo-PaperMod) ([Upstream](https://github.com/adityatelange/hugo-PaperMod))
 
 ## Local Deployment (with Docker)
 
