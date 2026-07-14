@@ -7,7 +7,7 @@ tags: ["homelab","self-hosting","LLM","machine-learning","AI",
       "ollama","vim","neovim","vscode","proxmox", "NVIDIA","nvidia-container-tookit","CUDA"]
 categories: ["Homelab", "Machine Learning"]
 series: ["Homelab"]
-aliases: ["self-hosting-ollama", "/posts/computer-science/technologies/self-hosting/self-hosting-ollama/"]
+aliases: ["self-hosting-ollama", "/posts/computer-science/technologies/self-hosting/self-hosting-ollama/", "/posts/homelab/self-hosting-ollama/"]
 ShowToc: true
 TocOpen: false
 cover:
