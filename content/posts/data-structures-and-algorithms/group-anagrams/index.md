@@ -11,7 +11,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "group-anagrams-cover.png"
+  image: "group-anagrams-cover.webp"
   linkFullImages: true
   alt: "The groupAnagrams function will return an array with anagrams grouped together"
   caption: ""

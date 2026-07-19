@@ -19,7 +19,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "top-k-frequent-cover.png"
+  image: "top-k-frequent-cover.webp"
   linkFullImages: true
   alt: "The topkFrequent function will return the top k most frequent elements in an array"
   caption: ""

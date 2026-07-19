@@ -12,7 +12,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "longest-consecutive-cover.png"
+  image: "longest-consecutive-cover.webp"
   linkFullImages: true
   alt: "The longestConsecutive function will return the length of the longest sequence if consecutive numbers in the input array"
   caption: ""

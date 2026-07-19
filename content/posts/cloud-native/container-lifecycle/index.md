@@ -10,7 +10,7 @@ aliases: ["container-lifecycle", "/posts/computer-science/technologies/cloud-nat
 ShowToc: true
 TocOpen: false
 cover:
-  image: "container_lifecycle.drawio.png"
+  image: "container_lifecycle.drawio.webp"
   linkFullImages: true
   alt: "Lifecycle of a container"
   caption: "Lifecycle of a container"

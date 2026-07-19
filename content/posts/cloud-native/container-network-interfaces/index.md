@@ -11,7 +11,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "CNI.png"
+  image: "CNI.webp"
   linkFullImages: true
   alt: "Execution of CNI Plugins by Container Runtime"
   caption: "Execution of CNI Plugins by Container Runtime"

@@ -10,7 +10,7 @@ aliases: ["containers", "/posts/computer-science/technologies/cloud-native/conta
 ShowToc: true
 TocOpen: false
 cover:
-  image: "containers.drawio.png"
+  image: "containers.drawio.webp"
   linkFullImages: true
   alt: "Types of application deployment"
   caption: "Types of application deployment"

@@ -12,7 +12,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "reorder-linked-lists-cover.png"
+  image: "reorder-linked-lists-cover.webp"
   linkFullImages: true
   alt: "The reorderList function will return the head of the reordered linked list given a linked list as input"
   caption: ""
@@ -33,7 +33,7 @@ the `reorderList` function should reorder its nodes as:
 
 $$Node_0 \rightarrow Node_n \rightarrow Node_1 \rightarrow Node_{(n-1)} \rightarrow Node_2 \rightarrow Node_{(n-2)} \rightarrow \dots$$
 
-<p align="center"><img src="reorder-linked-lists-problem.png" alt="Problem statement for the reorderList"></p>
+<p align="center"><img src="reorder-linked-lists-problem.webp" alt="Problem statement for the reorderList"></p>
 
 # Brute Force Solution
 To solve this problem we use two iterators: one starting from the `head` of the input list and another 
@@ -43,7 +43,7 @@ We pick values alternatively from both iterators and create a new
 linked list. The loop will continue until the length of the length of the new linked list is equal to the length of 
 the input list. The nodes in the new linked list will be ordered as specified in the problem statement.
 
-<p align="center"><img src="reorder-linked-lists-brute-force.png" alt="Brute-force solution for the reorderList"></p>
+<p align="center"><img src="reorder-linked-lists-brute-force.webp" alt="Brute-force solution for the reorderList"></p>
 
 
 ## Psuedo-code for the Brute Force Solution
@@ -231,7 +231,7 @@ the middle node.
 
 Then we will break the input linked list into two halves from the `slow.Next` node.
 
-<p align="center"><img src="reorder-linked-lists-optimized2.png" alt="Optimized solution for the reorderList"></p>
+<p align="center"><img src="reorder-linked-lists-optimized2.webp" alt="Optimized solution for the reorderList"></p>
 
 Since the reordering form requires the last node to be placed in between the first and second node of the list 
 we have to reverse the second half of the input linked list.
@@ -241,7 +241,7 @@ we have to reverse the second half of the input linked list.
 Finally, we will iterate over the first half of the input linked list while also inserting the nodes from the second half 
 (reversed) in between.
 
-<p align="center"><img src="reorder-linked-lists-optimized4.png" alt="Optimized solution for the reorderList"></p>
+<p align="center"><img src="reorder-linked-lists-optimized4.webp" alt="Optimized solution for the reorderList"></p>
 
 ## Psuedo code for the Optimized Solution
 ```text

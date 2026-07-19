@@ -10,7 +10,7 @@ aliases: ["container-images", "/posts/computer-science/technologies/cloud-native
 ShowToc: true
 TocOpen: false
 cover:
-  image: "container_image.drawio.png"
+  image: "container_image.drawio.webp"
   linkFullImages: true
   alt: "Workflow of container images"
   caption: "Workflow of container images"

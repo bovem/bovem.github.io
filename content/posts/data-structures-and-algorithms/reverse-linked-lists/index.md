@@ -12,7 +12,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "reverse-linked-lists-cover.png"
+  image: "reverse-linked-lists-cover.webp"
   linkFullImages: true
   alt: "The reverseList function will return the head of the reversed linked list"
   caption: ""

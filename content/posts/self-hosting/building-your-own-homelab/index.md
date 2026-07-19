@@ -10,7 +10,7 @@ aliases: ["building-your-own-homelab", "/posts/computer-science/technologies/sel
 ShowToc: true
 TocOpen: false
 cover:
-  image: "pc_cover_image.jpg"
+  image: "pc_cover_image.webp"
   linkFullImages: true
   alt: "My Homelab"
   caption: "My Homelab"
