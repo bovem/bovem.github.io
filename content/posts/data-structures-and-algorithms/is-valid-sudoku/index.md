@@ -12,7 +12,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "is-valid-sudoku-cover.png"
+  image: "is-valid-sudoku-cover.webp"
   linkFullImages: true
   alt: "The isValidSudoku function will return true if the input matrix represents a valid sudoku grid and false otherwise"
   caption: ""

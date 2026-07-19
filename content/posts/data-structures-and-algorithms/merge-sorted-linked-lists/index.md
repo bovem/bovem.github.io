@@ -12,7 +12,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "merge-sorted-linked-lists-cover.png"
+  image: "merge-sorted-linked-lists-cover.webp"
   linkFullImages: true
   alt: "The mergeTwoLists function will return the head of the merged linked list given two sorted linked lists as input"
   caption: ""
@@ -35,7 +35,7 @@ be a merged sorted linked list.
 If all the values from any one of the linked lists are added then the other linked list will be joined at the end of 
 the merged linked list.
 
-<p align="center"><img src="merge-sorted-linked-lists-optimal.png" alt="Optimal Solution for the mergeTwoLists"></p>
+<p align="center"><img src="merge-sorted-linked-lists-optimal.webp" alt="Optimal Solution for the mergeTwoLists"></p>
 
 ## Psuedo-code for the Optimal Solution
 ```text

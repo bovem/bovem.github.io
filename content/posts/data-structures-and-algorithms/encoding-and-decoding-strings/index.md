@@ -12,7 +12,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "encoding-and-decoding-strings-cover.png"
+  image: "encoding-and-decoding-strings-cover.webp"
   linkFullImages: true
   alt: "The encode function will encode a list of strings to a single string while the decode function will take the encoded string and return the original list of strings as output"
   caption: ""

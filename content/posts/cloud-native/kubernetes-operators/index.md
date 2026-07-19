@@ -69,7 +69,7 @@ Based on the level of maturity or capability of automation provided by an Operat
 
 A Level 3 operator could manage the whole application cycle while also performing Level 1 (installation & configuration) and Level 2 (patches & upgrades) automation.
 
-<p align="center"><img src="kubernetes-operator.png" alt="Just like the Kubernetes controller, a Kubernetes Operator monitors and maintains the state of Custom Resources of an applications"></p>
+<p align="center"><img src="kubernetes-operator.webp" alt="Just like the Kubernetes controller, a Kubernetes Operator monitors and maintains the state of Custom Resources of an applications"></p>
 <p align="center"><small><i>Just like the Kubernetes controller, a Kubernetes Operator monitors and maintains the state of Custom Resources of an applications</i></small></p>
 
 

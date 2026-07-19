@@ -12,7 +12,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "product-except-self-cover.png"
+  image: "product-except-self-cover.webp"
   linkFullImages: true
   alt: "The productExceptSelf function will returns an array of products of all the elements without the element at the same index in input array"
   caption: ""

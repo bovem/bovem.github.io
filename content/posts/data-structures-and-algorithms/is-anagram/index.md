@@ -11,7 +11,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "valid-anagrams-cover.png"
+  image: "valid-anagrams-cover.webp"
   linkFullImages: true
   alt: "The isAnagram function will return true if both input strings are anagram and false otherwise"
   caption: ""

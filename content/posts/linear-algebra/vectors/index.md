@@ -9,7 +9,7 @@ categories: ["Math", "Linear Algebra"]
 series: ["Linear Algebra"]
 aliases: ["vectors", "/posts/math/linear-algebra/vectors/"]
 cover:
-  image: "vectors_cover.png"
+  image: "vectors_cover.webp"
   linkFullImages: true
   alt:  "A vector is an array of data expanding in one dimension."  
   caption: ""

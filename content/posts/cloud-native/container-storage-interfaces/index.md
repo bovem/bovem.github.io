@@ -11,7 +11,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "CSIVolumeLifecycle.png"
+  image: "CSIVolumeLifecycle.webp"
   linkFullImages: true
   alt: "Lifecycle of a volume managed by CSI Plugin"
   caption: "Lifecycle of a volume managed by CSI Plugin"
@@ -124,7 +124,7 @@ CSI could be deployed with just the Controller plugin on the worker node that pr
 CSI could also be deployed with just a Node plugin on the worker node providing just the node services.
 
 ## Volume lifecycle with CSI
-<p align="center"><img src="CSIVolumeLifecycle.png" alt="Lifecycle of a Volume managed by CSI Plugin"></p>
+<p align="center"><img src="CSIVolumeLifecycle.webp" alt="Lifecycle of a Volume managed by CSI Plugin"></p>
 <p align="center"><small><i>Lifecycle of a Volume managed by CSI Plugin</i></small></p>
 
 ### Mounting a Volume on a Container 

@@ -10,7 +10,7 @@ aliases: ["container-architecture", "/posts/computer-science/technologies/cloud-
 ShowToc: true
 TocOpen: false
 cover:
-  image: "container_arch.drawio.png"
+  image: "container_arch.drawio.webp"
   linkFullImages: true
   alt: "Linux features essestial for the containers"
   caption: "Linux features essential for the containers"

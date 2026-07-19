@@ -9,7 +9,7 @@ aliases: ["building-container-images", "/posts/computer-science/technologies/clo
 ShowToc: true
 TocOpen: false
 cover:
-  image: "building_container_images.drawio.png"
+  image: "building_container_images.drawio.webp"
   linkFullImages: true
   alt: "Building container images from Containerfile"
   caption: "Building container images from Containerfile"

@@ -11,7 +11,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "linked-list-cover.png"
+  image: "linked-list-cover.webp"
   linkFullImages: true
   alt: "Linked Lists"
   caption: ""

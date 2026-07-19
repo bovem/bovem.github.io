@@ -11,7 +11,7 @@ ShowToc: true
 TocOpen: false
 comments: false
 cover:
-  image: "two-pointers-cover.png"
+  image: "two-pointers-cover.webp"
   linkFullImages: true
   alt: "We can improve the time complexity of some solutions from quadratic to linear using the two-pointer approach"
   caption: ""

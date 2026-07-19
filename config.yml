@@ -13,7 +13,7 @@ publishDir: "docs"
 # googleAnalytics: UA-123-45
 
 pagination:
-  pageSize: 5
+  pagerSize: 5
 
 minify:
     disableXML: true
