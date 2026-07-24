@@ -94,12 +94,6 @@ The **CNF Test Suite** is defined by the Telecom User Group (TUG) and Cloud Nati
 
 It provisions the infrastructure for a Kubernetes and OpenStack cluster. After that, it deploys similar workloads on both environments to benchmark their performance using testing tools such as NFVbench.
 
-<hr>
-
-Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
-
-If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
-
 # Resources
 <a href="https://www.redhat.com/en/topics/cloud-computing/what-is-telco-cloud" target="_blank">What is telco cloud?</a>  
 <a href="https://www.redhat.com/en/topics/virtualization/what-is-nfv" target="_blank">What is NFV?</a>  

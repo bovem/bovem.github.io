@@ -225,12 +225,6 @@ Personal Projects:
 Note: The above document is a draft and may require revisions based on your feedback. Please feel free to provide your inputs and suggestions, and I will be more than happy to incorporate them into the final document.
 ```
 
-<hr>
-
-Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
-
-If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
-
 # Resources
 <a href="https://github.com/bovem/brag" target="_blank">github.com/bovem/brag</a>  
 <a href="https://jvns.ca/blog/brag-documents/" target="_blank">Get your work recognized: write a brag document</a>  

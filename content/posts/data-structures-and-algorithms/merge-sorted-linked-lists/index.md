@@ -196,12 +196,6 @@ func main(){
 // 2->4->5->6->7->14->20->34->42->66->
 ```
 
-<hr>
-
-Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
-
-If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
-
 # Resources
 <a href="https://leetcode.com/problems/merge-two-sorted-lists/description/" target="_blank">21. Merge Two Sorted Lists</a>  
 <a href="https://www.youtube.com/watch?v=XIdigk956u0" target="_blank">Merge Two Sorted Lists - Leetcode 21 - Python</a>

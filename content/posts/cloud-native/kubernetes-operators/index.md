@@ -87,12 +87,6 @@ It could be limited to a single namespace or deployed cluster-wide. It is recomm
 * Metrics for database
 
 
-<hr>
-
-Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
-
-If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
-
 # Resources
 <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/" target="_blank">Operator Pattern</a>  
 <a href="https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/" target="_blank">Kubernetes Operators</a>  
