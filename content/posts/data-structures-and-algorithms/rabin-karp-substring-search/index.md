@@ -408,12 +408,6 @@ func main(){
 // rabinKarpSearch ION in ION result: true
 ```
 
-<hr>
-
-Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
-
-If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
-
 # Resources
 <a href="https://www.scinapse.io/papers/1972418517" target="_blank">Efficient randomized pattern-matching algorithms</a>  
 <a href="https://amturing.acm.org/award_winners/rabin_9681074.cfm" target="_blank">Michael O. Rabin</a>  

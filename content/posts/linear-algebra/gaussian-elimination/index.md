@@ -280,12 +280,6 @@ $$0=-4 \tag{12}$$
 
 The equation $(12)$ is a fallacy. Thus, we can confirm that there is no solution for the system of linear equations $(10)$, $(11)$, and $(12)$.
 
-<hr>
-
-Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
-
-If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
-
 # Resources
 <a href="https://youtu.be/QVKj3LADCnA?si=CXmVqn42IgpG8lwO" target="_blank">2. Elimination with Matrices.</a>  
 <a href="https://medium.com/linear-algebra/part-1-linear-equation-of-two-variables-and-matrices-d8de21eb8d51" target="_blank">Part 1 : Linear equation of two variables and Matrices</a>  

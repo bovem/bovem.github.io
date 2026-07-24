@@ -240,12 +240,6 @@ I selected <a href="https://www.corsair.com/us/en/Categories/Products/Cases/Mid-
 * You are responsible for the security of your data. Make sure that all of the services, OS, and hypervisors are up to date.
 * For some applications, you might not have full autonomy to switch to a self-hosted alternative. For example, if your friends and family use WhatsApp then you can’t simply switch to a self-hosted alternative and expect others to do the same.
 
-<hr>
-
-Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
-
-If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
-
 # Resources to Learn About Homelab and Self-Hosting
 ## Blogs
 <a href="https://pimylifeup.com/" target="_blank">PiMyLifeUp</a>  

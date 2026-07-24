@@ -888,11 +888,6 @@ func main() {
 
 To catch an unexpected error and exit the program we call the `panic()` function with a string or the error as its argument. If we don't want the program to abort on `panic()` we can follow it up with a `recover()` function.
 
-<hr>
-Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
-
-If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
-
 # Resources
 <a href="https://gobyexample.com/" target="_blank">Go by Example</a>  
 <a href="https://www.youtube.com/watch?v=C8LgvuEBraI" target="_blank">Learn Go in 12 Minutes</a>

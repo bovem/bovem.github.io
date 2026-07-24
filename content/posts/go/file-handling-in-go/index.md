@@ -571,12 +571,6 @@ func main() {
 // {John Doe 98 [English Maths Science]}
 ```
 
-<hr>
-
-Thank you for taking the time to read this blog post! Have questions, feedback or want to discuss this topic? Feel free to reach out at <a href="mailto:blog@avni.sh">blog@avni.sh</a>.  
-
-If you found this content valuable and would like to stay updated with my latest posts, consider subscribing to my <a href="https://www.avni.sh/index.xml" target="_blank">RSS Feed</a>.  
-
 # Resources
 <a href="https://gobyexample.com/" target="_blank">Go by Example</a>  
 <a href="https://go.dev/blog/json" target="_blank">JSON and Go</a>  
