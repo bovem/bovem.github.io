@@ -64,6 +64,8 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
+    newsletter:
+        buttondown: bovem
     images: ["cover.webp"]
 
     profileMode:
@@ -88,7 +90,7 @@ params:
 
            Check my <a target=_blank href="/resume/latest/Resume_Avnish_Pal.pdf">resume</a> to learn more about my professional experience.
 
-           Subscribe to my <a target=_blank href="index.xml">RSS feed</a> to be notified when I publish new articles.
+           Subscribe below to be notified when I publish new articles.
     socialIcons:
         - name: cv
           url: "resume/latest/Resume_Avnish_Pal.pdf"
